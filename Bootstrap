@@ -1,0 +1,92 @@
+@import '//fontawesome.io/assets/font-awesome/css/font-awesome.css';
+.chat {border: 0px;} 
+img {max-width: 48px;max-height: 48px;border:0;}
+::selection {background: #ccc;}
+::-moz-selection {background: #ccc;}
+::-webkit-selection {background: #ccc;}
+.chatTopLineWrapper ul li:nth-child(2) {display:none;}
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {background-image:none;}
+.chatTopLineWrapper > ul > li > a { text-shadow: none!important;}
+.chatMessageToMe .chatToUser {padding: 4px 7px 4px 7px;font-size: 9pt;}
+.chatTabs {
+  position: relative;
+  top:-25px;
+  background:rgba(251,251,251,1);
+  transition: .3s linear;
+  border-bottom:1px solid #D4D2CB;
+  cursor:pointer;
+  z-index:3;
+}
+.chatTabs ul {top:6px;}
+.chatTabs:hover {top:0px;-webkit-box-shadow: 0 6px 6px -6px #777;-moz-box-shadow: 0 6px 6px -6px #777;box-shadow: 0 6px 6px -6px #777;}
+.chatMessages.vscrollable, .chatPrivateMessages.vscrollable {top:17px;right:29px;}
+.chatSendExitPanel select,
+.chatSendButton,
+#join-chat-button,
+#join-chat-button2 {outline:none;cursor:pointer;}
+.chatSendText {padding:0 5px;outline:none;}
+.smilesBox {border-top:1px solid #D4D2CB}
+.smilesBox p {padding:5px 0 2px 5px;}
+.chatLinkVip {padding-right: 21px;}
+.chatLinkVip::after {position:absolute;margin-left: 21px;content:'Vip';border-bottom:1px dotted #000;}
+.chatLinkModerate {padding-right: 85px;border:0;}
+.chatLinkModerate::before {position:absolute;margin-left: 21px;content:'Moder';border-bottom:1px dotted #000;}
+.chatLinkMore {padding-left: 21px;margin-top:-2px;background:transparent url('//madeas.ru/chatcss/chatLinkMore_2.png') 0 0 no-repeat;}
+.smilesBox::-webkit-scrollbar,.vscrollable::-webkit-scrollbar {width: 9px;}
+.smilesBox::-webkit-scrollbar-thumb,.vscrollable::-webkit-scrollbar-thumb {background-color: #ccc;}
+.smilesBox::-webkit-scrollbar-track,.vscrollable::-webkit-scrollbar-track {background-color: #f4f4f4;}
+.chatPeople .chatPeopleTitle {width:100%;text-align:center;margin-top:25px;line-height:1.6}
+.chatPeople {
+  right: -141px !important;
+  border-left:1px solid #D4D2CB;
+  background-color:rgba(251,251,251,1)!important;  
+  transition: .3s linear;z-index:2;
+}
+.chatMain .chatPeople:hover {right:0!important;}
+.chatPeople ul.chatPeopleList li {padding-bottom:4px;}
+.chatPeople ul.chatPeopleList li.hover {border-top:1px solid #D4D2CB;border-bottom:1px solid #D4D2CB;}
+.content form {position: relative;width: 240px;background: #fff;padding: 15px;outline: 16px solid rgba(51,51,51,0.25);}
+.chatSpecifyPassword input[type=text] {
+    padding-left: 21px !important;
+    background: url("//madeas.ru/2017redes/svg/nickname.svg") 4px center no-repeat;
+    background-size:13.3333px;
+} 
+#scrollBottomBox {background-color:rgba(251,251,251,1); border: 1px solid #D4D2CB;}
+.chatFooter{background-color:rgba(251,251,251,1);} 
+@media screen and (max-width: 800px) {
+    #scrollBottomBox {left:90%!important;width: 18px;height: 18px;font-size: 0;padding: 0;opacity: .7;} 
+    #scrollBottomBox::before {content: "\f149";font-family: FontAwesome;font-size: 12pt;color:#999;}
+} 
+@media screen and (max-width: 610px) { 
+  .chatUserAvatar,
+  .user-icon,
+  .adm-icon,.mod-icon,
+  .chatSoundPanel,
+  .chatTime {
+      display:none;
+}
+.chatUserMenuItems {margin-left: 0!important;}
+.chatPeople.vscrollable {max-width:121px;right:-92px!important;}
+.chatFooter {height: 80px!important;}.chatSendButtonPanel {right: 115px!important;}
+.chatSendTextPanel {right: 136px!important;}.chatSendLinksPanel {height: 32px!important;} 
+.chatSendTextPanel,.chatSendExitPanel {top: 48px!important;} 
+.chatSendLinksPanel a {padding-bottom:5px;}
+#scrollBottomBox {margin:-5px 0 0 -30px} 
+.chatSendButtonPanel,
+.chatSendButton {width: 22px!important;height: 22px!important;}
+.chatSendButton {font-size:0;}
+.chatSendButtonPanel {top: 47px!important;padding: 0;border-top-right-radius:3px;border-bottom-right-radius:3px;opacity: 0.8;} 
+.chatMessages.vscrollable, 
+.chatPrivateMessages.vscrollable,
+.chatPeople.vscrollable {margin-bottom:18px;}
+.smilesBox {width:auto;}
+.chatSendButton {
+  background:buttonface url('//madeas.ru/chatcss/ok_button.png') 0 0 no-repeat; 
+  background-size:16px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+} 
+@media screen and (max-width: 320px) {
+.chatPeople.vscrollable {max-width:121px;right:-76px!important;} 
+#scrollBottomBox {margin:-5px 0 0 -35px}
+}
