@@ -1,4 +1,4 @@
-.chat {border:0;}
+.chat {border:0;border-color:#4d9dcb;}
  strong {color:#aa0000;}
 .chatHeader {
   top:-40px;
@@ -13,7 +13,18 @@
 }
 .chatTopLineWrapper > ul > li > a {text-shadow:1px 1px 0 #1e719e;}
 .chatTopLineWrapper > ul > li > a:hover {background-color:#4d9dcb;}
-
+.chatLinkModerate::after {
+  position:absolute;
+  margin-left: 21px;
+  content:'Модерирование';
+  border-bottom:1px dotted #000;
+}
+.chatLinkModerate {padding-right: 85px;border:0;}
+.chatLinkMore {
+  padding-left: 21px;
+  margin-top:-2px;
+  background:transparent url('//madeas.ru/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
+}
 .chatMain {top:6px;}
 .chat a,
 .chatSendButton,
@@ -154,7 +165,6 @@ select {
   visibility: visible;
   transition-delay: .2s;
 }
-
 #scrollBottomBox {
   position: absolute;
   font-size:0;
@@ -174,3 +184,33 @@ select {
 
 .chatMessageToMe .chatToUser {background-color:#1d6d9c;}
 .chatSendText {outline:none;}
+
+@media screen and (max-width: 610px) { 
+.chatUserAvatar,
+.user-icon,
+.adm-icon,
+.mod-icon,
+.chatSoundPanel,
+.chatTime {display:none;}
+.chatUserMenuItems {margin-left: 0!important;}
+}
+@media screen and (max-width: 500px) { 
+.chatFooter {height: 80px!important;}
+.chatSendLinksPanel {height: 32px!important;} 
+.chatSendLinksPanel a {padding-bottom:5px;}
+.chatSendButtonPanel,
+.chatSendButton,
+.chatSendTextPanel,
+.chatSendExitPanel {top: 48px!important;} 
+.chatMessages.vscrollable, 
+.chatPrivateMessages.vscrollable,
+.chatPeople.vscrollable {margin-bottom:18px;}
+.smileBox {max-width:310px!important;}
+}
+@media screen and (max-width: 420px) { 
+.chatPeopleTitle {display:none;}
+.chatPeople.vscrollable {
+  max-width:80px;
+  left:-51px!important;
+ }
+}
