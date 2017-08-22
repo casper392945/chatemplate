@@ -320,7 +320,12 @@
   background-size: 13.3333px;
 }
 @media screen and (max-width: 820px) {
-#scrollBottomBox {position:fixed!important;left:0;right:44px!important;bottom:84px;}
+#scrollBottomBox {
+    position:fixed!important;
+    left:0;
+    right:44px!important;
+    bottom:84px;
+}
 #scrollBottomBox {
    width: 18px;
    height: 18px;
