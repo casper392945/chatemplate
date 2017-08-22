@@ -16,7 +16,7 @@
 .chatLinkModerate::after {
   position:absolute;
   margin-left: 21px;
-  content:'Модерирование';
+  content:'РњРѕРґРµСЂРёСЂРѕРІР°РЅРёРµ';
   border-bottom:1px dotted #000;
 }
 .chatLinkModerate {padding-right: 85px;border:0;}
@@ -57,10 +57,10 @@ select {
   border-bottom:1px dotted #000;
 }
 
-.chatUserAway[title="Не беспокоить"] .chatUser {
+.chatUserAway[title="РќРµ Р±РµСЃРїРѕРєРѕРёС‚СЊ"] .chatUser {
   color: #ff6f00 !important;
 }
-.chatUserAway[title="Не беспокоить"] {
+.chatUserAway[title="РќРµ Р±РµСЃРїРѕРєРѕРёС‚СЊ"] {
   display: none;
 }
 
@@ -194,7 +194,7 @@ select {
 .chatTime {display:none;}
 .chatUserMenuItems {margin-left: 0!important;}
 }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 510px) { 
 .chatFooter {height: 80px!important;}
 .chatSendLinksPanel {height: 32px!important;} 
 .chatSendLinksPanel a {padding-bottom:5px;}
@@ -205,6 +205,7 @@ select {
 .chatMessages.vscrollable, 
 .chatPrivateMessages.vscrollable,
 .chatPeople.vscrollable {margin-bottom:18px;}
+
 .smileBox {max-width:310px!important;}
 }
 @media screen and (max-width: 420px) { 
