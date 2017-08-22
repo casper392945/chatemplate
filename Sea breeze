@@ -1,0 +1,181 @@
+.chat {border:0;}
+ strong {color:#aa0000;}
+.chatHeader {
+  top:-40px;
+  transition: .3s linear;
+  background-color:#4d9dcb;
+  border-bottom-color:#1d6d9c;
+}
+.chatHeader:hover {top:0;}
+.chatHeader .chatTopLine {
+  background-color:#4d9dcb;
+  border-color:#4d9dcb;
+}
+.chatTopLineWrapper > ul > li > a {text-shadow:1px 1px 0 #1e719e;}
+.chatTopLineWrapper > ul > li > a:hover {background-color:#4d9dcb;}
+
+.chatMain {top:6px;}
+.chat a,
+.chatSendButton,
+#join-chat-button,
+#join-chat-button2,
+select {
+  outline:none;
+  cursor:pointer;
+}
+
+.chatTitle {text-shadow:none!important;}
+.chatSendText {outline:none;}
+.chatHeader,
+.chatTabs > ul > li.chatTab.chatTabActive > a, 
+.chatTabs > ul > li.chatTab > a:hover, 
+.chatTabs > ul > li.chatTab > a.active,
+.chatTopLineWrapper > ul > li > a {
+  color:#fff!important;
+}
+.chatPeople ul.chatPeopleList li.hover {
+  border-top:1px solid #D4D2CB;
+  border-bottom:1px solid #D4D2CB;
+}
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {background-image:none;}
+.chatTopLineWrapper > ul > li > a { text-shadow: none!important;}
+.chatMessageToMe .chatToUser:hover {opacity:.8}
+.chatLinkVip {padding-right: 21px;}
+.chatLinkVip::after {
+  position:absolute;
+  margin-left: 21px;
+  content:'Vip';
+  border-bottom:1px dotted #000;
+}
+.chatMain {
+  background: transparent url('') 0 0 no-repeat;
+  background-size: cover;
+}
+
+.chatUserAway[title="Не беспокоить"] .chatUser {
+  color: #ff6f00 !important;
+}
+.chatUserAway[title="Не беспокоить"] {
+  display: none;
+}
+
+.smilesBox {
+  width: 333px !important;
+  background: transparent;z-index:98!important;
+}
+.smilesBox p {
+  background: #f5f4ef;
+  margin-top:1px;
+  width:50%;
+}
+
+.smilesBox::-webkit-scrollbar,
+.vscrollable::-webkit-scrollbar {width: 9px;}
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 6px;
+  margin:5px 0;
+}
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb {
+  background-color: #dadada;
+  border-radius: 6px;
+}
+
+.chatTabs {
+top:-2px;
+width:100%;
+background-color:#f5f4ef;
+border-bottom: 1px solid #bcbcbc;
+z-index:3;
+}
+.chatTab a {color:#1d6d9c!important;}
+.chatTabs > ul > li.chatTab > a {background-color:#eaeaea;}
+.chatTabs > ul > li.chatTab.chatTabActive > a, 
+.chatTabs > ul > li.chatTab > a:hover, 
+.chatTabs > ul > li.chatTab > a.active {
+  background-color:#4d9dcb;
+}
+.chatTabs ul li.chatTab .close {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(//madeas.ru/ChaTemplate/icon/close.png);
+  background-repeat: no-repeat;
+  border-radius:10px;
+  background-color:#1d6d9c;
+  opacity:0;
+  right: -6px;
+  top: 6px;
+}
+.chatTabs ul li.chatTab:hover .close,
+.chatTabs ul li.chatTab .close:hover {opacity:1;}
+.chatTabs > ul > li.chatTab > a {color:#333333;}
+
+.chatPeople.vscrollable {
+  left:-141px!important;
+  top:40px;
+  border-left:0;
+  border-right:1px solid #bcbcbc;
+  transition: .3s linear;
+  background: #f5f4ef;
+  z-index:2;
+}
+.chatPeople.vscrollable::after {
+  position:absolute;
+  bottom:2px;
+  left:5px;
+  content:'ChaTemplate';
+  color:#E1E1E1;
+  font-size:9px;
+}
+.chatPeople.vscrollable:hover {
+  left:0!important;
+}
+.chatUserFrom, 
+.chatPeople ul.chatPeopleList li a.chatUser {color:#1d6d9c;}
+
+.chatMessages.vscrollable,
+.chatPrivateMessages.vscrollable {
+  left:20px;
+  right:0;
+}
+
+.chatSpecifyPassword input[type=text] {
+padding-left: 21px !important;
+background: url("//madeas.ru/2017redes/svg/nickname.svg") 4px center no-repeat;
+background-size:13.3333px;
+}
+.content form {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0s linear 0.3s;
+  background: #fff;
+  padding: 15px;
+  outline: 10px solid rgba(51,51,51,0.05);
+}
+.center-wrapper:hover .content form {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .2s;
+}
+
+#scrollBottomBox {
+    position: absolute;
+    font-size:0;
+    bottom: 3px;
+    border:0!important;
+    padding:0!important;
+    left: auto !important;
+    right: 40px!important;
+    width: 16px!important;
+    height: 16px!important;
+    border-radius:0!important;
+    background-repeat: no-repeat;
+    background-color: transparent!important;
+    background-image: url(//madeas.ru/ChaTemplate/icon/bottom.png);
+    cursor: pointer;
+}
+
+.chatMessageToMe .chatToUser {background-color:#1d6d9c;}
