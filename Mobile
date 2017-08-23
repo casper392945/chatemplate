@@ -52,7 +52,7 @@
 .chatPeople.vscrollable {
     max-width:80px;right:-51px!important;
     transition: .3s linear;
-    background-color: transparent;z-index:2;
+    background-color: #f5f4ef;z-index:2;
   }
 .chatPeople.vscrollable:hover {width:80px;right:0!important;}
 .chatMain {top:6px;}
