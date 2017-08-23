@@ -21,8 +21,7 @@
   .mod-icon,
   .chatSoundPanel,
   .chatTime {display:none;}
-  .chatUserAway[title="Не беспокоить"] 
-  .chatUser {color: #ff6f00 !important;}
+  .chatUserAway[title="Не беспокоить"] .chatUser {color: #ff6f00 !important;}
   .chatUserAway[title="Не беспокоить"] {display: none;}
   .chatPeople.vscrollable::after {  
     position:absolute;  
