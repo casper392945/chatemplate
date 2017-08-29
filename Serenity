@@ -12,7 +12,7 @@
   text-shadow:none;
 }
 .chatMain {
-  top:6px;
+  top:4px;
 }
 .chatSendButton,
 #join-chat-button,
@@ -22,10 +22,11 @@ select {
   cursor:pointer;
 }
 .chatTabs {
-  top:-2px;
+  top:0px;
   width:100%;
-  background-color:#f5f4ef;
-  border-bottom: 1px solid #bcbcbc;
+  background-color: rgba(255,255,255,.4);
+  border-bottom: 1px solid #ccc;
+  border-bottom: 0px;
   z-index:3;
 }
 .chatTabs ul li.chatTab .close {
@@ -56,17 +57,9 @@ a[href="/hot/"],
   background-size:13.3333px;
 }
 .content form {
-  opacity: .8;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0s linear 0.3s;
-  background: #fff;
+  background: rgba(255,255,255,.9);
   padding: 15px;
   outline: 10px solid rgba(51,51,51,0.05);
-}
-.center-wrapper:hover .content form {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: .2s;
 }
 #scrollBottomBox {
   position: absolute;
@@ -108,19 +101,30 @@ a[href="/hot/"],
   padding-left: 20px;
   background:transparent url('//madeas.ru/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
 }
+.smilesBox,
+.chatPopupMenuDiv1 ,
+.chatPopupMenuDiv2 {  
+  transition: .3s linear;
+  background-color: rgba(255,255,255,.6);
+}
+.smilesBox:hover,
+.chatPopupMenuDiv2:hover {
+  background-color: rgba(255,255,255,.9);
+}
 .chatPeople.vscrollable {
   left:-141px!important;
   top:40px;
   border-left:0;
   border-right:1px solid #bcbcbc;
+  background-color: rgba(255,255,255,.4);
   transition: .3s linear;
-  background: #f5f4ef;
   z-index:2;
 }
 .chatPeople .chatPeopleTitle {
   width:100%;
   text-align:center;
-  line-height:1.6
+  line-height:1.6;
+  color:#000!important;
 }
 .chatPeople.vscrollable::after {
   position:absolute;
@@ -133,6 +137,11 @@ a[href="/hot/"],
 .chatPeople.vscrollable:hover {
   left:0!important;
 }
+.chatPeople.vscrollable:hover,
+.chatTabs:hover {
+  background-color:rgba(255,255,255,.9);
+  transition: .3s;
+}
 .chatPeople ul.chatPeopleList li.hover {
   border-top:1px solid #D4D2CB;
   border-bottom:1px solid #D4D2CB;
@@ -143,18 +152,43 @@ a[href="/hot/"],
 
 .chatMessages.vscrollable,
 .chatPrivateMessages.vscrollable {
-  left:20px;
+  left:30px;
   right:0;
 }
+.chatMessages.vscrollable,
+.chatFull .transparent,
+.chatPrivateMessages.vscrollable {
+  background-color:rgba(0,0,0,.3);
+}
+
+.chatFull .transparent {
+ -webkit-filter: url(#blur);
+ filter: url(#blur);
+ -webkit-filter: blur(3px);
+ filter: blur(3px);
+ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+ -webkit-transition: 1s -webkit-filter linear;
+ transition: 1s filter linear;
+}
+.chatFull:hover .transparent {
+ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+ -webkit-filter: blur(0px);
+ filter: blur(0px);
+ transition: 2s;
+}
+
 .chatSendText {
   outline:none;
+  padding:0 5px;
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
 }
 .smilesBox {
   border-top:1px solid #CFCFC9;
 }
-.smilesBox p {
+.smilesBox p,
+.chatPopupMenuContent p {
   padding: 5px;
+  color:#333;
 }
 #userGift {
   margin-left:50px;
@@ -204,9 +238,13 @@ a[href="/hot/"],
   23px 0 20px -23px rgba(0, 0, 0, .8),0 0 40px rgba(0, 0, 0, .1) inset;
 }
 .chatTopLineWrapper > ul > li > ul > li a:hover {
-  background-color:#ccc;color:#fff;
+  background-color:#ccc;
+  color:#fff;
 }
-
+.chatFooter {
+  background: rgba(255,255,255,.2)!important;
+  background-color: rgba(255,255,255,.2)!important;
+}
 .chatUserMenuInfo {background-image: url(//madeas.ru/ChaTemplate/icon/icon_user.png);}
 .chatUserMenuPrivate {background-image: url(//madeas.ru/ChaTemplate/icon/icon_pm.png);}
 .chatUserMenuPhotos {background-image: url(//madeas.ru/ChaTemplate/icon/icon_img.png);}
@@ -238,25 +276,67 @@ a[href="/hot/"],
   text-decoration:none!important;
   border-bottom:none!important;
 }
+#sign-in-label a, 
+#join-chat-button, 
+#join-chat-button2, 
+.dialog-buttons button {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: none;
+  border: 1px solid rgba(34,36,38,.15);
+  vertical-align: baseline;
+  padding: 0.75em 1.25em;
+  line-height: 1em;
+  text-decoration: none;
+  border-radius: 3px;
+}
+#sign-in-label a:hover, 
+#join-chat-button:hover, 
+#join-chat-button2:hover, 
+.dialog-buttons button:hover, 
+.chatLinkSmiles:hover {
+  border-color: rgba(34,36,38,.35);
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.08) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+  background-image: -o-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+  text-decoration: none;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+}
+#sign-in-label a:active, 
+#join-chat-button:active, 
+#join-chat-button2:active, 
+.dialog-buttons button:active {
+  position: relative;
+  top: 1px;
+}
+#sign-in-label a:active, 
+#join-chat-button:active, 
+#join-chat-button2:active, 
+.dialog-buttons button:active, 
+.chatLinkSmiles:active {
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  -webkit-box-shadow: none;
+  text-decoration: none;
+  box-shadow: none;
+}
 @media screen and (max-width: 610px) { 
   .user-icon,
   .adm-icon,
   .mod-icon,
   .chatSoundPanel,
   .chatTime {display:none;}
-  .chatPeople.vscrollable::after {  
-    position:absolute;  
-    bottom:2px;  
-    left:5px;  
-    content:'ChaTemplate';  
-    color:#E1E1E1;  
-    font-size:8px;
-  }
-
-@media screen and (max-width: 420px) { 
-.chatUserAvatar,
-.chatUserGiftsCount,
-#userGift {display:none;}
+}
+@media screen and (max-width: 510px) { 
 .chatFooter {height: 80px!important;}
 .chatSendLinksPanel {height: 32px!important;} 
 .chatSendLinksPanel a {padding-bottom:5px;}
@@ -264,19 +344,31 @@ a[href="/hot/"],
 .chatSendButton,
 .chatSendTextPanel,
 .chatSendExitPanel {top: 48px!important;} 
-.chatMessages.vscrollable, 
-.chatPrivateMessages.vscrollable,
+}
+@media screen and (max-width: 420px) { 
+.chatUserAvatar,
+.chatUserGiftsCount,
+#userGift {display:none;}
 .chatPeopleTitle {opacity:0;}
 .chatPeople.vscrollable {
   margin-bottom:18px;
   left:-51px;!important
   max-width:80px;
-  transition: .3s linear;
   z-index:2;
-}
+ }
+.chatMessages.vscrollable, 
+.chatPrivateMessages.vscrollable {
+    margin-bottom:18px;
+    left:29px!important;
+  }
 .chatPeople.vscrollable:hover {
-  width:80px;
   right:0!important;
-}
+ }
 .chatUserMenuItems {margin-left: 0!important;}
+}
+@media screen and (max-width: 400px) { 
+.chatMessages.vscrollable, 
+.chatPrivateMessages.vscrollable {
+    left:0!important;
+  }
 }
