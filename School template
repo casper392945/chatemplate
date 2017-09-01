@@ -36,8 +36,11 @@
   background: #004d20 url(//madeas.ru/ChaTemplate/bg/school.png) 0 0 no-repeat;
   background-size: cover;
 }
+.chat,
 .chatMain {
-  cursor: url(''), auto;
+  cursor: url('//madeas.ru/ChaTemplate/cur/chalk.png'), auto;
+}
+.chatMain {
   color:#fff;
   font-weight:600;
 }
@@ -58,7 +61,8 @@
 #sign-in-label a, 
 .dialog-buttons button,
 input[type="button"],
-input[type="submit"]  {
+input[type="submit"],
+input[type="text"]  {
   outline:none;
 }
 .chatSendButton,
