@@ -1,6 +1,9 @@
 .chat {border: 7px solid #704214;}
 .chatHeader {border-bottom-color: #704214;}
-.chatTitle {text-shadow:none!important;font: 14pt bold;}
+.chatTitle {
+  text-shadow:none!important;
+  font: 14pt bold;
+}
 .chatTopLineWrapper ul > li > a {
   text-shadow:none!important;
   transition: .3s linear;
@@ -9,7 +12,11 @@
   background-color: rgba(0,0,0,.6);
 }
 .chatFooter {border-top: 4px solid #704214;}
-.chatHeader .chatTopLine {border-color: transparent;background-color:transparent;border: 0; }
+.chatHeader .chatTopLine {
+  border-color: transparent;
+  background-color:transparent;
+  border: 0; 
+}
 .chatHeader,
 .chatFooter,
 .chatTabs,
@@ -25,8 +32,15 @@
 .transparent,
 .chatMain,
 .chatFooter,
-.chatHeader {background: #004d20 url(//madeas.ru/ChaTemplate/bg/school.png) 0 0 no-repeat;background-size: cover;}
-.chatMain {cursor: url(''), auto;color:#fff;font-weight:600;}
+.chatHeader {
+  background: #004d20 url(//madeas.ru/ChaTemplate/bg/school.png) 0 0 no-repeat;
+  background-size: cover;
+}
+.chatMain {
+  cursor: url(''), auto;
+  color:#fff;
+  font-weight:600;
+}
 .chatSendText,
 .chatInputText,
 .chatSpecifyPassword input[type=text] {
@@ -64,7 +78,9 @@ input[type="submit"] {cursor:pointer;}
 .chatSoundPanel a span {font-size:10pt;}
  select {background:transparent;color:#fff;}
  option {color:#888;}
-.chatFull {background: radial-gradient(left center, black, rgba(0,0,0,.6), rgba(0,0,0,.3), transparent);}
+.chatFull {
+  background: radial-gradient(left center, black, rgba(0,0,0,.6), rgba(0,0,0,.3), transparent);
+}
 .chatSendLinksPanel a span,
 .chatSoundPanel a span,
 .chatUserMenuItems a,
@@ -129,14 +145,17 @@ a[href="/hot/"],
 .chatPopupMenuDiv1 ,
 .chatPopupMenuDiv2 {
   margin-top:-6px;
-  margin-left:-6px;
+  margin-left:-5px;
 }
 .smilesBox {
+  margin-top:-6px;
+  margin-left:-7px;
   background-color: transparent;
   border: 0;
 }
+.smilesBox:hover,
 .chatPopupMenuDiv2:hover {
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.8);
 }
 .chatMain .chatPeople {
   border-left: 4px solid #704214;
@@ -165,22 +184,33 @@ a[href="/hot/"],
   border-bottom:1px solid rgba(12,166,20,.50);
   background-color: rgba(0,0,0,.20);
 }
+#scrollBottomBox {
+  background-color: #E5DB68;
+  border: 1px solid #AE6720;
+  margin-top:-8px;
+}
+.chatMessages.vscrollable,
+.chatPrivateMessages.vscrollable {
+  margin:4px 7px 4px 0;
+}
 .smilesBox::-webkit-scrollbar,
-.vscrollable::-webkit-scrollbar {
-    width: 8px;
+.chatMessages.vscrollable::-webkit-scrollbar,
+.chatPrivateMessages.vscrollable::-webkit-scrollbar {
+  width: 6px;
 }
 .smilesBox::-webkit-scrollbar-thumb,
-.vscrollable::-webkit-scrollbar-thumb {
-    background-color: #704214;
-}
-.smilesBox::-webkit-scrollbar-thumb:hover,
-.vscrollable::-webkit-scrollbar-thumb:hover {
-    background-color: #999;
-}
-.smilesBox::-webkit-scrollbar-thumb {
+.chatMessages.vscrollable::-webkit-scrollbar-thumb,
+.chatPrivateMessages.vscrollable::-webkit-scrollbar-thumb {
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+ box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #8A5520;
   border-radius: 6px;
 }
-
+.smilesBox::-webkit-scrollbar-thumb:hover,
+.chatMessages.vscrollable::-webkit-scrollbar-thumb:hover,
+.chatPrivateMessages.vscrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
 .chatUserAway[title="Не беспокоить"] {
   display: none;
 }
