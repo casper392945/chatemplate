@@ -1,3 +1,6 @@
+.chatMain {background-size:cover}
+a:hover {color:#000;}
+
 .chat,
 .chatHeader .chatTopLine {
   border:0;
@@ -14,32 +17,40 @@
 .chatMain {
   top:4px;
 }
+.chatSendText,
+ select,
+.chatInputText,
+#sign-in-label a, 
 .chatSendButton,
-#join-chat-button,
-#join-chat-button2,
-select {
+.dialog-buttons button,
+ input[type="button"],
+ input[type="submit"],
+ input[type="text"]  {
   outline:none;
+}
+.chatSendButton,
+ input[type="button"],
+ input[type="submit"],
+ select {
   cursor:pointer;
 }
 .chatTabs {
-  top:0px;
   width:100%;
   background-color: rgba(255,255,255,.4);
-  border-bottom: 1px solid #ccc;
-  border-bottom: 0px;
+  border-bottom: 0;
   z-index:3;
 }
 .chatTabs ul li.chatTab .close {
   position: absolute;
   width: 12px;
   height: 12px;
+  background-color: inherit!important;
   background-image: url(//madeas.ru/ChaTemplate/icon/close.png);
   background-repeat: no-repeat;
   border-radius:50%;
   background-size:12px;
-  background-color: inherit;
   opacity:0;
-  right: -3px;
+  right: -6px;
   top: 6px;
 }
 .chatTabs ul li.chatTab:hover .close,
@@ -68,7 +79,7 @@ a[href="/hot/"],
   border:0!important;
   padding:0!important;
   left: auto !important;
-  right: 65px!important;
+  right: 85px!important;
   width: 16px!important;
   height: 16px!important;
   border-radius:0!important;
@@ -112,10 +123,10 @@ a[href="/hot/"],
   background-color: rgba(255,255,255,.9);
 }
 .chatPeople.vscrollable {
-  left:-141px!important;
+  right:-141px!important;
   top:40px;
-  border-left:0;
-  border-right:1px solid #bcbcbc;
+  border-right:0;
+  border-left:1px solid #bcbcbc;
   background-color: rgba(255,255,255,.4);
   transition: .3s linear;
   z-index:2;
@@ -129,13 +140,13 @@ a[href="/hot/"],
 .chatPeople.vscrollable::after {
   position:absolute;
   bottom:2px;
-  left:5px;
+  right:5px;
   content:'ChaTemplate';
   color:#E1E1E1;
   font-size:9px;
 }
 .chatPeople.vscrollable:hover {
-  left:0!important;
+  right:0!important;
 }
 .chatPeople.vscrollable:hover,
 .chatTabs:hover {
@@ -152,8 +163,8 @@ a[href="/hot/"],
 
 .chatMessages.vscrollable,
 .chatPrivateMessages.vscrollable {
-  left:30px;
-  right:0;
+  right:30px;
+  left:0;
 }
 .chatMessages.vscrollable,
 .chatFull .transparent,
@@ -189,10 +200,6 @@ a[href="/hot/"],
 .chatPopupMenuContent p {
   padding: 5px;
   color:#333;
-}
-#userGift {
-  margin-left:50px;
-  margin-top:8px;
 }
 .chatMessageToMe .chatToUser {
   padding: 2px 5px;
@@ -328,47 +335,4 @@ a[href="/hot/"],
   -webkit-box-shadow: none;
   text-decoration: none;
   box-shadow: none;
-}
-@media screen and (max-width: 610px) { 
-  .user-icon,
-  .adm-icon,
-  .mod-icon,
-  .chatSoundPanel,
-  .chatTime {display:none;}
-}
-@media screen and (max-width: 510px) { 
-.chatFooter {height: 80px!important;}
-.chatSendLinksPanel {height: 32px!important;} 
-.chatSendLinksPanel a {padding-bottom:5px;}
-.chatSendButtonPanel,
-.chatSendButton,
-.chatSendTextPanel,
-.chatSendExitPanel {top: 48px!important;} 
-}
-@media screen and (max-width: 420px) { 
-.chatUserAvatar,
-.chatUserGiftsCount,
-#userGift {display:none;}
-.chatPeopleTitle {opacity:0;}
-.chatPeople.vscrollable {
-  margin-bottom:18px;
-  left:-51px;!important
-  max-width:80px;
-  z-index:2;
- }
-.chatMessages.vscrollable, 
-.chatPrivateMessages.vscrollable {
-    margin-bottom:18px;
-    left:29px!important;
-  }
-.chatPeople.vscrollable:hover {
-  right:0!important;
- }
-.chatUserMenuItems {margin-left: 0!important;}
-}
-@media screen and (max-width: 400px) { 
-.chatMessages.vscrollable, 
-.chatPrivateMessages.vscrollable {
-    left:0!important;
-  }
 }
