@@ -38,6 +38,7 @@ a:hover {color:#000;}
   width:100%;
   background-color: rgba(255,255,255,.4);
   border-bottom: 0;
+  transition: .3s linear;
   z-index:3;
 }
 .chatTabs ul li.chatTab .close {
@@ -99,12 +100,12 @@ a[href="/hot/"],
   border-bottom:0px;
 }
 .chatLinkModerate {
-  padding-right: 36px;
+  padding-right: 56px;
   border:0;
 }
 .chatLinkModerate::before {
   position:absolute;
-  margin-left: 19px;
+  margin-left: 30px;
   content:'Moder';
   border-bottom:0;
 }
@@ -150,8 +151,7 @@ a[href="/hot/"],
 }
 .chatPeople.vscrollable:hover,
 .chatTabs:hover {
-  background-color:rgba(255,255,255,.9);
-  transition: .3s;
+  background-color:rgba(255,255,255,1);
 }
 .chatPeople ul.chatPeopleList li.hover {
   border-top:1px solid #D4D2CB;
@@ -166,9 +166,7 @@ a[href="/hot/"],
   right:30px;
   left:0;
 }
-.chatMessages.vscrollable,
-.chatFull .transparent,
-.chatPrivateMessages.vscrollable {
+.chatFull .transparent {
   background-color:rgba(0,0,0,.3);
 }
 
@@ -248,10 +246,7 @@ a[href="/hot/"],
   background-color:#ccc;
   color:#fff;
 }
-.chatFooter {
-  background: rgba(255,255,255,.2)!important;
-  background-color: rgba(255,255,255,.2)!important;
-}
+
 .chatUserMenuInfo {background-image: url(//madeas.ru/ChaTemplate/icon/icon_user.png);}
 .chatUserMenuPrivate {background-image: url(//madeas.ru/ChaTemplate/icon/icon_pm.png);}
 .chatUserMenuPhotos {background-image: url(//madeas.ru/ChaTemplate/icon/icon_img.png);}
@@ -270,7 +265,7 @@ a[href="/hot/"],
 .chatSendLinksPanel .chatLinkImage {background: url(//madeas.ru/ChaTemplate/icon/icon_gallery.png) 0 0 no-repeat;}
 .chatSendLinksPanel .chatLinkProfile {background: url(//st1.chatovod.ru/i/widget/user_comment.png) 0 0 no-repeat;}
 .chatSendLinksPanel .chatLinkGold {background: url(//madeas.ru/ChaTemplate/icon/icon_gold.png) 0 0 no-repeat;}
-.chatSendLinksPanel .chatLinkModerate {background: url(//madeas.ru/ChaTemplate/icon/icon_moder.png) 0 0 no-repeat;}
+.chatSendLinksPanel .chatLinkModerate {background: url(//madeas.ru/ChaTemplate/icon/icon_editor.png) 10px 0 no-repeat;}
 .chatSendLinksPanel .chatLinkVip {background: url(//madeas.ru/ChaTemplate/icon/icon_vip.png) 0 0 no-repeat;}
 .chatTime {
   background: transparent url(//madeas.ru/ChaTemplate/icon/icon-clock.png) no-repeat 0 0 / 16px 16px;
