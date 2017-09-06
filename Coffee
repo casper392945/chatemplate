@@ -55,6 +55,18 @@
   border-bottom:1px solid #fff;
   transition:.5s;
 }
+.chatMain .chatPeople.vscrollable::after {
+  opacity:0;
+  position:absolute;
+  bottom:2px;
+  right:5px;
+  content:'ChaTemplate';
+  color:#333;
+  font-size:9px;
+}
+.chatMain .chatPeople:hover::after {
+  opacity:1;
+}
 .chatPeopleTitle {
   text-align: center;
   font-weight: bold;
@@ -70,7 +82,7 @@
   overflow: hidden;
 }
 .chatMain .chatPeople:hover {
-  height:100%;
+  height:99.2%;
   background-color:rgba(0,0,0,.6);
 }
 .chatMain .chatPeople:hover .chatPeopleList  {
