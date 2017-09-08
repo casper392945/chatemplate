@@ -87,19 +87,6 @@
 .vscrollable::-webkit-scrollbar {
   width: 6px;
 }
-.chatMessages .chatMessage:not(.chatSystemMessage) strong:first-child {
-  color: #860404;
-  background: #ffebee;
-  margin-left: -15px;
-  width: 102%;
-  display: block;
-  padding: 6px 2px;
-  font-weight: 400;
-  text-align: center;
-}
-.chatMessages .chatSystemMessage {
-  background-image: none;
-}
 .chatPeople ul.chatPeopleList li.hover {
   background: rgba(179, 205, 210, 0.15) !important;
   border-color: transparent;
