@@ -217,30 +217,30 @@
   box-shadow: none;
 }
 .chatSendButton {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: url(//madeas.ru/ChaTemplate/icon/button_reply.png) !important;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:20px;
-  font-size: 0;
-  height: 22px !important;
-  width: 24px !important;
-  min-height: 1em;
-  opacity: 0.5;
-  outline: none;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(http://madeas.ru/ChaTemplate/icon/button_reply.png) !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:20px;
+    font-size: 0;
+    height: 22px !important;
+    width: 24px !important;
+    min-height: 1em;
+    opacity: 0.5;
+    outline: none;
     border: transparent;
-  line-height: 1em;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  cursor: pointer;
+    line-height: 1em;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 .chatPanel:hover .chatSendButton {
     opacity: 1;
@@ -258,7 +258,7 @@
 .chatLinkMore {
   padding-left: 21px;
   margin-top:-2px;
-  background:transparent url('//madeas.ru/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
+  background:transparent url('http://madeas.ru/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
 }
 .chatPopupMenuContent {
   background-color:#fff;
@@ -308,7 +308,7 @@
 .chatTopLineWrapper ul li ul li a:hover {background-color:#c4c4c4;color:#fff;}
 .chatSpecifyPassword input[type=text] {
   padding-left: 21px !important;
-  background: url(//madeas.ru/2017redes/svg/nickname.svg) 4px center no-repeat;
+  background: url(http://madeas.ru/2017redes/svg/nickname.svg) 4px center no-repeat;
   background-size: 13.3333px;
 }
 #scrollBottomBox {
@@ -324,7 +324,7 @@
   border-radius:0!important;
   background-repeat: no-repeat;
   background-color: transparent!important;
-  background-image: url(//madeas.ru/ChaTemplate/icon/bottom.png);
+  background-image: url(http://madeas.ru/ChaTemplate/icon/bottom.png);
   cursor: pointer;
 }
 @media screen and (max-width: 610px) { 
