@@ -1,4 +1,6 @@
-.chatMain {background-size:cover}
+.chatMain {
+  background-size:cover;
+}
 a:hover {color:#000;}
 
 .chat,
