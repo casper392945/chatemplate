@@ -1,5 +1,10 @@
-.chat {border: 7px solid #704214;}
-.chatHeader {border-bottom-color: #704214;}
+.chat {
+  border: 7px solid #704214;
+  font-family: Comic Sans MS;
+}
+.chatHeader {
+  border-bottom-color: #704214;
+}
 .chatTitle {
   text-shadow:none!important;
   font: 14pt bold;
@@ -11,7 +16,9 @@
 .chatTopLineWrapper ul > li > a:hover {
   background-color: rgba(0,0,0,.6);
 }
-.chatFooter {border-top: 4px solid #704214;}
+.chatFooter {
+  border-top: 4px solid #704214;
+}
 .chatHeader .chatTopLine {
   border-color: transparent;
   background-color:transparent;
@@ -28,17 +35,19 @@
 }
 .chat,
 .chat a,
-.chatSpecifyPassword input[type=text] {font-style: italic;}
+.chatSpecifyPassword input[type=text] {
+  font-style: italic;
+}
 .transparent,
 .chatMain,
 .chatFooter,
 .chatHeader {
-  background: #004d20 url(//madeas.ru/ChaTemplate/bg/school.png) 0 0 no-repeat;
+  background: #004d20 url(http://madeas.ru/ChaTemplate/bg/school.png) 0 0 no-repeat;
   background-size: cover;
 }
 .chat,
 .chatMain {
-  cursor: url('//madeas.ru/ChaTemplate/cur/chalk.png'), auto;
+  cursor: url('http://madeas.ru/ChaTemplate/cur/chalk.png'), auto;
 }
 .chatMain {
   color:#fff;
@@ -48,13 +57,15 @@
 .chatInputText,
 .chatSpecifyPassword input[type=text] {
   border:0;
-  background: transparent url(//madeas.ru/ChaTemplate/img/pencil.png) no-repeat 0 0 / 16px 16px;
+  background: transparent url(http://madeas.ru/ChaTemplate/img/pencil.png) no-repeat 0 0 / 16px 16px;
   border-bottom:2px solid #704214;
   transition:.3s linear;
 }
 .chatSendText:focus,
 .chatInputText:focus {background:#f4f4f4;}
-.chatSpecifyPassword input[type=text] {padding-left:21px;}
+.chatSpecifyPassword input[type=text] {
+  padding-left:21px;
+}
 .chatSendText,
  select,
 .chatInputText,
@@ -68,20 +79,31 @@ input[type="text"]  {
 .chatSendButton,
  select,
 input[type="button"],
-input[type="submit"] {cursor:pointer;}
+input[type="submit"] {
+  cursor:pointer;
+}
 .chat a,
 .chatTitle,
 .chatTopLineWrapper ul > li > a,
 .smilesBox p,
 .chatPopupMenuContent p,
-.chatSpecifyPassword input[type=text] {color:#fff;}
-.chatMessage.chatSystemMessage {color:#58D3F7;}
+.chatSpecifyPassword input[type=text] {
+  color:#fff;
+}
+.chatMessage.chatSystemMessage {
+  color:#58D3F7;
+}
 .chatLinkModerate::before,
 .chatSendLinksPanel a span,
 .chatLinkVip::after,
 .chatSoundPanel a span {font-size:10pt;}
- select {background:transparent;color:#fff;}
- option {color:#888;}
+ select {
+   background:transparent;
+   color:#fff;
+ }
+ option {
+   color:#888;
+ }
 .chatFull {
   background: radial-gradient(left center, black, rgba(0,0,0,.6), rgba(0,0,0,.3), transparent);
 }
@@ -100,26 +122,14 @@ input[type="submit"] {cursor:pointer;}
   color:#333;
   font-size:9px;
 }
-.chatTabs ul li.chatTab .close {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-image: url(//madeas.ru/ChaTemplate/icon/close.png);
-  background-repeat: no-repeat;
-  border-radius:50%;
-  background-size:12px;
-  background-color: inherit;
-  opacity:0;
-  right: -6px;
-  top: 6px;
-}
+
 a[href="/hot/"],
 #register-menu-item {
   font-weight:bold;
 }
-.chatTabs ul li.chatTab:hover .close,
-.chatTabs ul li.chatTab .close:hover {opacity:1;}
-.chatLinkVip {padding-right: 21px;}
+.chatLinkVip {
+  padding-right: 21px;
+}
 .chatLinkVip::after {
   position:absolute;
   margin-left: 21px;
