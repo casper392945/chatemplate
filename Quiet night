@@ -137,14 +137,6 @@ input[type="submit"] {
   background-size: cover; 
   background-position: center center;
 }
-.chatMain { 
-  background-image: url(http://madeas.ru/ChaTemplate/bg/bg_birds.gif), url(http://madeas.ru/ChaTemplate/bg/bg4.jpg);
-  background-position:  85% 5%, center center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 40%, cover; 
-  margin-top: -46px;
-  margin-bottom:-63px;
-}
 .chatHeader {
   position: static;
   width: calc(100% - 120px - 150px);
