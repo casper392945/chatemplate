@@ -1,0 +1,431 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,600italic,400italic&subset=latin,cyrillic,latin-ext,cyrillic-ext);
+ body:not(.has-nick) .chatTopLine,
+ body:not(.has-nick) .chatTabs {
+    display: none;
+}
+.chat,
+.chatMain,
+#scrollBottomBox,
+.smoke,
+.dialog-buttons button,
+.dialog-prompt input,
+input[type="button"],
+input[type="submit"] {
+  font-family: 'Open Sans', Lucida Grande, sans-serif;
+}
+ a,
+ a:hover,
+.chatPeopleTitle,
+.smilesBox p,
+.chatPopupMenuDiv2 .chatPopupMenuContent p,
+.chatFooter .chatFooterWrapper .chatPanel div a span {
+  color:#fff!important;
+  line-height: normal;
+  text-decoration: none!important;
+  border-bottom: none!important;
+}
+.chat { 
+  border:0;
+}
+.smilesBox::-webkit-scrollbar-track,
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-thumb,
+.chatMessageToMe .chatToUser {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+#chatUserMiniMenu,
+ input[type="text"],
+.chatSendButton,
+ input[type="submit"],
+#chatChannel_main,
+.chatPrivateMessages.vscrollable,
+.chatSendExitPanel select,
+.content form,
+.chatTopLineWrapper > ul > li > ul,
+.chatSendExitPanel select,
+.chatTabs > ul > li.chatTab > a,
+.chatSpecifyPassword input[type=text],
+#join-chat-button2,
+#sign-in-label a {
+  -webkit-border-radius:9px;
+  -moz-border-radius:9px;
+  border-radius:9px;
+}
+#chatUserMiniMenu,
+.chatPopupMenuDiv1,
+.chatPopupMenuDiv2,
+.content form, 
+.chatTopLineWrapper > ul > li > ul {
+  -webkit-box-shadow: 0px 0px 7px #000;
+  -moz-box-shadow: 0px 0px 7px #000;
+  box-shadow: 0px 0px 7px #000;
+}
+.chatSendExitPanel select,
+#sign-in-label a,
+ input[type="button"],
+ input[type="submit"],
+ input[type="text"]  {
+  outline:none;
+}
+.chatSendExitPanel select,
+ input[type="button"],
+ input[type="submit"] {
+  cursor:pointer;
+}
+ input[type="text"] {
+  padding:0 13px;
+  line-height: 25px;
+  height: 25px;
+  border: 2px solid #6b6c6d;
+  background: #3b3c41;
+  color: #fff;
+}
+ input[type="text"]:focus {
+  background: #fff;
+  color: #131415;
+}
+.chatFooter, 
+.chatEventDiv, 
+.chatPopupMenuDiv1, 
+.chatPeople, 
+.chatPeople ul.chatPeopleList li.hover {
+  background-color: rgba(44,46,50,0.85);
+} 
+.chatPopupMenuDiv2, 
+.smilesBox {
+  background-color: rgba(44,46,50,1);
+} 
+.chatPeople .chatPeopleTitle {
+  width:100%;
+  text-align: center;
+}
+.chatPeople.vscrollable::after {
+  position:absolute;
+  bottom:50px;
+  right:17px;
+  content:'ChaTemplate';
+  color:rgba(51,51,51,.7);
+  font-size:9px;
+  z-index:-1;
+}
+.chatTabs {
+  right:20px;  
+  left:20px;  
+}
+.chatTabsLeft {
+    left: 0;
+    background: transparent url(http://madeas.ru/icon/arrow-left.png) no-repeat 2px 12px / 16px 16px;
+}
+.chatTabsRight {
+    right: 0;
+    background: transparent url(http://madeas.ru/icon/arrow-right.png) no-repeat 2px 12px / 16px 16px;
+}
+.chatTabs > ul > li.chatTab > a:hover,
+.chatTabs > ul > li.chatTab > a.active {
+  background-color: #488bfa;
+}
+.chatPopupMenuDiv1, 
+.chatPopupMenuDiv2 {
+  border-color:#333;
+}
+.chatMain { 
+  margin-top: -46px;
+  margin-bottom:-63px;
+  background-size: cover; 
+  background-position: center center;
+}
+.chatMain { 
+  background-image: url(http://madeas.ru/ChaTemplate/bg/bg_birds.gif), url(http://madeas.ru/ChaTemplate/bg/bg4.jpg);
+  background-position:  85% 5%, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40%, cover; 
+  margin-top: -46px;
+  margin-bottom:-63px;
+}
+.chatHeader {
+  position: static;
+  width: calc(100% - 120px - 150px);
+  top:0;
+  left: 0;
+  transition: all 0.3s ease;
+  text-align: right;
+  height: 63px;
+  background-color: transparent;
+}
+.chatHeader .chatTopLine {
+  margin-top:20px;
+  margin-right:17px;
+  background-color: transparent;
+  border:0;
+  z-index:101;
+}
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {
+  background-image: none;
+}
+.chatTopLineWrapper > ul > li > a,
+.chatTopLineWrapper > ul > li > a:hover {
+  background-color: transparent;
+  text-shadow: none!important;
+}
+.chatTopLineWrapper > ul > li > a:hover {
+  background-color: transparent;
+}
+.chatTitle {
+  background: linear-gradient(to bottom, rgba(44,46,50,1), rgba(44,46,50,1), transparent);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  position: absolute;
+  display: block;
+  height:65px;
+  left:5px;
+  right:20px;
+  top:45px;
+  padding-top:10px;
+  text-align: center;
+  font-size:19pt;
+  font-weight: 400!important;
+  text-shadow: none!important;
+  z-index:33;
+}
+.chatTopLineWrapper > ul > li > ul {
+  background:rgba(44,46,50,1);
+  border:0;
+  padding: 10px 0px 5px 15px!important;
+  text-align: left;
+}
+#account-info a {
+  display: block!important;
+  position: absolute;
+  margin-top:161px;
+  margin-left:235px;
+ }
+#sign-in-label a {
+  display: inherit;
+  width: 100%;
+  line-height: 45px;
+  height: 45px!important;
+  border: 0px;
+  background-color: #488bfa;
+  text-align: center;
+  color: #fff;
+}
+#chatMainMenuChatovod {
+  margin-left:-19px!important;
+}
+.chatFooter {
+  background: linear-gradient(to top, rgba(44,46,50,1), rgba(44,46,50,1), rgba(44,46,50,1), transparent);
+  border-top: 0!important;
+  bottom:40px;
+  left:20px;
+  right:20px;
+  height:65px;
+  padding-top:10px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  z-index:99;
+}
+.chatPeople ul.chatPeopleList li.hover {
+  border-top:1px solid transparent;
+  border-bottom:1px solid transparent;
+}
+.chatPeople.vscrollable {
+  top:90px;
+  right:20px;
+  bottom: 60px!important;
+  border-left:0;
+  z-index:34;
+}
+.chatMessages.vscrollable,
+.chatPrivateMessages.vscrollable {
+  top:60px;
+  left:20px;
+  right:190px;
+  bottom: 40px;
+  padding: 75px 5px;
+  margin: auto;
+  background: rgba(44,46,50,0.85);=
+  color: #fff;
+}
+ body:not(.has-nick) .chatTopLine,
+ body:not(.has-nick) .chatPeopleTitle  {
+  display: none;
+}
+#join-chat-button {
+  position: fixed!important;
+  top: 10px !important;
+  left:auto!important;
+  right:10px!important;
+  color:#fff;
+  border:0;
+  background: transparent;
+  z-index:100;
+}
+.chatSendButton,
+ input[type="submit"],
+.chatSendExitPanel select {
+  display: block;
+  height: 25px!important;
+  border: 0px;
+  color: #fff;
+  background-color: #488bfa;
+  vertical-align: middle;
+}
+.chatSendButton:hover,
+ input[type="submit"]:hover,
+.chatSendExitPanel select:hover {
+  background-color: #f1f1f1; 
+  color: #333;
+}
+.smilesBox::-webkit-scrollbar {
+  width:6px;
+}
+.smilesBox::-webkit-scrollbar-track,
+.smilesBox::-webkit-scrollbar-thumb {
+  margin: 5px auto;
+}
+.vscrollable::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-thumb  {
+  margin: 60px auto 50px;
+  visibility: hidden;
+}
+.smilesBox:hover::-webkit-scrollbar-thumb,
+.vscrollable:hover::-webkit-scrollbar-thumb {
+  background-color: #488bfa;
+  visibility: visible;
+}
+.chatTabs ul li.chatTab .close {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #488bfa;
+  background-image: url(http://madeas.ru/images/pro_check_circle_disabled.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius:50%;
+  opacity:0;
+  right: -4px;
+  top: 6px;
+}
+.chatTabs ul li.chatTab:hover .close,
+.chatTabs ul li.chatTab .close:hover {
+  opacity:1;
+}
+.chatMessageToMe .chatToUser {
+  color: #ffffff;
+  padding: 2px 8px;
+}
+#join-chat-button2 {
+  display: block;
+  line-height: 45px;
+  height: 45px!important;
+  border: 0px;
+  min-width: 275px;
+  padding: 0 25px;
+  margin: 0 auto 10px auto;
+  color: #fff;
+  background-color: #488bfa;
+  font-size: 18px;
+}
+.chatSpecifyPassword input[type=text] {
+  display: inline-block;
+  line-height: 45px;
+  height: 45px;
+  padding: 0 18px;
+  margin: 0;
+  border: 2px solid #6b6c6d;
+  width: 275px;
+  background: #3b3c41;
+  color: #fff;
+  position: relative;
+}
+.chatFull .transparent {
+   background-image: url(http://madeas.ru/ChaTemplate/bg/bg_birds.gif), url(http://madeas.ru/ChaTemplate/bg/bg4.jpg);
+  background-position:  85% 5%, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40% auto, cover; 
+    opacity: 1;
+}
+.content form {
+  background-color: rgba(44,46,50,0.85);
+  padding:20px 30px;
+  color:#fff;
+}
+.has-account #existing-nick-label,
+#new-nick-label {
+  margin-left:20px;
+}
+#account-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#chatUserMiniMenu {
+  border:0;
+  background-color:rgba(44,46,50,1);
+  padding:4px 6px;
+}
+.chatPopupMenuDiv2 {
+  margin-top:-2px;
+}
+.chatTopLineWrapper > ul > li > ul > li > a:hover {
+  background-color: #3b3c41;
+}
+#chatMainMenuChatovod li {
+  padding-left: 21px;
+  background: url(//st1.chatovod.ru/i/msi.png) no-repeat;
+}
+#chatMainMenuChatovod li a:hover {
+  background:#3b3c41 url(//st1.chatovod.ru/i/msi.png) no-repeat;
+}
+#chatMainMenuChatovod li:nth-child(1) {
+  background-position: 0 -285px;
+}
+#chatMainMenuChatovod li:nth-child(2) {
+  background-position: 0 -189px;
+}
+#chatMainMenuChatovod li:nth-child(3) {
+  background-position: 0 -475px;
+}
+#chatMainMenuChatovod li:nth-child(4) {
+  background-position: 0 -315px;
+}
+.chatSendText.chatInputText {
+  -webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+@-webkit-keyframes slideOut {
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+.chatLinkVip {
+  margin-right: 33px!important;
+}
+.chatLinkVip::after {
+  position:absolute;
+  content:'vip';
+  margin-left:21px;
+}
+.chatLinkModerate { 
+  margin-right: 51px!important;
+}
+.chatLinkModerate::before {
+  position: absolute;
+  content:'модер';
+  margin-left:21px;
+}
+.chatLinkMore {
+  padding-left:21px;
+  background: transparent url('http://madeas.ru/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
+}
+#scrollBottomBox {
+  margin-top:-60px;
+  padding:2px 6px;
+  background-color:#3b3c41;
+  border:2px solid #6b6c6d;
+  color:#fff;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  z-index:102;
+}
