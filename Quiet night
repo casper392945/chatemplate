@@ -410,6 +410,9 @@ input[type="submit"] {
   padding-left:21px;
   background: transparent url('http://madeas.ru/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
 }
+.chatMain .chatMessages, .chatMain .chatPrivateMessages {
+line-height: 2em;
+}
 #scrollBottomBox {
   margin-top:-60px;
   padding:2px 6px;
