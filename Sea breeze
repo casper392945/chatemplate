@@ -22,18 +22,7 @@
 .chatTopLineWrapper > ul > li > a:hover {
   background-color:#4d9dcb;
 }
-.chatLinkModerate::after {
-  position:absolute;
-  margin-left: 21px;
-  content:'Модерирование';
-  border-bottom:1px dotted #000;
-}
-.chatLinkModerate {padding-right: 85px;border:0;}
-.chatLinkMore {
-  padding-left: 21px;
-  margin-top:-2px;
-  background:transparent url('//madeas.ru/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
-}
+
 .chatMain {top:4px;}
 .chat a,
 .chatSendButton,
@@ -71,12 +60,27 @@ select {
 .chatTopLineWrapper ul li.chatMenuItemWithSeparator a {background-image:none;}
 .chatTopLineWrapper > ul > li > a { text-shadow: none!important;}
 .chatMessageToMe .chatToUser:hover {opacity:.8}
-.chatLinkVip {padding-right: 21px;}
+.chatLinkVip {
+    margin-right: 33px!important;
+}
 .chatLinkVip::after {
-  position:absolute;
-  margin-left: 21px;
-  content:'Vip';
-  border-bottom:1px dotted #000;
+    position:absolute;
+    content:'vip';
+    margin-left:21px;
+    border-bottom:1px dotted #000;
+}
+.chatLinkModerate { 
+    margin-right: 51px!important;
+}
+.chatLinkModerate::before {
+    position: absolute;
+    content:'модер';
+    margin-left:21px;
+    border-bottom:1px dotted #000;
+}
+.chatLinkMore {
+    padding-left:21px;
+    background: transparent url('http://madeas.usite.pro/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
 }
 .chatUserAway[title="Не беспокоить"] {
   display: none;
@@ -124,7 +128,7 @@ select {
   width: 12px;
   height: 12px;
   background-color:#1d6d9c;
-  background-image: url(//madeas.ru/ChaTemplate/icon/close.png);
+  background-image: url(//madeas.usite.pro/ChaTemplate/icon/close.png);
   background-repeat: no-repeat;
   border-radius:10px;
   opacity:0;
@@ -205,7 +209,7 @@ select {
 
 .chatSpecifyPassword input[type=text] {
   padding-left: 21px !important;
-  background: url("//madeas.ru/2017redes/svg/nickname.svg") 4px center no-repeat;
+  background: url("//madeas.usite.pro/2017redes/svg/nickname.svg") 4px center no-repeat;
   background-size:13.3333px;
 }
 .content form {
@@ -232,7 +236,7 @@ select {
   border-radius:0!important;
   background-repeat: no-repeat;
   background-color: transparent!important;
-  background-image: url(//madeas.ru/ChaTemplate/icon/bottom.png);
+  background-image: url(//madeas.usite.pro/ChaTemplate/icon/bottom.png);
   cursor: pointer;
 }
 
