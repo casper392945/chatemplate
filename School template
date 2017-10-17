@@ -33,6 +33,14 @@
    0 2px 3px rgba(0,0,0,.5) inset,
    0 1px 1px rgba(255,255,255,.1);
 }
+
+.chatTabsRight {
+  right: 5px;
+}
+.chatTabsLeft {
+  left: 5px;
+}
+
 .chat,
 .chat a,
 .chatSpecifyPassword input[type=text] {
@@ -42,13 +50,10 @@
 .chatMain,
 .chatFooter,
 .chatHeader {
-  background: #004d20 url(http://madeas.ru/ChaTemplate/bg/school.png) 0 0 no-repeat;
+  background: #004d20 url(http://madeas.usite.pro/ChaTemplate/bg/school.png) 0 0 no-repeat;
   background-size: cover;
 }
-.chat,
-.chatMain {
-  cursor: url('http://madeas.ru/ChaTemplate/cur/chalk.png'), auto;
-}
+
 .chatMain {
   color:#fff;
   font-weight:600;
@@ -57,7 +62,7 @@
 .chatInputText,
 .chatSpecifyPassword input[type=text] {
   border:0;
-  background: transparent url(http://madeas.ru/ChaTemplate/img/pencil.png) no-repeat 0 0 / 16px 16px;
+  background: transparent url(http://madeas.usite.pro/ChaTemplate/img/pencil.png) no-repeat 0 0 / 16px 16px;
   border-bottom:2px solid #704214;
   transition:.3s linear;
 }
@@ -147,7 +152,7 @@ a[href="/hot/"],
 }
 .chatLinkMore {
   padding-left: 20px;
-  background:transparent url('//madeas.ru/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
+  background:transparent url('//madeas.usite.pro/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
 }
 .smilesBox,
 .chatPopupMenuDiv1 ,
