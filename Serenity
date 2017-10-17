@@ -48,7 +48,7 @@ a:hover {color:#000;}
   width: 12px;
   height: 12px;
   background-color: inherit!important;
-  background-image: url(//madeas.ru/ChaTemplate/icon/close.png);
+  background-image: url(//madeas.usite.pro/ChaTemplate/icon/close.png);
   background-repeat: no-repeat;
   border-radius:50%;
   background-size:12px;
@@ -59,7 +59,7 @@ a:hover {color:#000;}
 .chatTabs ul li.chatTab:hover .close,
 .chatTabs ul li.chatTab .close:hover {opacity:1;}
 a[href="/hot/"] {
-  background: url("//madeas.ru/ChaTemplate/icon/news.png") 5% center no-repeat !important;
+  background: url("//madeas.usite.pro/ChaTemplate/icon/news.png") 5% center no-repeat !important;
 }
 a[href="/hot/"],
 #register-menu-item {
@@ -67,7 +67,7 @@ a[href="/hot/"],
 }
 .chatSpecifyPassword input[type=text] {
   padding-left: 21px !important;
-  background: url("//madeas.ru/2017redes/svg/nickname.svg") 4px center no-repeat;
+  background: url("//madeas.usite.pro/2017redes/svg/nickname.svg") 4px center no-repeat;
   background-size:13.3333px;
 }
 .content form {
@@ -88,7 +88,7 @@ a[href="/hot/"],
   border-radius:0!important;
   background-repeat: no-repeat;
   background-color: transparent!important;
-  background-image: url(//madeas.ru/ChaTemplate/icon/bottom.png);
+  background-image: url(//madeas.usite.pro/ChaTemplate/icon/bottom.png);
   cursor: pointer;
 }
 .chatMessageToMe .chatToUser:hover {
@@ -113,7 +113,7 @@ a[href="/hot/"],
 }
 .chatLinkMore {
   padding-left: 20px;
-  background:transparent url('//madeas.ru/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
+  background:transparent url('//madeas.usite.pro/ChaTemplate/icon/chatLinkMore_2.png') 0 0 no-repeat;
 }
 .smilesBox,
 .chatPopupMenuDiv1 ,
@@ -249,28 +249,28 @@ a[href="/hot/"],
   color:#fff;
 }
 
-.chatUserMenuInfo {background-image: url(//madeas.ru/ChaTemplate/icon/icon_user.png);}
-.chatUserMenuPrivate {background-image: url(//madeas.ru/ChaTemplate/icon/icon_pm.png);}
-.chatUserMenuPhotos {background-image: url(//madeas.ru/ChaTemplate/icon/icon_img.png);}
-.chatUserMenuGift {background-image: url(//madeas.ru/ChaTemplate/icon/icon_gift.png);}
-.chatUserMenuIgnore {background-image: url(//madeas.ru/ChaTemplate/icon/icon_ig.png);}
-.chatUserMenuBan {background-image: url(//madeas.ru/ChaTemplate/icon/icon_ban.png);}
+.chatUserMenuInfo {background-image: url(//madeas.usite.pro/ChaTemplate/icon/icon_user.png);}
+.chatUserMenuPrivate {background-image: url(//madeas.usite.pro/ChaTemplate/icon/icon_pm.png);}
+.chatUserMenuPhotos {background-image: url(//madeas.usite.pro/ChaTemplate/icon/icon_img.png);}
+.chatUserMenuGift {background-image: url(//madeas.usite.pro/ChaTemplate/icon/icon_gift.png);}
+.chatUserMenuIgnore {background-image: url(//madeas.usite.pro/ChaTemplate/icon/icon_ig.png);}
+.chatUserMenuBan {background-image: url(//madeas.usite.pro/ChaTemplate/icon/icon_ban.png);}
 
-.msi.msi_vcard {background: url('//madeas.ru/ChaTemplate/icon/icon_user.png')!important;}
-.msi.msi_vcard_edit {background: url('//madeas.ru/ChaTemplate/icon/icon_sett.png')!important;}
-.msi.msi_wand {background: url('//madeas.ru/ChaTemplate/icon/icon_vip2.gif')!important;}
+.msi.msi_vcard {background: url('//madeas.usite.pro/ChaTemplate/icon/icon_user.png')!important;}
+.msi.msi_vcard_edit {background: url('//madeas.usite.pro/ChaTemplate/icon/icon_sett.png')!important;}
+.msi.msi_wand {background: url('//madeas.usite.pro/ChaTemplate/icon/icon_vip2.gif')!important;}
 .msi.msi_photos {background: url('//madeas.ru/ChaTemplate/icon/icon_ava.png')!important;}
-.msi.msi_coins {background: url('//madeas.ru/ChaTemplate/icon/icon_gold.png')!important;}
-.msi.msi_ignore {background: url('//madeas.ru/ChaTemplate/icon/icon_ig.png')!important;}
+.msi.msi_coins {background: url('//madeas.usite.pro/ChaTemplate/icon/icon_gold.png')!important;}
+.msi.msi_ignore {background: url('//madeas.usite.pro/ChaTemplate/icon/icon_ig.png')!important;}
 
-.chatSendLinksPanel a.chatLinkSmiles {background: url(//madeas.ru/ChaTemplate/icon/icon_smile.png) 0 0 no-repeat;}
-.chatSendLinksPanel .chatLinkImage {background: url(//madeas.ru/ChaTemplate/icon/icon_gallery.png) 0 0 no-repeat;}
+.chatSendLinksPanel a.chatLinkSmiles {background: url(//madeas.usite.pro/ChaTemplate/icon/icon_smile.png) 0 0 no-repeat;}
+.chatSendLinksPanel .chatLinkImage {background: url(//madeas.usite.pro/ChaTemplate/icon/icon_gallery.png) 0 0 no-repeat;}
 .chatSendLinksPanel .chatLinkProfile {background: url(//st1.chatovod.ru/i/widget/user_comment.png) 0 0 no-repeat;}
-.chatSendLinksPanel .chatLinkGold {background: url(//madeas.ru/ChaTemplate/icon/icon_gold.png) 0 0 no-repeat;}
-.chatSendLinksPanel .chatLinkModerate {background: url(//madeas.ru/ChaTemplate/icon/icon_editor.png) 10px 0 no-repeat;}
-.chatSendLinksPanel .chatLinkVip {background: url(//madeas.ru/ChaTemplate/icon/icon_vip.png) 0 0 no-repeat;}
+.chatSendLinksPanel .chatLinkGold {background: url(//madeas.usite.pro/ChaTemplate/icon/icon_gold.png) 0 0 no-repeat;}
+.chatSendLinksPanel .chatLinkModerate {background: url(//madeas.usite.pro/ChaTemplate/icon/icon_editor.png) 10px 0 no-repeat;}
+.chatSendLinksPanel .chatLinkVip {background: url(//madeas.usite.pro/ChaTemplate/icon/icon_vip.png) 0 0 no-repeat;}
 .chatTime {
-  background: transparent url(//madeas.ru/ChaTemplate/icon/icon-clock.png) no-repeat 0 0 / 16px 16px;
+  background: transparent url(//madeas.usite.pro/ChaTemplate/icon/icon-clock.png) no-repeat 0 0 / 16px 16px;
   padding-left: 20px!important;
 }
 .chatUserMenuItems a,
