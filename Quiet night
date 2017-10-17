@@ -117,11 +117,11 @@ input[type="submit"] {
 }
 .chatTabsLeft {
     left: 0;
-    background: transparent url(http://madeas.ru/icon/arrow-left.png) no-repeat 2px 12px / 16px 16px;
+    background: transparent url(http://madeas.usite.pro/icon/arrow-left.png) no-repeat 2px 12px / 16px 16px;
 }
 .chatTabsRight {
     right: 0;
-    background: transparent url(http://madeas.ru/icon/arrow-right.png) no-repeat 2px 12px / 16px 16px;
+    background: transparent url(http://madeas.usite.pro/icon/arrow-right.png) no-repeat 2px 12px / 16px 16px;
 }
 .chatTabs > ul > li.chatTab > a:hover,
 .chatTabs > ul > li.chatTab > a.active {
@@ -293,7 +293,7 @@ input[type="submit"] {
   width: 13px;
   height: 13px;
   background-color: #488bfa;
-  background-image: url(http://madeas.ru/images/pro_check_circle_disabled.svg);
+  background-image: url(http://madeas.usite.pro/images/pro_check_circle_disabled.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border-radius:50%;
@@ -333,8 +333,9 @@ input[type="submit"] {
   color: #fff;
   position: relative;
 }
+.chatMain,
 .chatFull .transparent {
-   background-image: url(http://madeas.ru/ChaTemplate/bg/bg_birds.gif), url(http://madeas.ru/ChaTemplate/bg/bg4.jpg);
+   background-image: url(http://madeas.usite.pro/ChaTemplate/bg/bg_birds.gif), url(http://madeas.usite.pro/ChaTemplate/bg/bg4.jpg);
   background-position:  85% 5%, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: 40% auto, cover; 
@@ -408,7 +409,7 @@ input[type="submit"] {
 }
 .chatLinkMore {
   padding-left:21px;
-  background: transparent url('http://madeas.ru/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
+  background: transparent url('http://madeas.usite.pro/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
 }
 .chatMain .chatMessages, .chatMain .chatPrivateMessages {
 line-height: 2em;
