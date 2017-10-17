@@ -323,7 +323,7 @@ input[type="submit"]:active {
   border-radius:0!important;
   background-repeat: no-repeat;
   background-color: transparent!important;
-  background-image: url(http://madeas.ru/ChaTemplate/icon/bottom.png);
+  background-image: url(http://madeas.usite.pro/ChaTemplate/icon/bottom.png);
   cursor: pointer;
 }
 .chatTime {
@@ -349,7 +349,7 @@ input[type="submit"]:active {
   width: 26px !important;
   height: 26px!important;
   font-size:0!important;
-  background: transparent url(http://madeas.ru/ChaTemplate/icon/arrow_enter.png) center center no-repeat / 20px 20px;
+  background: transparent url(http://madeas.usite.pro/ChaTemplate/icon/arrow_enter.png) center center no-repeat / 20px 20px;
 }
 .content form {
   position: relative;
@@ -499,7 +499,7 @@ input[type="submit"]:active {
 .chatLinkMore {
   padding-left: 20px;
   background-color:transparent;
-  background-image: url('http://madeas.usite.pro/ChaTemplate/icon/chatLinkMore_2.png')!important;
+  background-image: url('http://madeas.usite.pro/ChaTemplate/icon/icon_plus.png')!important;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
