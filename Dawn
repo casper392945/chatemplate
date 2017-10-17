@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,600italic,400italic&subset=latin,cyrillic,latin-ext,cyrillic-ext);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,600italic,400italic&subset=latin,cyrillic,latin-ext,cyrillic-ext);
  body:not(.has-nick) .chatTopLine,
  body:not(.has-nick) .chatTabs {
     display: none;
@@ -38,7 +38,7 @@
     margin-top: -46px;
 }
 .chatFull .transparent {
-    background: transparent url(http://madeas.ru/ChaTemplate/bg/bg5.jpg) 0 0 no-repeat;
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/bg/bg5.jpg) 0 0 no-repeat;
     background-size: cover;
     margin-top:-24px;
     opacity:1;
@@ -154,10 +154,10 @@
 	100% {bottom:0px; opacity: 1;}
 }
 #nick {
-    background: transparent url(http://madeas.ru/ChaTemplate/icon/log_user_icon.png) 10px center no-repeat /25px 25px;
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/icon/log_user_icon.png) 10px center no-repeat /25px 25px;
 }
 #captcha-input {
-    background: transparent url(http://madeas.ru/ChaTemplate/icon/log_closed_icon.png) 10px center no-repeat /22px 22px;
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/icon/log_closed_icon.png) 10px center no-repeat /22px 22px;
 }
 #sign-in-label a {
     display: inherit;
@@ -329,7 +329,7 @@
 }
 .chatLinkMore {
     padding-left:21px;
-    background: transparent url('http://madeas.ru/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
+    background: transparent url('http://madeas.usite.pro/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
 }
 .chatPopupMenuDiv1 ,
 .chatPopupMenuDiv2 {
@@ -373,10 +373,10 @@
     height: auto;
 }
 .chatSendText.chatInputText {
-    background: rgba(0, 0, 0, 0.4) url(http://madeas.ru/ChaTemplate/icon/text_icon.png) 10px center no-repeat /25px 25px;
+    background: rgba(0, 0, 0, 0.4) url(http://madeas.usite.pro/ChaTemplate/icon/text_icon.png) 10px center no-repeat /25px 25px;
 }
 .chatSendText.chatInputText:focus {
-    background: rgba(0, 0, 0, 0.6) url(http://madeas.ru/ChaTemplate/icon/text_icon.png) 10px center no-repeat /25px 25px;
+    background: rgba(0, 0, 0, 0.6) url(http://madeas.usite.pro/ChaTemplate/icon/text_icon.png) 10px center no-repeat /25px 25px;
 }
 .vscrollable::-webkit-scrollbar,
 .smilesBox::-webkit-scrollbar {
