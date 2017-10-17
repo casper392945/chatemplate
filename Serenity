@@ -336,6 +336,7 @@ a[href="/hot/"],
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a { 
   background: url("//madeas.ru/icon/online.png") 0 0 no-repeat; 
   animation: pulse 2s infinite; 
+  margin-right:10px;
   border-radius: 50%; 
   padding-left: 15px; 
   padding-top: 5px; 
@@ -370,4 +371,4 @@ a[href="/hot/"],
   -moz-box-shadow: 0 0 0 0 rgba(0,0,0, 0); 
   box-shadow: 0 0 0 0 rgba(0,0,0, 0); 
  } 
-} 
+}
