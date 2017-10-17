@@ -1,4 +1,4 @@
- a,
+a,
  a > span {
   text-decoration: none!important;
   border-bottom-color: transparent!important;
@@ -16,7 +16,7 @@
   border-bottom: 0;
 }
 .chatMain {
-  background: linear-gradient(135deg, rgba(255,255,255, .6), rgba(160,202,45,.2)), url(http://madeas.ru/ChaTemplate/img/clear_bg.jpg) no-repeat center center; 
+  background: linear-gradient(135deg, rgba(255,255,255, .6), rgba(160,202,45,.2)), url(http://madeas.usite.pro/ChaTemplate/img/clear_bg.jpg) no-repeat center center; 
   background-size: cover;
   margin-bottom:-63px;
   margin-top: -43px;
@@ -105,8 +105,8 @@ input[type="submit"] {
   background: linear-gradient(to right, transparent , rgba(255,255,255,.5), rgba(255,255,255,.5), transparent);
 }
 .chatFull .transparent {
-  background: #fff url(http://madeas.ru/ChaTemplate/img/Flowers_form.png) 45% center no-repeat;
-  background-size: 500px;
+  background: #fff url(//madeas.ru/wp-content/uploads/2017/10/00009.jpg) center center no-repeat;
+  background-size: cover;
   opacity: 1;
 }
 #chatMainMenuProfile,
@@ -149,7 +149,7 @@ input[type="submit"] {
   padding: 13px;
 }
 .chatUserAvatar {
-  background: transparent url(http://madeas.ru/ChaTemplate/img/sun.jpg) no-repeat center center;
+  background: transparent url(http://madeas.usite.pro/ChaTemplate/img/sun.jpg) no-repeat center center;
   background-size: 55px!important;
   border-radius: 35px 0 0 0;
 }
@@ -212,10 +212,4 @@ input[type=submit]:active {
 }
 .chatUser {
   font-weight: bold;
-}
-@media only screen and (max-width:1000px) {
-.chatFull .transparent {
-  background: #fff url(http://madeas.ru/ChaTemplate/img/Flowers_form.png) 40% center no-repeat;
-  background-size: 500px;
-  opacity: 1;
 }
