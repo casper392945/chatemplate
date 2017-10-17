@@ -148,14 +148,30 @@ input[type=submit]:active {
   transform: translate(0, 4px);
 }
 .content form {
-  background: rgba(0,0,0,.4) url(http://madeas.ru/ChaTemplate/bg/coffee_form.png) 0 0 no-repeat;
+  background: none;
   background-size: 100%;
   color: #fff;
   width:250px;
   height: 140px;
   margin-auto;
   padding: 35px 30px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, -50%);
 }
+.chatMain {
+  background: transparent url(//madeas.ru/wp-content/uploads/2017/10/00008.jpg) center center no-repeat;
+  background-size: cover;
+}
+.chatFull .transparent {
+  opacity: 1;
+  background-image: url(//madeas.ru/wp-content/uploads/2017/10/coffee-wallpaper.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
 .chatPeople ul.chatPeopleList li.hover {
   border-top:1px solid rgba(51,51,51,.50);
   border-bottom:1px solid rgba(51,51,51,.50);
@@ -179,7 +195,6 @@ input[type=submit]:active {
 .chatHeader .chatTopLine {
   border:0;
 }
-
 .chatSendText,
 .chatInputText,
 .chatSpecifyPassword input[type=text] {
