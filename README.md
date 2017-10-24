@@ -26,6 +26,7 @@
 <h3>How to put a template?</h3>
 
 Everything is simple:
+
 <ul>
 <li>select template</li>
 <li>Copy the code @import - (Ctrl + C)</li>
@@ -33,4 +34,5 @@ Everything is simple:
 </ul>
 
 <b>Template directory</b> - https://madeas.ru/articles/chatemplate/
+
 <b>FAQ</b> - https://madeas.ru/chatemplate/faq/
