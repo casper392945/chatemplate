@@ -11,7 +11,7 @@
 <br />Version: 1.0.14<br />
 <br />License: GNU General Public License v2 or later
 <br />License URI: http://www.gnu.org/licenses/gpl-2.0.html
-<br />Text Domain: ChaTemplate
+<br />Text Domain: madeas.ru
 <br />Tags: madeas, chatemplate, design, template, chatovod, chat-colors, complement, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov, translation-ready, accessibility-ready, e-commerce, blog, portfolio
 <br />
 <br />This theme, like Chatovod, is licensed under the GPL.
