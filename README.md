@@ -32,6 +32,6 @@ Everything is simple:
 <li>Paste the code into your chat via CSS settings and you're done! - (Ctrl + V)</li>
 </ul>
 
-<b>About</b> - https://madeas.ru/chatemplate/about/
+<b>About</b> - https://madeas.ru/chatemplate/about/ 
 
 <b>Template directory</b> - https://madeas.ru/articles/chatemplate/
