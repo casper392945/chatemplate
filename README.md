@@ -2,8 +2,8 @@
 <br />
 <img src="https://madeas.ru/wp-content/uploads/2017/10/facebanner.png">
 <br />
-<br />Theme Name: ChaTemplate project
-<br />Theme URI: https://madeas.ru/chatemplate/
+<br />Project Name: ChaTemplate
+<br />Project URI: https://madeas.ru/chatemplate/
 <br />Author: Andrej Sharapov
 <br />Author URI: https://madeas.ru/
 <br />Description: ChaTemplate is an evolving project where you can find an interesting template to improve your favorite chatovod chat service, and also join a huge community of users who want to transform their chat.
