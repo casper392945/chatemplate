@@ -1,6 +1,6 @@
-<img src="https://madeas.ru/wp-content/uploads/2017/10/facebanner.png">
-# ChaTemplate - CSS Template FREE
+# ChaTemplate - CSS Templates free for Chatovod.ru
 <br />
+<img src="https://madeas.ru/wp-content/uploads/2017/10/facebanner.png">
 <br />
 <br />Theme Name: ChaTemplate project
 <br />Theme URI: https://madeas.ru/chatemplate/
@@ -32,6 +32,6 @@ Everything is simple:
 <li>Paste the code into your chat via CSS settings and you're done! - (Ctrl + V)</li>
 </ul>
 
-<b>Template directory</b> - https://madeas.ru/articles/chatemplate/
+<b>About</b> - https://madeas.ru/chatemplate/about/
 
-<b>FAQ</b> - https://madeas.ru/chatemplate/faq/
+<b>Template directory</b> - https://madeas.ru/articles/chatemplate/
