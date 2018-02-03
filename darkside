@@ -1,0 +1,487 @@
+/*
+Theme Name: Darkside ChaTemplate
+Theme URI: https://madeas.ru/product/darkside/
+Author: Andrej Sharapov 
+Author URI: https://madeas.ru/ 
+Description: Darkside ChaTemplate is an evolving project where you can find an interesting template to improve your favorite chatovod chat service, and also join a huge community of users who want to transform their chat. 
+Version: 1.0.0
+
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: darkside
+Tags: madeas, chatemplate, design, template, chatovod, darkside, chat-colors, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov
+
+This theme, like Chatovod, is licensed under the GPL. 
+Use it to make something cool, have fun, and share what you've learned with others. 
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,300italic,600italic,600,300,700,800,400);
+ body:not(.has-nick) .chatTabs,
+ body:not(.has-nick) .chatTopLine,
+ body:not(.has-nick) .chatUserMenuGift,
+ body:not(.has-nick) .chatUserMenuIgnore {
+    display: none;
+}
+.chatSendExitPanel select,
+#sign-in-label a,
+ input[type="button"],
+ input[type="submit"],
+ input[type="text"]  {
+    outline:none;
+}
+.chatSendExitPanel select,
+ input[type="button"],
+ input[type="submit"] {
+    cursor:pointer;
+}
+.chatTitle::after,
+.chat,
+.chatMain,
+.chatHeader,
+#scrollBottomBox,
+.smoke,
+.dialog-buttons button,
+.dialog-prompt input {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.chat,
+.chatFull .transparent {
+    border:0;
+    background-color: #101111;
+    opacity:1;
+}
+.chatHeader {
+    background: url(http://madeas.usite.pro/ChaTemplate/img/darkside_header.png), url(http://madeas.usite.pro/ChaTemplate/img/darkside_main.png);
+    background-color: #101111;
+    background-repeat: repeat-x, no-repeat;
+    background-position: center top, center bottom;
+    border-bottom:0;
+    height: 80px;
+}
+.chatHeader .chatTitle {
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/img/darkside_tapeTitle.png) 0 0 no-repeat;    
+    -webkit-font-smoothing: antialiased;
+    text-shadow: -1px -1px #000,
+               0 1px 0 #444;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    transition: all 1s;
+    width: 505px;
+    padding: 18px 0 0 5px;
+    text-align: center;
+    font-size: 1.17em;
+    height: 60px;
+    margin-top:8px;
+}
+.chatMain {
+    top: 86px;
+    background: url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg.png), url(http://madeas.usite.pro/ChaTemplate/img/darkside_MainLight.png);  
+    background-position: center -48px, center top;
+    background-repeat: repeat, no-repeat;
+}
+.chatFooter {
+    border-top:1px solid transparent;
+    font-size: 9px;
+    color: #2c2d2f;
+    background-color: #101111;
+    background-image: url(http://madeas.usite.pro/ChaTemplate/img/darkside_FooterBg.png);
+}
+.chatFooter .chatFooterWrapper .chatPanel div a span,
+.chatLinkModerate::before,
+.chatLinkVip::after {
+    text-transform: uppercase;
+    color: #424345;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #000;
+    -webkit-font-smoothing: antialiased;
+    white-space: nowrap;
+    border-bottom: 0;
+}
+.chatFooter::before {
+    content: '';
+    position: absolute;
+    background:url(http://madeas.usite.pro/ChaTemplate/img/darkside_Footerbefore.png);
+    background-repeat: repeat-x;
+    width:100%;
+    height:14px;
+    top:-1px;
+    left:0;
+    right:0;
+    margin: auto;
+}
+.chatHeader .chatTopLine {
+    top: 30px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 0 0;
+    border-color: transparent;
+}
+.chatTopLineWrapper > ul > li > a {
+    padding:4px 22px 12px;
+    line-height:1.5em;
+    text-shadow: none;
+    color:#fff;
+    opacity: 0.5; 
+}
+.chatTopLineWrapper ul {
+    margin-right: 12px;
+}
+.chatTopLineWrapper ul li:nth-child(3) {
+    display:none;
+}
+.chatTopLineWrapper > ul > li > a:hover,
+.chatFooter .chatFooterWrapper .chatPanel div a:hover span {
+    background-color: transparent;
+    text-shadow: none;
+}
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a,
+.chatTopLineWrapper > ul > li > a span {
+    text-transform: uppercase;
+    background-image:none;
+}
+.chatTopLineWrapper ul li ul {
+    background: #101111 url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg.png) 0 0;
+    border-color:#101111;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+}
+.chatTopLineWrapper ul li ul {
+    width:200px!important;
+}
+.chatTopLineWrapper ul li ul li a {
+    color: #424345;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #000;
+    width:182px!important;
+}
+.chatTopLineWrapper > ul > li > a:hover {
+    color:#fff;
+    background-image: url(http://madeas.usite.pro/ChaTemplate/img/darkside_link_Active.png);
+    background-repeat: no-repeat;
+    float: left;
+    background-position: center bottom;
+    opacity: 1;    
+}
+ input[type="text"] {
+    font-size: 16px;
+    color: #ddd;
+    background-color: #000;
+    background: rgba(000, 0, 0, .2);
+    border: 1px solid #222;
+    float: right;
+    box-shadow: inset 0 2px 6px #000000;
+    padding:2px;
+}
+ input[type="text"]:focus {
+    border: 1px solid #333;
+    background: rgba(000, 0, 0, .5);
+}
+ input[type="button"],
+ input[type="submit"] {
+    color: #E7E6DF;
+    text-align: center;
+    min-width: 91px;
+    height: 37px;
+    padding: 6px 0 4px 0;
+    margin: 0;
+    vertical-align: bottom;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.chatSendButton,
+.chatSendButtonPanel {
+    width: 91px!important;
+    height: 37px!important;
+    right: 110px!important;
+}
+.chatSendButton {
+    background: rgba(0, 0, 0, .5) url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg_Submit.png) 0 0;
+    background-repeat: no-repeat;
+    margin-top: -10px!important;
+}
+.chatSendButton:hover {
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg_Submit.png) 0 0;
+}
+.chatSendExitPanel select {
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    color: #424345;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #000;
+}
+.chatMain .chatPeople {
+    border-left: 1px dotted #333; 
+    top: 0;
+}
+.chatPeople.vscrollable::after {
+  position:absolute;
+  bottom:2px;
+  right:17px;
+  content:'ChaTemplate';
+  color: #000;
+  font-size:9px;
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendLinksPanel {
+    top: 9px;
+}
+.chatLinkVip {
+    margin-right: 33px!important;
+}
+.chatLinkVip::after {
+    position:absolute;
+    content:'vip';
+    margin-left:21px;
+}
+.chatLinkModerate { 
+    margin-right: 51px!important;
+}
+.chatLinkModerate::before {
+    position: absolute;
+    content:'модер';
+    margin-left:21px;
+}
+.chatLinkMore {
+    padding-left:21px;
+    background: transparent url('http://madeas.usite.pro/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
+}
+
+/* --------- страница входа в чат ------------- */
+
+.chatFull a {
+    text-decoration: none;
+}
+.chatFull .transparent {
+    font: 15px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #373737 url("http://madeas.usite.pro/ChaTemplate/img/darkside_bg_dotted.png") 0 0 repeat;
+}
+.chatSpecifyPassword input[type=text] {
+    padding: 0 10px;
+    width: 300px;
+    height: 40px;
+    color: #bbb;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(0, 0, 0, 0.16);
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+.chatSpecifyPassword input[type=text]:focus {
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    outline: 0;
+}
+#existing-nick-label,
+#new-nick-label,
+#captcha-label {
+    font-weight: 300;
+    color: #a8a7a8;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+#account-info,
+#sign-in-label {
+    height: 60px;
+    min-width:300px;
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/img/darkside_tapeTitle.png) 0 0 no-repeat;    
+    text-shadow: 0 -1px 0 #000;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 1s;
+    clear: both;
+    padding: 22px 0 0 5px;
+    text-align: center;
+    font-size: 1.17em;
+}
+#sign-in-label a {
+    color: #fff;
+}
+#account-info a {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    bottom: 20px!important;
+    right: 20px;
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: none;
+    border: 0;
+    border-radius: 24px;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+    z-index: 2;
+}
+#account-info a::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: #00a2d3;
+    border-radius: 24px;
+    background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: -moz-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: -o-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: linear-gradient(to bottom, #00a2d3, #0d7796);
+    -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+#account-info a:active::before {
+    background: #0591ba;
+    background-image: -webkit-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: -moz-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: -o-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: linear-gradient(to bottom, #0591ba, #00a2d3);
+}
+#account-info a::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 25px;
+    height: 19px;
+    background: url("http://madeas.usite.pro/ChaTemplate/img/darkside_logout.png") center center no-repeat / 18px 18px;
+}
+#nick {
+    margin-bottom:15px;
+}
+
+/* ---------------------------- */
+
+.chatPopupMenuContent input[type="submit"] {
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg_Submit.png) 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 27px;
+    padding: 2px 6px;
+    margin-top:-3px;
+}
+.chatPopupMenuDiv2,
+.chatPopupMenuDiv1 {
+    background: url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg.png);
+    border-color:#101111;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+}
+.chatPopupMenuDiv2 {
+    padding:3px;
+}
+.smilesBox {
+    background: url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg.png);
+    margin-top:1px;
+    margin-left:-3px;
+    border:0;
+    padding-left:3px;
+}
+.vscrollable::-webkit-scrollbar,
+.smilesBox::-webkit-scrollbar {
+    width: 9px;
+    height: 0px;
+}
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb,
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track {
+    margin:5px 0;
+} 
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+.smilesBox::-webkit-scrollbar-thumb:hover,
+.vscrollable::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track {
+    background-color: rgba(255,255,255,.03);
+}
+.chatPeople ul.chatPeopleList li.hover {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    color: #ddd;
+    background-color: #000;
+    background: rgba(000, 0, 0, .2);
+    box-shadow: inset 0 2px 6px #000000;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.chatPeople ul.chatPeopleList li.hover a {
+    color: #ccc;
+    text-decoration: none;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+#join-chat-button2,
+#join-chat-button {
+    background: rgba(0, 0, 0, .5) url(http://madeas.usite.pro/ChaTemplate/img/darkside_bg_Submit.png) 0 0;
+    background-repeat: no-repeat;
+}
+#join-chat-button {
+    position: absolute;
+    top:15px;
+}
+
+.chatTabs,
+.chatPeople {
+    top:0px;
+    background-image: url(http://madeas.usite.pro/ChaTemplate/img/darkside_tabs_top.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.chatTabs > ul > li > a,
+.chatPeople .chatPeopleTitle {
+    text-transform: uppercase;
+    color: #424345;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #000;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none!important;
+    white-space: nowrap;
+}
+.chatTabsLeft {
+    left: 0;
+    background: transparent url(http://madeas.usite.pro/icon/arrow-left.png) no-repeat 2px 12px / 16px 16px;
+}
+.chatTabsRight {
+    right: 0;
+    background: transparent url(http://madeas.usite.pro/icon/arrow-right.png) no-repeat 2px 12px / 16px 16px;
+}
+.chatPeople .chatPeopleTitle {
+    width:100%;
+    padding-top:8px;
+    text-align: center;
+    vertical-align: bottom;
+}
+#scrollBottomBox {
+    background-color: #000;
+    background: rgba(000, 0, 0, .2);
+    border: 1px solid #222;
+    color: #ddd;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    box-shadow: inset 0 2px 6px #000000;
+}
+#chatUserMiniMenu {
+  -webkit-box-shadow: 0px 0px 7px #000;
+  -moz-box-shadow: 0px 0px 7px #000;
+  box-shadow: 0px 0px 7px #000;
+  border:0;
+  background-color:rgba(44,46,50,1);
+  padding:4px 6px;
+}
+.chatPopupMenuContent a,
+.smilesBox a {
+    color:#5d5b53;
+    text-decoration: none;
+}
