@@ -1,0 +1,232 @@
+/*
+Theme Name: Clear Day ChaTemplate
+Theme URI: https://madeas.ru/product/clear-day/
+Author: Andrej Sharapov 
+Author URI: https://madeas.ru/ 
+Description: Clear Day ChaTemplate is an evolving project where you can find an interesting template to improve your favorite chatovod chat service, and also join a huge community of users who want to transform their chat. 
+Version: 1.0.0
+
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: clear-day
+Tags: madeas, chatemplate, design, template, chatovod, clear-day, chat-colors, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov
+
+This theme, like Chatovod, is licensed under the GPL. 
+Use it to make something cool, have fun, and share what you've learned with others. 
+*/
+
+ a,
+ a > span {
+  text-decoration: none!important;
+  border-bottom-color: transparent!important;
+}
+ a:hover {
+  color: green;
+}
+.chatPeople ul.chatPeopleList li.hover {
+    background-color: rgba(76,175,80,0.08);;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+.chatHeader {
+  background: linear-gradient(to top, transparent, #fff);
+  border-bottom: 0;
+}
+.chatMain {
+  background: linear-gradient(135deg, rgba(255,255,255, .6), rgba(160,202,45,.2)), url(http://madeas.usite.pro/ChaTemplate/img/clear_bg.jpg) no-repeat center center; 
+  background-size: cover;
+  margin-bottom:-63px;
+  margin-top: -43px;
+}
+.chatFooter {
+  background: linear-gradient(to bottom, transparent, #fff, #fff);
+  border-top: 0!important;
+  z-index:99;
+}
+.chatPopupMenuDiv1 {
+  background-color: transparent;
+  border-color:transparent;
+}
+.chatSendText,
+ select,
+.chatInputText,
+#sign-in-label a, 
+.dialog-buttons button,
+input[type="button"],
+input[type="submit"],
+input[type="text"]  {
+  outline:none;
+}
+.chatSendButton,
+ select,
+input[type="button"],
+input[type="submit"] {
+  cursor:pointer;
+}
+ select,
+.chatUserIcon,
+.chatUserWrapper {
+  padding-left:11px; 
+  padding-bottom:4px;
+}
+ select,
+ input[type=button],
+ input[type=submit],
+.chatSendText.chatInputText,
+.chat,
+.chatTopLine,
+.chatTopLineWrapper ul li ul,
+.chatUserMenu {
+  border-radius: 45px 0 45px 0;
+}
+ select {
+  padding-top:2px;
+}
+.chatTopLineWrapper ul li ul {
+  width: 197px;
+}
+.chatTopLineWrapper ul li ul li {
+  padding-left: 25px;
+}
+.chatTopLineWrapper ul li a {
+  padding-top:5px;
+  padding-left:13px;
+}
+.chatTopLineWrapper ul li a:hover {
+  background: none!important;
+}
+.chatTopLineWrapper ul li ul li a:hover {
+  background: none;
+  color: green;
+}
+.chatPeople.vscrollable::after {
+  position:absolute;
+  bottom:2px;
+  right:17px;
+  content:'ChaTemplate';
+  color: rgba(0,0,0,.11);
+  font-size:9px;
+}
+.chatMessages.vscrollable,
+.chatPrivateMessages.vscrollable,
+.chatPeople.vscrollable {
+  margin-bottom:62px;
+}
+.chatMessages.vscrollable,
+.chatPrivateMessages.vscrollable,
+.chatPeople.vscrollable,
+.chatTabs {
+  margin-top: 45px;
+}
+.chatTabs {
+  background: linear-gradient(to right, transparent , rgba(255,255,255,.5), rgba(255,255,255,.5), transparent);
+}
+.chatFull .transparent {
+  background: #fff url(//madeas.ru/wp-content/uploads/2017/10/00009.jpg) center center no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+#chatMainMenuProfile,
+#chatMainMenuChatovod {
+  margin-left:-55px!important;
+}
+.chatTopLine li {
+  height:23px!important;
+}
+.chatTopLine li a {
+  height:14px!important;
+}
+.chatTopLine li:first-child > a:hover {
+  border-radius: 45px 0 0 0;
+}
+.chatTopLine li:last-child > a:hover {
+  border-radius: 0 0 45px 0;
+}
+.chatTitle {
+  padding-left:20px;
+}
+.chatSendText.chatInputText {
+  padding:1px 18px;
+}
+.chatSendTextPanel {
+  right:220px !important;
+}
+.chatMain .chatPeople {
+  overflow: inherit !important;
+  border-left-color: transparent;
+  background: linear-gradient(-135deg, rgba(255,255,255,.5), transparent);
+}
+.chatUserMenu {
+  position: absolute;
+  margin-top: -10px;
+  right: 145px;
+  background: #fff;
+  overflow: inherit !important;
+  border: 1px solid #cfcfc9;
+  padding: 13px;
+}
+.chatUserAvatar {
+  background: transparent url(http://madeas.usite.pro/ChaTemplate/img/sun.jpg) no-repeat center center;
+  background-size: 55px!important;
+  border-radius: 35px 0 0 0;
+}
+input[type=button],
+input[type=submit] {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  user-select: none;
+  outline: none;
+  background: linear-gradient(#bde655, #a0ca2d);
+  border: 1px solid rgba(51,51,51,0.25);
+  -webkit-animation: pulsate 2s linear infinite;
+  animation: pulsate 2s linear infinite;
+}
+#join-chat-button,
+#join-chat-button2,
+ input[type="submit"] {
+  padding: 0.45em 1.25em;
+}
+input[type=button]:active,
+input[type=submit]:active {
+  position: relative;
+  top:1px;
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+
+@-webkit-keyframes pulsate {
+50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+.chatSendButton {
+  padding: 0!important;
+  min-width:120px;
+}
+.vscrollable::-webkit-scrollbar-thumb,
+.smilesBox::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+.smilesBox::-webkit-scrollbar-track {
+  background-color: rgba(207,207,201,.3);
+}
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb,
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.smilesBox::-webkit-scrollbar,
+.vscrollable::-webkit-scrollbar:hover {
+  width:9px;
+}
+.chatUser {
+  font-weight: bold;
+}
