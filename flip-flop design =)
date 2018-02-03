@@ -1,0 +1,129 @@
+/* Template Flip-flop by ChaTemplate */
+.chatHeader {
+	bottom:0;
+	top: auto;
+	border-bottom: 0;
+	border-top: 1px solid #d4d2cb;
+}
+
+.chatFooter {
+ 	top:0;
+ 	bottom: auto;
+	border-bottom: 1px solid #d4d2cb;
+	border-top: 0;
+}
+
+.chatMain {
+	top:63px;
+	bottom:45px;
+}
+
+.chatPopupMenuDiv2 {
+	top: 26px !important;
+	bottom: auto !important;
+}
+
+.chatHeader .chatTitle {
+	float: right;
+	margin-right: 12px;
+}
+
+.chatHeader .chatTopLine {
+	left: 12px;
+	right: auto;
+}
+
+.chatPeople.vscrollable::after {
+	position:absolute;
+	bottom:2px;
+	right:5px;
+	content:'ChaTemplate';
+	color:#000;
+	font-size:9px;
+	opacity: .2;
+}
+
+.chatPeople .chatPeopleTitle {
+	position: absolute;
+	bottom: 0;
+}
+
+.chatTopLineWrapper ul li ul {
+	bottom: 23px;
+	top: auto !important;
+}
+
+.downarrowclass {
+	transform: rotate(180deg);
+}
+
+.chatMain .chatPeople {
+	left: 0 !important;
+	border-left:0;
+	border-right: 1px solid #d4d2cb;
+	padding-bottom:5px;
+}
+
+.chatMain .chatMessages, .chatMain .chatPrivateMessages {
+	right: 0 !important;
+	left: 170px !important;
+}
+
+.chatTabs {
+	left: 171px !important;
+	right: 0 !important;
+}
+
+.chatSetupNickname {
+	left: auto;
+	right: 15px;
+}
+
+.smilesBox {
+	margin-top:1px;
+	height: 249px;
+	border-bottom:1px solid #CFCFC9;
+}
+
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {
+  	height: 15px;
+}
+
+.smilesBox::-webkit-scrollbar,
+.vscrollable::-webkit-scrollbar {
+	width: 6px;
+	height: 0;
+}
+
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb {
+	background-color: rgba(51,51,51, 0.3);
+}
+
+.chatTopLineWrapper ul li ul {
+	border-color: #CFCFC9;
+	padding:0;
+}
+
+.chatTopLineWrapper ul li ul {
+	width: 180px !important;
+}
+
+.chatTopLineWrapper ul li ul li a {
+	width: 162px !important;
+}
+
+.chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel {
+	right: auto;
+	left: 13px;
+}
+
+.chatFooter .chatFooterWrapper .chatPanel .chatSendTextPanel {
+	right: 99px;
+	left: 115px;
+}
+
+.chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel {
+	right: 12px;
+	left: auto;	
+}
