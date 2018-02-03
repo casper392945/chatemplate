@@ -1,3 +1,20 @@
+/*
+Theme Name: Snow ChaTemplate
+Theme URI: https://madeas.ru/product/snow/
+Author: Andrej Sharapov 
+Author URI: https://madeas.ru/ 
+Description: Snow ChaTemplate is an evolving project where you can find an interesting template to improve your favorite chatovod chat service, and also join a huge community of users who want to transform their chat. 
+Version: 1.0.0
+
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: snow
+Tags: madeas, chatemplate, design, template, chatovod, snow, chat-colors, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov
+
+This theme, like Chatovod, is licensed under the GPL. 
+Use it to make something cool, have fun, and share what you've learned with others. 
+*/
+
 .chat {
   border-color:#f4f4f4;
 }
