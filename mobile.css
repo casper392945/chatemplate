@@ -76,6 +76,11 @@
  }
 
  .chatMain .chatPeople {
+	background-image: url(http://st1.chatovod.ru/i/widget/vborder.png);
+    	background-repeat: repeat-y;
+    	background-position: left top;
+	border-left: 0;
+	top:-2px;
 	width: 150px;
 	background-color: #f5f4ef;
 	right: -110px !important;
@@ -83,14 +88,10 @@
 	-moz-transition: .2s linear;
 	-ms-transition: .2s linear;
 	-o-transition: .2s linear;
+	z-index: 102;
  }
 
 .chatMain .chatPeople:hover {
-	-webkit-box-shadow: 0px 0px 7px #ccc;
-	-moz-box-shadow: 0px 0px 7px #ccc;
-	-ms-box-shadow: 0px 0px 7px #ccc;
-	-o-box-shadow: 0px 0px 7px #ccc;
-	box-shadow: 0px 0px 7px #ccc;
 	right: 0 !important;
  }
 .chatMessages.vscrollable, 
@@ -145,14 +146,15 @@
  }
 .chatFull .content form::after {  
 	position: absolute;  
-	bottom:70px;
+	bottom:75px;
 	content: '© 2017 ChaTemplate project. Mobile version by Andrej Sharapov.';  
-	color:#505050;  
+	color:#ddd;  
 	font-size:10pt;
+	text-align: center;
  }
 #email {
 	display: block;
-	font-size: 22px;
+	font-size: 1.2rem !important;
 	text-transform: uppercase;	
  }
 #sign-in-label a {
@@ -222,7 +224,7 @@ input[type=button] {
   	border-radius:6px;
 }
 #account-info {
-  	font: 19px bold;
+  	font: 19px bold !important;
   	text-align: center;
  }
 #account-info a {
@@ -232,6 +234,7 @@ input[type=button] {
   	left:0;
   	right:0;
   	margin: auto 0;
+	font-size: 24px !important;
   	text-align: center;
   	text-decoration: none;
   	color: #fff;
@@ -501,16 +504,13 @@ input[type=button] {
 .dialog-buttons button,
 .dialog-prompt input,
 #scrollBottomBox,
-.chatPeopleTitle,
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a {
 	font-size:0pt !important;
  }
-* {
+*,
+.chatTabs > ul > li > a {
 	font-size:16px !important;
  }
-.chatTime {
-	font-size:12px;
-}
 .chatHeader .chatTitle {
 	width: 100%;
 	text-align: center;
@@ -520,6 +520,9 @@ input[type=button] {
 	white-space: nowrap;
  }
 .chatTopLineWrapper > ul > li > ul {
+	position: absolute;
+	left: 0 !important;
+	margin-left: 0 !important;
 	text-align: left;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.6);
  }
@@ -530,5 +533,28 @@ input[type=button] {
  }
 .chatTopLineWrapper > ul > li > ul > li {
 	white-space: nowrap;
+ }
+.chatMessage.type-news, 
+.chatMessage.type-event {
+	background-size: 8px !important;
+ }
+.chatPeople .chatPeopleTitle {
+	background-color: #b6e245;
+	padding: 4px 0 4px 8px;
+	margin: 0;
+	border-bottom: 1px solid #a0ca2d;
+ }
+.chatUsersCount {
+	color:#4a600d;
+ }
+.chatUsersCount::after {
+	content:' User online';
+ }
+.chatPeople ul.chatPeopleList li.hover {
+	background-image: url(http://st1.chatovod.ru/i/widget/vborder.png);
+    	background-repeat: repeat-y;
+    	background-position: left top;
+	border-top: 1px solid #f5f4ef;
+	border-bottom: 1px solid #ccc;
  }
 }
