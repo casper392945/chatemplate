@@ -1,6 +1,4 @@
-
 @import url(https://necolas.github.io/normalize.css/8.0.0/normalize.css);
-@import url(//fonts.googleapis.com/css?family=Exo+2:300,300italic,500,600&subset=latin,cyrillic);
 
 *, 
 *:before, 
@@ -41,6 +39,7 @@
 	padding-right: 12px;
 }
 .smilesBox {
+	height: calc(250px - 3px);
 	margin: 1px -3px;
 	padding-left:3px;
 }
@@ -59,6 +58,7 @@
 }
 .smilesBox:hover::-webkit-scrollbar-thumb,
 .vscrollable:hover::-webkit-scrollbar-thumb {
+	background-color: #999;
 	visibility:visible;
 	opacity:1;
 }
@@ -81,36 +81,52 @@
 	background-image:url("http://st1.chatovod.ru/i/widget/vborder.png");
 }
 .chatTopLineWrapper > ul > li > ul {
-	margin-top:5px;
-	width: 178px!important;
-	border: 1px solid #f4f4f4;
+	margin-top: 2px;
+	border: 1px solid transparent;
 }
 #chatMainMenuChatovod {
 	margin-left:-13px!important;
 }
 .chatLinkVip {
 	padding-left: 21px;
+	padding-right: 12px;
 }
 .chatLinkVip::after {
 	position:absolute;
 	content:'vip';
-	border-bottom:0px dotted #000;
+	border-bottom:1px dotted #000;
 }
 .chatLinkModerate {
-	padding-right: 26px;
 	background-position: 7px 0;
-	padding-left: 26px;
 	border:0;
+	padding-left: 26px;
 }
 .chatLinkModerate::before {
 	position:absolute;
 	content:'модер';
-	border-bottom:0px dotted #000;
+	border-bottom:1px dotted #000;
 }
 .chatLinkMore {
-	padding-left: 21px;
+	posiiton: relative;
+	margin-left: 40px!important;
+	padding-left: 19px;
 	background-color:transparent;
 	background-image: url('http://madeas.ru/icon/chatemplate/icon_plus.png') !important;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
+
+/* ------------- */
+
+ body:not(.has-nick) .chatFooter::after {
+	position: absolute;
+	content: "© ChaTemplate 2018 by Andrej Sharapov";
+	font:normal 5pt Arial;
+	color: #ccc;
+	left: 0;
+	right: 0;
+	bottom: 7px;
+	text-align: center;
+}
+
+/* ------------- */
