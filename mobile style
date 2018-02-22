@@ -1,0 +1,38 @@
+
+@import url(https://necolas.github.io/normalize.css/8.0.0/normalize.css);
+@import url(//fonts.googleapis.com/css?family=Exo+2:300,300italic,500,600&subset=latin,cyrillic);
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@-ms-viewport {
+	width: device-width;
+}
+@-o-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+/* CHATEMPLATE NORMALIZE */
+
+#scrollBottomBox {  
+  position: absolute;  
+  font-size:0;  
+  bottom: 3px;  
+  left:auto!important;  
+  right:173px!important;  
+  border:0!important;  
+  padding:0!important;  
+  width: 16px!important;  
+  height: 16px!important;  
+  border-radius:0!important;  
+  background-repeat: no-repeat;  
+  background-color: transparent!important;  
+  background-image: url(https://madeas.ru/icon/bottom.png);  
+  cursor: pointer; 
+}
