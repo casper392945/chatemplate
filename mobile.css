@@ -301,6 +301,142 @@ input[type=button] {
 .justify a {
   	color:#000!important;
  }
+
 /* -------------- */
 
+.chatToUser {
+	font-style: normal;
+	padding: 2px 3px;
+ }
+.chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a { 
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARpJREFUOMtj+P//PwMlmGFwGcCwWISBYbkoH8NK0UwgXgfEx6F0JlgcKE/IAD6GpSKzNA5Z3fe/k/gt8lHWX7/bCd/UDlreB4mD5PEbsFA4U22vxX3/6wn/3c6Fw7Hv1bj/SjtN7oPk8RswW2id87mQbxYHPP+b7XP/r7/d4b/GBsv/6ust/uvvcvgGksdvwFSB406ng/+qb7b4L7ZM/b/gIiU4llyp9Rckj9+APr51WnutvwluAmpCx+uUvoHk8RvQzpvJt0j2vtgxoO1HlRD4iNJ/9nmi90Hy+A1o5uFjqOGaxTlX5D7/MflvgpeU/vIdlfvGPlf4PkgcJE/IAAaGAnY+hmSWTCBeB8THoXQmWBwoP8iT8oAYAAClSYwgz8te5AAAAABJRU5ErkJggg==") 0 0 no-repeat; 
+	animation: pulse 2s infinite;
+  	border-radius: 50%; 
+  	padding-left: 15px; 
+  	padding-top: 5px; 
+  	height: 10px; 
+  	font-size:0; 
+ } 
+.chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a.muted { 
+  	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVRJREFUeNrUk79rwkAUxy8x5EiMWqRYKJ0qdGupq3GrQwMZ0j+g/RtTUFGoSDQdCorQjoXORtsgNrmYn/bdYJFCsmTqgw/c997dl3fv7pjdbofyBItyRm4D7lBomoY4jsMMw1yBPAdKwDfwAUd9jaLI13U93QACJ0lyq6qqJstyWxTFE9d1LdM0n3q9Ht3ZB/xUgziOrxVFuWs2m/eEEBag02egH7bbLTMYDBagX1INwjC8aDQabcuyWHo7QRDQOQRVsfV6vQ3jYaYBbKjA+WuO4yDHIVBR9Jvjeb5G85lN9H3fXS6/Vp4XnxYKGFH2QYi7ovnMa4QF74ZhjAWhlGBcRHt4vpjMZrMxzWdWAE2cdjqPXUICrtW6aZXLlePNZv05mQzN0ajfxRhP/xowh08ZGohs2xagBzLIS+AIWANvkiQ9V6tVbz6fpxv8z7+Q2+BHgAEAHG6lklcQKVAAAAAASUVORK5CYII=") 0 0 no-repeat; 
+  	animation: none; 
+ } 
+@-webkit-keyframes pulse { 
+ 0% { 
+  -webkit-box-shadow: 0 0 0 0 rgba(34,139,34, 0.4); 
+  } 
+ 70% { 
+  -webkit-box-shadow: 0 0 0 10px rgba(0,0,0, 0); 
+  } 
+ 100% { 
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0, 0); 
+  } 
+ } 
+@keyframes pulse { 
+ 0% { 
+  -moz-box-shadow: 0 0 0 0 rgba(34,139,34, 0.4); 
+  box-shadow: 0 0 0 0 rgba(34,139,34, 0.4); 
+  } 
+ 70% { 
+  -moz-box-shadow: 0 0 0 10px rgba(0,0,0, 0); 
+  box-shadow: 0 0 0 10px rgba(0,0,0, 0); 
+  } 
+ 100% { 
+  -moz-box-shadow: 0 0 0 0 rgba(0,0,0, 0); 
+  box-shadow: 0 0 0 0 rgba(0,0,0, 0); 
+  } 
+ }
+
+.chatPopupMenuDiv2,
+.smilesBox,
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb,
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track,
+.chatSendButton,
+.chatMessage,
+.chatTopLineWrapper ul li ul,
+.content form #nick, 
+.content form #captcha-input,
+ #sign-in-label a,
+ input[type=text],
+ select {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+ }
+.chatTopLineWrapper > ul > li > ul > li:first-child > a {
+	border-radius: 0;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+ }
+
+.chatTopLineWrapper > ul > li > ul > li:last-child > a {
+	border-radius: 0;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+ }
+
+/* -------------- */
+
+.chatSendLinksPanel {
+  	position: absolute;
+  	width: 36px;
+  	height: 36px!important;
+  	left: 0;
+  	top: 13px!important;
+ 	border: solid 1px #aaa;
+	background: #f5f4ef url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjIyQkFFNjc1Q0Y3MTFFMkI1NEFBNkJFQ0MyNkQ2RkYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjIyQkFFNjg1Q0Y3MTFFMkI1NEFBNkJFQ0MyNkQ2RkYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGMjJCQUU2NTVDRjcxMUUyQjU0QUE2QkVDQzI2RDZGRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGMjJCQUU2NjVDRjcxMUUyQjU0QUE2QkVDQzI2RDZGRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pvb/uPAAAAAmSURBVHjaYmRgYPBlIBGwiIuLk6qHgfH///+DWdNoQNA7IAACDABm7hO6FUUnoQAAAABJRU5ErkJggg==) no-repeat 11px 11px / 13px 12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	z-index:99;
+	transition: none;
+ }
+
+.chatSendLinksPanel a {
+	visibility: hidden;
+ }
+
+.chatSendLinksPanel:hover {
+	background: #f5f4ef url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTnU1rJkAAAAhElEQVQoU5WSXQrAIAyD9bK7kheYD213xnUGrTj/wIBIk3wKolNVz/yEtC63EXL00MeQAFEiflcg/JyLop8MrsYMbIG8c87HIIMrv6ovEFHcAqYWtLUFTLjhD1Es0VzHN7UAdhG523kAe8CedfQLuAyKpnk69fBHcCh/D+AcMCFHT1X9B0fBIgXMXhSCAAAAAElFTkSuQmCC) no-repeat 11px 136px / 13px 13px;
+	min-width: 120px;
+	width: auto;
+	max-width: none;
+	min-height: 150px;
+	padding:5px 5px 5px 30px;
+	top:-111px!important;
+ }
+
+.chatSendLinksPanel:hover a {
+	visibility: visible; 
+	display: block;
+	float: left;
+	clear: both;
+	margin:2px auto 3px;
+	transition: .3s ease-out;
+ }
+/* -------------- */
+
+.smilesBox {
+  	background-color:#fff;
+ }
+.smilesBox p {
+  	border:1px solid #ccc;
+  	width:60%;
+  	padding: 5px;
+  	margin:3px;
+  	color: #333;
+  	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTnU1rJkAAAA3UlEQVRIS2MYBcMIODo6Fjo7Oy8iEcdBteMGTk5OZi4uLm+A+D8xGKj+HhBLQ7XjBsbGxqxADfVA/BvZAGwY6NJPQENDgNoYIboJAB8fHy6ghv3YDEPC/4BqFoAcAtVGHABqVAW66BaaYcj4GFBeGKqcJMAEjMhUoOYfWAx97erqag1VRzoAeRPo3YVAg/4hGQoKgubQ0FBmqDLygL29vQjQsKMwg4E+WAuKA6g0ZQAYJG5AA98B8T0gWxkqTDkAupoF6NpioMFx9fX1TFBhqgGQgcSl11EwCrAABgYAkAOMm/9waSsAAAAASUVORK5CYII=) 95% 7px no-repeat;
+  	background-size: 12px;
+ }
+.smilesBox img {
+  	max-width: 48px;
+  	max-height: 48px;
+  	border:0;
+ }
+.smilesBox img:hover {
+  	background-color: #cccccc;
+ }
 }
