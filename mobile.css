@@ -2,7 +2,7 @@
 @media screen and (min-width: 980px) {.chatMain {background:rgba(255, 0, 0, .1);}} /* Desktop */ 
 @media screen and (max-width: 979px) {.chatMain {background:rgba(0, 255, 0, .1);}} /* Tablet */ 
 @media screen and (max-width: 500px) {.chatMain {background:rgba(0, 0, 255, .1);}} /* Mobile */ 
-@media (max-width: 480px) and (max-device-width: 480px) {
+@media (max-width: 500px) {
  body:not(.has-nick) .chatTopLine,
  body:not(.has-nick) .chatUserMenuPhotos,
  body:not(.has-nick) .chatUserMenuGift,
@@ -26,4 +26,26 @@
   height: auto;
   background: #f5f4ef url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTnU1rJkAAAAhElEQVQoU5WSXQrAIAyD9bK7kheYD213xnUGrTj/wIBIk3wKolNVz/yEtC63EXL00MeQAFEiflcg/JyLop8MrsYMbIG8c87HIIMrv6ovEFHcAqYWtLUFTLjhD1Es0VzHN7UAdhG523kAe8CedfQLuAyKpnk69fBHcCh/D+AcMCFHT1X9B0fBIgXMXhSCAAAAAElFTkSuQmCC) no-repeat 11px 11px/ 13px 13px;
  }
+.chatTabs:hover ul,
+.chatTabs:hover .chatTabsLeft,
+.chatTabs:hover .chatTabsRight {
+ visibility: visible; 
+ margin-left: 40px; 
+ }
+.chatTabs > ul,
+.chatTabs .chatTabsLeft,
+.chatTabs .chatTabsRight {
+	visibility: hidden;
+	margin-top: -2px;
+ }
+.chatTabs .chatTabsRight {
+	right: 5px;
+ }
+.chatHeader .chatTitle {
+	margin-left: 45px;
+ }
+.chatMain .chatMessages, 
+.chatMain .chatPrivateMessages {
+  top:4px;
+ } 
 }
