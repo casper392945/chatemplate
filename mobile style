@@ -1,12 +1,13 @@
 
 @import url(https://necolas.github.io/normalize.css/8.0.0/normalize.css);
 @import url(//fonts.googleapis.com/css?family=Exo+2:300,300italic,500,600&subset=latin,cyrillic);
+
 *, 
 *:before, 
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 @-ms-viewport {
 	width: device-width;
@@ -21,18 +22,55 @@
 /* CHATEMPLATE NORMALIZE */
 
 #scrollBottomBox {  
-  position: absolute;  
-  font-size:0;  
-  bottom: 3px;  
-  left:auto!important;  
-  right:173px!important;  
-  border:0!important;  
-  padding:0!important;  
-  width: 16px!important;  
-  height: 16px!important;  
-  border-radius:0!important;  
-  background-repeat: no-repeat;  
-  background-color: transparent!important;  
-  background-image: url(https://madeas.ru/icon/bottom.png);  
-  cursor: pointer; 
+	position: absolute;  
+	font-size:0;  
+	bottom: 3px;  
+	left:auto!important;  
+	right:173px!important;  
+	border:0!important;  
+	padding:0!important;  
+	width: 16px!important;  
+	height: 16px!important;  
+	border-radius:0!important;  
+	background-repeat: no-repeat;  
+	background-color: transparent!important;  
+	background-image: url(https://madeas.ru/icon/bottom.png);  
+	cursor: pointer; 
+}
+.chatTime {
+	padding-right: 12px;
+}
+.smilesBox {
+	margin: 1px -3px;
+	padding-left:3px;
+}
+.smilesBox::-webkit-scrollbar,
+.vscrollable::-webkit-scrollbar {
+	width: 6px;
+	height: 0;
+}
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb {
+	visibility: hidden;
+	opacity:0;
+	-webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+	-moz-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+	transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+.smilesBox:hover::-webkit-scrollbar-thumb,
+.vscrollable:hover::-webkit-scrollbar-thumb {
+	visibility:visible;
+	opacity:1;
+}
+ select,
+ input[type="button"],
+ input[type="submit"] {
+	cursor:pointer;
+}
+ button:focus,
+ select:focus,
+ input[type="button"]:focus,
+ input[type="submit"]:focus,
+ input[type="text"]:focus {
+  outline:none;
 }
