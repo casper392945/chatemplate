@@ -1,23 +1,7 @@
 @import url(https://madeas.ru/css/chatemplate/alignment.css);
-
-@media screen and (min-width: 980px) /* Desktop */ {
-  .chatMain {
-    background: rgba(255, 0, 0, .1);
-  }
-} 
-
-@media screen  and (max-width: 979px) /* Tablet */ {
-  .chatMain {
-    background: rgba(0, 255, 0, .1);
-  }
-} 
-
-@media screen and (max-width: 500px) /* Mobile */ {
-  .chatMain {
-    background:rgba(0, 0, 255, .1);
-  }
-}
-
+@media screen and (min-width: 980px) {.chatMain {background:rgba(255, 0, 0, .1);}} /* Desktop */ 
+@media screen and (max-width: 979px) {.chatMain {background:rgba(0, 255, 0, .1);}} /* Tablet */ 
+@media screen and (max-width: 500px) {.chatMain {background:rgba(0, 0, 255, .1);}} /* Mobile */ 
 @media (max-width: 480px) and (max-device-width: 480px) {
  body:not(.has-nick) .chatTopLine,
  body:not(.has-nick) .chatUserMenuPhotos,
