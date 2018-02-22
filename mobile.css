@@ -54,4 +54,15 @@
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
   }
+.chatTitle {
+	position: relative;
+	max-width: 40%;
+	white-space: nowrap;
+	overflow: hidden;
+ }
+.chatUser {
+	margin-left: 0px;
+	white-space:nowrap;
+	overflow:hidden;
+ }
 }
