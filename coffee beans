@@ -23,344 +23,433 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 @import url('https://cdn.linearicons.com/free/1.0.0/icon-font.min.css');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 * {
-font-size: 0pt !important;
-font-size: 14px!important;
+  font-size: 0pt !important;
+  font-size: 14px!important;
 }
 body {
-color: #b2b2b2;
+	color: #b2b2b2;
 }
 .chat {
-border:0;
+ 	border:0;
 }
 .chatMain {
-top: 0;
-bottom: 0;
-background: linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(https://madeas.ru/wp-content/uploads/2018/02/bg_beans.jpg);
-background-attachment: fixed;
-background-position: center;
-background-size: cover;
+	top: 0;
+	bottom: 0;
+	background: linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(https://madeas.ru/wp-content/uploads/2018/02/bg_beans.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 .chatFull .transparent {
-  background: linear-gradient(rgba(47,23,15,.9), rgba(47,23,15,.9)),url(https://madeas.ru/wp-content/uploads/2018/02/bg_beans.jpg);
-background-attachment: fixed;
-background-position: center;
-background-size: cover;
-opacity: 1;
+	background: linear-gradient(rgba(47,23,15,.9), rgba(47,23,15,.9)),url(https://madeas.ru/wp-content/uploads/2018/02/bg_beans.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	opacity: 1;
 }
-
 .smilesBox::-webkit-scrollbar, 
 .vscrollable::-webkit-scrollbar {
-width: 8px;
+	width: 8px;
 }
 .smilesBox::-webkit-scrollbar-thumb, 
 .vscrollable::-webkit-scrollbar-thumb, 
 .smilesBox::-webkit-scrollbar-thumb:hover, 
 .vscrollable::-webkit-scrollbar-thumb:hover {
-background: rgba(230,167,86,.5);
+	background: rgba(230,167,86,.5);
 }
 .smilesBox::-webkit-scrollbar-thumb:active, 
 .vscrollable::-webkit-scrollbar-thumb:active {
-background-color: rgba(230,167,86,.9);
+	background-color: rgba(230,167,86,.9);
+}
+.chatSendLinksPanel > a > span, 
+.chatSoundPanel > a > span,
+.chatPopupMenuDiv1,
+.downarrowclass,
+.menu_profile_title,
+.chatTopLineWrapper > ul > li:nth-child(3) > a > img,
+.msi {
+	display: none !important;
+}
+.chatTabs,
+#chatUserMiniMenu,
+.chatHeader .chatTopLine,
+.chatFooter,
+.chatFooter .chatFooterWrapper,
+.chatPeople ul.chatPeopleList li.hover,
+#account-info a {
+	background: rgba(47,23,15,.9);
+}
+#join-chat-button, 
+#join-chat-button2, 
+#sign-in-label a,
+.chatSendLinksPanel > a, 
+.chatSoundPanel > a, 
+.chatSendButton,
+.dialog-buttons button,
+.justify a,
+.chatPopupMenuContent input[type="submit"],
+.chatTopLineWrapper > ul > li > a,
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li,
+.chatUserAvatar,
+#account-info a:before {
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
+	background: -o-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
+	background: linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
+
+	-webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
+	-moz-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
+	-o-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
+	box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
+}
+#sign-in-label a:active, 
+#join-chat-button:active, 
+#join-chat-button2:active, 
+.dialog-buttons button:active, 
+.chatSendLinksPanel > a:active, 
+.chatSoundPanel > a:active, 
+.chatSendButton:active,
+.chatPopupMenuContent input[type="submit"]:active,
+.justify a:active,
+.chatTopLineWrapper > ul > li > a:active,
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li:active{
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.08) 0%, rgba(255,255,255,0.08) 100%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.08) 0%, rgba(255,255,255,0.08) 100%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 0.08) 0%, rgba(255,255,255,0.08) 100%);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.08) 0%, rgba(255,255,255,0.08) 100%);
+}
+#scrollBottomBox {
+	right: 230px;
+	left: auto !important;
+	width:30px;
+	height: 30px;
+	padding:0;
+	background-color: #df902a;
+	border-color:rgba(230,167,86,.1);
+	font-size: 0 !important;
+}
+#scrollBottomBox::before {
+	position: relative;
+	vertical-align: top;
+	animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
+	font-family:Linearicons-Free;
+	content:'\e874';
+	font-size:16px!important;
+	color:#fff;
+	background: none;
+}
+#scrollBottomBox:hover::before {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+@-webkit-keyframes bouncing{
+	0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+	100% { bottom: 25px; box-shadow: 0 30px 30px rgba(0,0,0,0.1); }
+}
+@keyframes bouncing{
+	0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+	100% { bottom: 25px; box-shadow: 0 30px 30px rgba(0,0,0,0.1); }
+}
+.chatInputText, 
+.content form #nick, 
+.content form #captcha-input,
+.chatSendLinksPanel,
+#join-chat-button, 
+#join-chat-button2, 
+#sign-in-label a,
+.chatSendLinksPanel > a, 
+.chatSoundPanel > a, 
+.chatSendButton,
+.dialog-buttons button,
+.justify a,
+.chatHeader .chatTopLine,
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li,
+#account-info a {	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatHeader --- */
 .chatHeader {
-background-color: transparent;
-border-bottom: 0;
-height: 80px;
+	background-color: transparent;
+	border-bottom: 0;
+	height: 80px;
 }
 .chatHeader .chatTitle {
-float: none;
-width: 100%;
-font-family: Raleway;
-text-align: center;
-text-transform: uppercase;
-color: #e6a756!important;
-font-size: 32px!important;
-font-weight: 800;
-text-shadow: none;
-margin:0;
-margin-top: 20px;
+	color: #e6a756!important;
+	float: none;
+	font-family: Raleway;
+	font-size: 32px!important;
+	font-weight: 800;
+	margin:0;
+	margin-top: 20px;
+	text-align: center;
+	text-shadow: none;
+	text-transform: uppercase;
+	width: 100%;
 }
 .chatTabs {
-top: 80px;
-left: 0;
-right: 0;
-width: 100%;
-height: 80px;
-background-color: rgba(47,23,15,.9);
+	top: 80px;
+	width: 100%;
 }
 .chatTabs ul {
-top: 0;
-left: 0;
-right: 0;
-margin: auto;
-text-align: center;
-height: 80px;
+	top: 0;
+	margin: auto;
+	text-align: center;
+}
+.chatTabs,
+.chatTabs ul {
+	height: 80px;
+	right: 0;
+	left: 0;
 }
 .chatTabs > ul > li.chatTab > a,
 .chatTabs > ul > li.chatTab.chatTabActive > a, 
 .chatTabs > ul > li.chatTab > a:hover, 
 .chatTabs > ul > li.chatTab > a.active,
 .chatTabs ul li.appTab a {
-color: rgba(255,255,255,.7);
-background: none !important;
-font-weight: 700;
-text-decoration: none;
-text-transform: uppercase;
-padding: .25rem 1rem;
-margin: 0!important;
-line-height: 70px;
+	background: none !important;
+	color: rgba(255,255,255,.7);
+	font-weight: 700;
+	line-height: 70px;
+	margin: 0!important;
+	padding: .25rem 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 .chatTabs > ul > li {
-margin-top: 0;
+	margin-top: 0;
 }
 .chatTabs > ul > li.chatTab.chatTabActive,
 .chatTabs > ul > li:hover {
-background-color: rgba(255,255,255,.07) !important;
+	background-color: rgba(255,255,255,.07) !important;
 }
 #chat_main a,
 .chat_0 {
-color: #e6a756;
-padding: .25rem 1rem !important;
+	color: #e6a756;
+	padding: .25rem 1rem !important;
 }
 .chatTabs > ul > li {
-margin-left: 0!important;
-margin-right: 0!important;
+	margin-left: 0!important;
+	margin-right: 0!important;
 }
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- chatMain --- */
 .chatMain .chatMessages, 
 .chatMain .chatPrivateMessages {
-top: 160px;
-bottom:80px;
+	top: 160px;
+	bottom:80px;
 }
 .chatSystemMessage {
-font-style: normal !important;
+	font-style: normal !important;
 }
 .chatUserFrom,
 .chatPeople ul.chatPeopleList li a.chatUser {
-color: #e6a756;
+	color: #e6a756;
 }
 .chatMessage .chatTime {
-color: rgba(255,255,255,.5);
-cursor: help;
+	color: rgba(255,255,255,.5);
+	cursor: help;
 }
 #chatUserMiniMenu {
--webkit-box-shadow: none;
--moz-box-shadow: none;
-box-shadow: none;
-background: rgba(47,23,15,.9);
-border-color:rgba(230,167,86,.4);
+	border-color:rgba(230,167,86,.4);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 .chatSystemMessage a {
-color: #df902a;
-text-decoration: none;
-font-weight: 700;
+	color: #df902a;
+	font-weight: 700;
+	text-decoration: none;
 }
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatFooter --- */
 .chatFooter,
 .chatFooter .chatFooterWrapper {
-background: rgba(47,23,15,.9);
-border-top: 0;
-height: 80px;
-bottom:0;
+	bottom:0;
+	border-top: 0;
+	height: 80px;
 }
 .chatInputText, 
 .content form #nick, 
 .content form #captcha-input {
-background-color: rgba(0, 0, 0, 0.3);
-background-image: none;
-color: #fff;
--webkit-transition: border-color;
--moz-transition: border-color;
-transition: border-color;
-box-sizing: border-box;
-border-radius: 3px;
-border: 1px solid rgba(255, 255, 255, 0.18);
-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
-padding: 0.5em;
-width: 100%;
-outline: none;
-margin-top: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: none;
+	color: #fff;
+	box-sizing: border-box;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+	padding: 0.5em;
+	width: 100%;
+	margin-top: 10px;
+  
+	-webkit-transition: border-color;
+	-moz-transition: border-color;
+	transition: border-color;
 }
 .chatSendTextPanel {
-top: auto !important;
-left: 6px !important;
-right: 144px !important;
-bottom: 6px !important;
+	top: auto !important;
+	left: 6px !important;
+	right: 144px !important;
+	bottom: 6px !important;
 }
 .chatInputText {
-font-size: 18px;
-font-weight: 300;
-word-wrap: break-word;
-height: 2.5em !important;
-line-height: 1em;
-white-space: normal;
-padding: .75em .5em .75em .5em;
-outline: 0;
--webkit-transform: rotateZ(0);
--ms-transform: rotate(0);
-transform: rotate(0);
+	font-size: 18px;
+	font-weight: 300;
+	word-wrap: break-word;
+	height: 2.5em !important;
+	line-height: 1em;
+	white-space: normal;
 }
 .chatSendExitPanel {
-width: 171px !important;
-top: auto !important;
-right: 0 !important;
-bottom: 50px;
+	width: 171px !important;
+	top: auto !important;
+	right: 0 !important;
+	bottom: 50px;
 }
 .chatSendExitPanel select {
-border-color: transparent;
-background: rgba(230,167,86,0);
-color: rgba(255,255,255,.5);
-outline: none;
-cursor: pointer;
+	border-color: transparent;
+	background: rgba(230,167,86,0);
+	color: rgba(255,255,255,.5);
+	cursor: pointer;
 }
  option[value="ONLINE"] {
-background: #4caf50;
-color: #fff;
+	background: #4caf50;
+	color: #fff;
 }
  option[value="AWAY"],
  option[value="CUSTOM"],
  option[value="DND"] {
-background: rgba(255,255,255,.85);
-color: #90A4ae;
+	background: rgba(255,255,255,.85);
+	color: #90A4ae;
 }
  option[value="EXIT"] {
-background: #990000;
-color: #fff;
+	background: #990000;
+	color: #fff;
 }
 .chatSendButtonPanel {
-top: auto !important;
-right: 6px !important;
-bottom: 6px !important;
-width: 130px !important;
+	top: auto !important;
+	right: 6px !important;
+	bottom: 6px !important;
+	width: 130px !important;
 }
 .chatSendButton {
-width: 100% !important;
-height: auto !important;
+	width: 100% !important;
+	height: auto !important;
 }
 .chatSendLinksPanel {
-top: auto !important;
-left: 6px !important;
-bottom: 46px !important;
-border: 1px solid rgba(0, 0, 0, 0.25);
-border-radius: 3px;
-}
-.chatSendLinksPanel > a > span, 
-.chatSoundPanel > a > span {
-display: none !important;
+	top: auto !important;
+	left: 6px !important;
+	bottom: 46px !important;
+	border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .chatSendLinksPanel > a::before, 
 .chatSoundPanel > a::before,
 .chatTopLineWrapper > ul > li > a::before {
-display: inline-block;
-font-family: Linearicons-Free;
-font-size: 16px !important;
-color:#e6a756;
-padding-top:2px;
-width: 16px;
-height: 16px;
+	display: inline-block;
+	font-family: Linearicons-Free;
+	font-size: 16px !important;
+	color:#e6a756;
+	padding-top:2px;
+	width: 16px;
+	height: 16px;
 }
 /* ---------------------------- */
 .chatLinkSmiles::before {
-content:'\e854';
+	content:'\e854';
 }
 .chatLinkImage::before {
-content:'\e824';
+	content:'\e824';
 }
 .chatLinkProfile::before {
-content:'\e82a';
+	content:'\e82a';
 }
 .chatLinkGold::before {
-content:'\e80e';
+	content:'\e80e';
 }
 .chatLinkVip::before {
-content:'\e814';
+	content:'\e814';
 }
 .chatLinkModerate::before {
-content:'\e810';
+	content:'\e810';
 }
 .chatLinkMore::before {
-content:'\e82b';
+	content:'\e82b';
 }
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a::before {
-content:'\e85a';
+	content:'\e85a';
 }
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a.muted::before {
-content:'\e85d';
+	content:'\e85d';
 }
 /* ---------------------------- */
 .chatSendLinksPanel > a, 
 .chatSoundPanel > a,
 .chatTopLineWrapper > ul > li > a {
-background-image: none !important;
-padding: 5px !important;
-margin-right: 2px !important;
-height: 30px !important;
-width: 30px;
+	background-image: none !important;
+	padding: 5px !important;
+	margin-right: 2px !important;
+	height: 30px !important;
+	width: 30px;
 }
 .chatSoundPanel > a,
 .chatTopLineWrapper > ul > li:last-child > a {
-margin-right: 0!important;
+	margin-right: 0!important;
 }
 
 .chatPanel .chatSoundPanel {
-position: absolute;
-width: 30px !important;
-height: 30px !important;
-top: auto !important;
-bottom: 46px !important;
-left: 232px;
-border: 1px solid rgba(0, 0, 0, 0.25);
-}
-.chatPopupMenuDiv1 {
-display: none !important;
+	position: absolute;
+	width: 30px !important;
+	height: 30px !important;
+	top: auto !important;
+	bottom: 46px !important;
+	left: 232px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .chatEventDiv, 
 .chatPopupMenuDiv2, 
 .chatTopLineWrapper ul li ul, 
 .dialog.smoke {
-border-color: rgba(255, 255, 255, 0.08);
-box-shadow: rgba(0,0,0,0.26) 0px 20px 20px, rgba(0,0,0,0.1) 0px 2px 2px;
+	border-color: rgba(255, 255, 255, 0.08);
+	box-shadow: rgba(0,0,0,0.25) 0px 20px 20px, rgba(0,0,0,0.1) 0px 2px 2px;
 }
 .chatEventDiv, 
 .chatPopupMenuDiv2 {
-top: auto!important;
-right: auto !important;
-bottom: 90px !important;
-left:3px !important;
-width: 320px !important;
-min-height: 95px;
+	top: auto!important;
+	right: auto !important;
+	bottom: 90px !important;
+	left:3px !important;
+	width: 320px !important;
+	min-height: 95px;
 }
 .chatPopupMenuDiv2,
 .smilesBox {
-background: rgba(47,23,15,1);
-padding: 6px;
+	background: rgba(47,23,15,1);
+	padding: 6px;
 }
 .chatPopupMenuDiv2 .chatPopupMenuContent a,
 .chatPopupMenuDiv2 .chatPopupMenuContent p,
 .chatPopupMenuDiv2,
 .smilesBox,
 .smilesBox a {
-color:#fff;
-text-decoration: none;
+	color:#fff;
+	text-decoration: none;
 }
 .chatPopupMenuDiv2 .chatPopupMenuContent {
-padding: 0;
+	padding: 0;
 }
 .chatPopupMenuDiv2 .chatPopupMenuContent > p > a[onclick*="removePopupMenu"] {
-display: block;
-text-decoration: none;
-padding: 3px 15px;   
+	display: block;
+	text-decoration: none;
+	padding: 3px 15px;   
 }
 .chatPopupMenuDiv2 .chatPopupMenuContent > p > a[onclick*="removePopupMenu"]:hover {
-background-color: rgba(255,255,255,.15);
+	background-color: rgba(255,255,255,.15);
 }
 #chatImageUrl {
-margin:5px auto;
-margin-top: -2px;
+	margin:5px auto;
+	margin-top: -2px;
 }
 .chatPopupMenuDiv2 .chatPopupMenuContent p {
 font-size: 11px !important;
@@ -374,41 +463,29 @@ font-size: 11px !important;
 .chatSendButton,
 .dialog-buttons button,
 .justify a {
-background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-border: 1px solid rgba(0, 0, 0, 0.25);
-color: rgba(255, 255, 255, 0.85);
-cursor: pointer;
-display: inline-block;
-min-height: 1em;
-outline: none;
-vertical-align: baseline;
-padding: 0.75em 1.25em;
-text-transform: none;
-text-shadow: none;
-font-weight: normal;
-line-height: 1em;
-font-style: normal;
-text-align: center;
-text-decoration: none;
-border-radius: 3px;
--webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
--webkit-transition: 0.1s all linear;
--moz-transition: 0.1s all linear;
--ms-transition: 0.1s all linear;
--o-transition: 0.1s all linear;
-transition: 0.1s all linear;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
--webkit-font-smoothing: antialiased;
-box-sizing: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 0.85);
+	cursor: pointer;
+	display: inline-block;
+	min-height: 1em;
+	vertical-align: baseline;
+	padding: 0.75em 1.25em;
+	text-transform: none;
+	text-shadow: none;
+	font-weight: normal;
+	line-height: 1em;
+	font-style: normal;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+	-webkit-transition: 0.1s all linear;
+	-moz-transition: 0.1s all linear;
+	-o-transition: 0.1s all linear;
+	transition: 0.1s all linear;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 #sign-in-label a:hover, 
 #join-chat-button:hover, 
@@ -419,15 +496,14 @@ box-sizing: border-box;
 .chatSendButton:hover,
 .chatPopupMenuContent input[type="submit"]:hover,
 .justify a:hover {
-background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
-background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
-text-decoration: none;
--webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
-cursor: pointer;
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%,rgba(255,255,255,0.08) 100%);
+	text-decoration: none;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+	cursor: pointer;
 }
 #sign-in-label a:active, 
 #join-chat-button:active, 
@@ -438,332 +514,247 @@ cursor: pointer;
 .chatSendButton:active,
 .chatPopupMenuContent input[type="submit"]:active,
 .justify a:active {
-background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-border-color: rgba(255, 255, 255, 0.08);
-text-decoration: none;
--webkit-box-shadow: none;
-box-shadow: none;
-box-shadow: inset rgba(0,0,0,0.4) 0px 1px 3px;
-cursor: pointer;
+	border-color: rgba(255, 255, 255, 0.08);
+	text-decoration: none;
+	-webkit-box-shadow: none;
+	box-shadow: inset rgba(0,0,0,0.4) 0px 1px 3px;
+	cursor: pointer;
 }
 .chatPopupMenuContent input[type="submit"] {
-background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-border: 0;
-position: absolute;
-left: 0;
-right: 0;
-bottom: 0;
-color: #fff;
-font-size: 8pt;
-padding: 10px 0;
-transition: .3s;
-font-weight: normal;
-box-sizing: inherit;
-outline: none;
-cursor: pointer;
-width: 100%;
+	border: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	font-size: 8pt;
+	padding: 10px 0;
+	transition: .3s;
+	font-weight: normal;
+	box-sizing: inherit;
+	cursor: pointer;
+	width: 100%;
 }
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------ chatTopLine --- */
 .chatHeader .chatTopLine {
-left: 12px;
-right: auto;
-background: rgba(47,23,15,.9);
-border: 1px solid rgba(0, 0, 0, 0.25);
-border-radius: 3px;
+	left: 12px;
+	right: auto;
+	border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .chatTopLineWrapper ul li.chatMenuItemWithSeparator a {
-overflow-y: hidden;
-}
-.downarrowclass {
-display: none;
+	overflow-y: hidden;
 }
 .chatTopLineWrapper > ul > li > a,
 .chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li,
 .chatUserAvatar {
-text-shadow: none;
-background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-border: 1px solid rgba(0, 0, 0, 0.25);
--webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, rgba(0,0,0,0.3) 0px 1px 3px;
--webkit-transition: 0.1s all linear;
--moz-transition: 0.1s all linear;
--ms-transition: 0.1s all linear;
--o-transition: 0.1s all linear;
-transition: 0.1s all linear;
+	text-shadow: none;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	-webkit-transition: 0.1s all linear;
+	-moz-transition: 0.1s all linear;
+	-o-transition: 0.1s all linear;
+	transition: 0.1s all linear;
 }
 .chatTopLineWrapper > ul > li > a:active,
 .chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li:active {
-background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 0%,rgba(255,255,255,0.08) 100%);
-border-color: rgba(255, 255, 255, 0.08);
-box-shadow: inset rgba(0,0,0,0.4) 0px 1px 3px;
+	border-color: rgba(255, 255, 255, 0.08);
+	box-shadow: inset rgba(0,0,0,0.4) 0px 1px 3px;
 }
 .chatTopLineWrapper > ul > li > a::before {
-font-weight: bold;
-padding-top:2px;
-padding-left:2px;
-font-size: 26px !important;
-}
-.menu_profile_title,
-.chatTopLineWrapper > ul > li:nth-child(3) > a > img {
-display: none;
+	font-weight: bold;
+	padding-top:2px;
+	padding-left:2px;
+	font-size: 26px !important;
 }
 .chatTopLineWrapper > ul > li > a:hover {
-background: none;
+	background: none;
 }
 /* ---------------------------- */
 .chatTopLineWrapper > ul > li:nth-child(1) > a::before {
-content:'\e82a';
+	content:'\e82a';
 }
 .chatTopLineWrapper > ul > li:nth-child(2) > a::before {
-content:'\e83f';
+	content:'\e83f';
 }
 .chatTopLineWrapper > ul > li:nth-child(3) > a::before {
-content:'\e871';
+	content:'\e871';
 }
 /* ---------------------------- */
-.msi {
-display: none;
-}
 .chatTopLineWrapper > ul > li > ul {   
-background: rgba(47,23,15,1);
-transition: all .25s ease-in-out 0s;
+	background: rgba(47,23,15,1);
+	transition: all .25s ease-in-out 0s;
 }
 .chatTopLineWrapper > ul > li > ul[style*="display: none"],
  .smilesBox.hidden {
-display: block !important;
-pointer-events: none;
-opacity: 0;
-visibility: hidden;
-transition: all.25s ease-in-out;
-transform: translateY(5px);
+	display: block !important;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: all.25s ease-in-out;
+	transform: translateY(5px);
 }
 .chatTopLineWrapper > ul > li > ul[style*="display: block"] {
-opacity: 1;
-visibility: visible;
-pointer-events: auto;
-transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	transform: translateY(0);
 }
 .chatTopLineWrapper > ul > li > ul > li {
-display: block;
-white-space: nowrap;
+	display: block;
+	white-space: nowrap;
 }
 .chatTopLineWrapper ul > li > ul > li > a { 
-color: rgba(255,255,255,0.5);
-padding: 5px 10px;
+	color: rgba(255,255,255,0.5);
+	padding: 5px 10px;
 }
 .chatTopLineWrapper ul li ul li a:hover {
-color: rgba(255,255,255,0.8);
-background: rgba(230,167,86,.9);
+	color: rgba(255,255,255,0.8);
+	background: rgba(230,167,86,.9);
 }
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatPeople --- */
 .chatMain .chatPeople {
-  top: 160px;
-  bottom: 80px;
-  border-left: 0;
+	top: 160px;
+	bottom: 80px;
+	border-left: 0;
 }
 .chatPeople .chatPeopleTitle {
-  color: rgba(255,255,255,.9);
+	color: rgba(255,255,255,.9);
 }
 .chatPeople ul.chatPeopleList li.hover {
-  border-top-color: transparent;
-  border-bottom-color: transparent;;
-  background-color: rgba(47,23,15,.9);
+	border-top-color: transparent;
+	border-bottom-color: transparent;
 }
 .chatUserMenuItems {
-  margin-left: 66px;
+	margin-left: 66px;
 }
 .chatUserMenu {
-  padding: 8px 0;
-  width: 170px;
+	padding: 8px 0;
+	width: 170px;
 }
 .chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li {
-  width: 24px;
-  height: 24px;
-  float: left;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  margin: 0 3px 2px 0;
-  cursor: pointer;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin: 0 3px 2px 0;
+	cursor: pointer;
 }
 .chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li a {
-  text-decoration: none;
-  font-size: 0 !important;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin:0;
-  padding: 0;
-  line-height: 0;
-  text-align: center;
-  line-height: 25px;
-  background-image: none;
+	text-decoration: none;
+	font-size: 0 !important;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin:0;
+	padding: 0;
+	text-align: center;
+	line-height: 25px;
+	background-image: none;
 }
 .chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li a:before {
-  display: inline-block;
-  font-family: Linearicons-Free;
-  font-size: 14px !important;
-  color: #e6a756;
-  width: 16px;
-  height: 16px;
+	display: inline-block;
+	font-family: Linearicons-Free;
+	font-size: 14px !important;
+	color: #e6a756;
+	width: 16px;
+	height: 16px;
 }
 /* ---------------------------- */
 .chatUserMenuInfo::before {
-  content:'\e82a';
+	content:'\e82a';
 }
 .chatUserMenuPrivate::before {
-  content:'\e82b';
+	content:'\e82b';
 }
 .chatUserMenuPhotos::before {
-  content:'\e827';
+	content:'\e827';
 }
 .chatUserMenuGift::before {
-  content:'\e844';
+	content:'\e844';
 }
 .chatUserMenuIgnore::before {
-  content:'\e86e';
+	content:'\e86e';
 }
 .chatUserMenuBan::before {
-  content:'\e880';
+	content:'\e880';
 }
 /* ---------------------------- */
 
 /* ---------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------- content --- */
 .center-wrapper .content form {
-  position: fixed;
-  padding: 3rem;
-  margin: .5rem;
-  top:20%;
-  left:20%;
-  background-color: rgba(255,255,255,.85);
-  text-align: center;
-  border-radius: .25rem;
-  z-index: 1;
+	position: fixed;
+	padding: 3rem;
+	margin: .5rem;
+	top:20%;
+	left:20%;
+	background-color: rgba(255,255,255,.85);
+	text-align: center;
+	border-radius: .25rem;
+	z-index: 1;
 }
 .center-wrapper .content form::before {
-  border-radius: .5rem;
-  content: '';
-  position: absolute;
-  top: -.5rem;
-  bottom: -.5rem;
-  left: -.5rem;
-  right: -.5rem;
-  border: .25rem solid rgba(255,255,255,.85);
-  z-index:-1;
+	border-radius: .5rem;
+	content: '';
+	position: absolute;
+	top: -.5rem;
+	bottom: -.5rem;
+	left: -.5rem;
+	right: -.5rem;
+	border: .25rem solid rgba(255,255,255,.85);
+	z-index:-1;
 }
 #account-info {
-  font-size: 18px !important;
-  font-family: Raleway;
-  text-transform: uppercase;
-  font-weight: 800;
-  line-height: 1.2;
-  color: inherit;
+	font-size: 18px !important;
+	font-family: Raleway;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 1.2;
+	color: inherit;
 }
 #email {
-  display: block;
-  font-size: 24px !important;
-  font-weight: 200;
-  margin-bottom: 1.5rem;
+	display: block;
+	font-size: 24px !important;
+	font-weight: 200;
+	margin-bottom: 1.5rem;
 }
 .justify a,
 #join-chat-button2 {
-  background-color: #e6a756;
-  border-color: #e6a756;
+	background-color: #e6a756;
+	border-color: #e6a756;
 }
 .center-wrapper .content:after {
-  position: absolute;
-  top:0;
-  left:0;
-  height: 100%;
-  width:100%;
-  margin: auto;
-  content:'';
-  background: url(https://madeas.ru/wp-content/uploads/2018/02/bg_beans_form.jpg) 90% 50% no-repeat;
-  background-size: 50%;
-  border-radius: .25rem;
-  z-index: -1;
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	width:100%;
+	margin: auto;
+	content:'';
+	background: url(https://madeas.ru/wp-content/uploads/2018/02/bg_beans_form.jpg) 90% 50% no-repeat;
+	background-size: 50%;
+	border-radius: .25rem;
+	z-index: -1;
 }
 #account-info a {
-  position: absolute;
-  bottom: 4px;
-  right: 4px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  width: 30px;
-  height: 30px;
-  font-size: 0 !important;
-  background: rgba(47,23,15,.9);
-  color:#fff;
-  text-decoration: none;
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	width: 30px;
+	height: 30px;
+	font-size: 0 !important;
+	color:#fff;
+	text-decoration: none;
 }
 #account-info a:before {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top:0;
-  left:0;
-  padding-top:2px;
-  padding-left:2px;
-  font-family:Linearicons-Free;
-  content:'\e820';
-  font-size: 20px;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
-}
-/* ---------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- content --- */
-#scrollBottomBox {
-  right: 230px;
-  left: auto !important;
-  width:30px;
-  height: 30px;
-  padding:0;
-  background-color: #df902a;
-  border-color:rgba(230,167,86,.1);
-  font-size: 0 !important;
-}
-#scrollBottomBox::before {
-  position: relative;
-  vertical-align: top;
-  animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
-  font-family:Linearicons-Free;
-  content:'\e874';
-  font-size:16px!important;
-  color:#fff;
-  background: none;
-}
-#scrollBottomBox:hover::before {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-@-webkit-keyframes bouncing{
-  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
-  100% { bottom: 25px; box-shadow: 0 30px 30px rgba(0,0,0,0.1); }
-}
-@keyframes bouncing{
-  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
-  100% { bottom: 25px; box-shadow: 0 30px 30px rgba(0,0,0,0.1); }
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:0;
+	left:0;
+	padding-top:2px;
+	padding-left:2px;
+	font-family:Linearicons-Free;
+	content:'\e820';
+	font-size: 20px;
 }
