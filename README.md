@@ -32,5 +32,6 @@ Everything is simple:
 
 <b>About</b> - https://madeas.ru/chatemplate/about/ 
 
-<b>Template directory</b> - https://madeas.ru/product-category/templates/
+<b>Template directory</b> - https://madeas.ru/product-category/templates/ 
+
 <b>Additions</b> - https://madeas.ru/product-category/additions/
