@@ -169,6 +169,12 @@ body {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+ input[type="text"]:focus,
+ input[type="button"]:focus,
+ input[type="submit"]:focus,
+ select:focus {
+	outline:none;
+}
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatHeader --- */
 .chatHeader {
