@@ -1,14 +1,14 @@
 /*
-Theme Name: Сoffee Beans
+Theme Name: Arabika
 Theme URI: https://madeas.ru/product/beans/
 Author: Andrej Sharapov 
 Author URI: https://madeas.ru/ 
-Description: Сoffee beans - а nice and comfortable chat template with a nice design. Intricate coffee shades, neat lines, icons, mouth-watering images and much more.
+Description: Arabika - а nice and comfortable chat template with a nice design. Intricate coffee shades, neat lines, icons, mouth-watering images and much more.
 Version: 1.0.0
 
 License: GNU General Public License v3 or later 
 License URI: http://www.gnu.org/licenses/gpl.html 
-Text Domain: coffee-beans
+Text Domain: arabika
 Tags: madeas, chatemplate, design, template, chatovod, coffee-beans, chat-colors, chat, full-width-template, new-web-design, andrej-sharapov, css
 
 This theme, like Chatovod, is licensed under the GPL. 
@@ -25,9 +25,6 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 * {
   font-size: 0pt !important;
   font-size: 14px!important;
-}
-body {
-	color: #b2b2b2;
 }
 .chat {
  	border:0;
@@ -249,10 +246,6 @@ body {
 }
 .chatSystemMessage {
 	font-style: normal !important;
-}
-.chatUserFrom,
-.chatPeople ul.chatPeopleList li a.chatUser {
-	color: #e6a756;
 }
 .chatMessage .chatTime {
 	color: rgba(255,255,255,.5);
@@ -725,7 +718,8 @@ font-size: 11px !important;
 	margin-bottom: 1.5rem;
 }
 .justify a,
-#join-chat-button2 {
+#join-chat-button2,
+#sign-in-label a{
 	background-color: #e6a756;
 	border-color: #e6a756;
 }
@@ -751,6 +745,7 @@ font-size: 11px !important;
 	font-size: 0 !important;
 	color:#fff;
 	text-decoration: none;
+	box-shadow: none !important;
 }
 #account-info a:before {
 	width: 30px;
@@ -763,4 +758,29 @@ font-size: 11px !important;
 	font-family:Linearicons-Free;
 	content:'\e820';
 	font-size: 20px;
+}
+
+@media (max-width:768px) {
+	.chatHeader .chatTitle {
+   		font-size: 24px !important;
+	}
+	.chatHeader,
+	.chatTabs, 
+	.chatTabs ul {
+		height: 40px;
+ 	}
+	.chatTabs {
+    		top: 40px;
+	}
+	.chatMain .chatMessages, 
+	.chatMain .chatPrivateMessages {
+		top: 115px;
+	}
+	.chatTabs > ul > li.chatTab > a, 
+	.chatTabs > ul > li.chatTab.chatTabActive > a, 
+	.chatTabs > ul > li.chatTab > a:hover, 
+	.chatTabs > ul > li.chatTab > a.active, 
+	.chatTabs ul li.appTab a {
+    		line-height: 40px;
+	}
 }
