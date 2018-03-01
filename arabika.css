@@ -198,8 +198,15 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 }
 .chatTabs ul {
 	top: 0;
-	margin: auto;
+	margin: auto 25px;
 	text-align: center;
+}
+.chatTabsRight.chatTabsLRActive,
+.chatTabsLeft.chatTabsLRActive {
+	width: 25px;
+	text-align: center;
+	background-color: rgba(230,167,86,.54);
+	background-position: 6px 12px;
 }
 .chatTabs,
 .chatTabs ul {
@@ -778,7 +785,7 @@ font-size: 11px !important;
 		height: 40px;
  	}
 	.chatTabs {
-    		top: 40px;
+    		top: 60px;
 	}
 	.chatMain .chatMessages, 
 	.chatMain .chatPrivateMessages {
