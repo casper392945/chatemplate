@@ -273,7 +273,7 @@ input[type=button]:focus,
 	top: 0;
 	bottom: 0;
 	background-color: #fff;
-	background-image: linear-gradient(45deg, rgba(47,23,15,.35),rgba(47,23,15,.15)), url(http://demo.sunrisetheme.com/eion/wp-content/uploads/2016/09/iStock_000064923589_Full.jpg);
+	background-image: linear-gradient(45deg, rgba(47,23,15,.35),rgba(47,23,15,.15)), url(http://demo.madeas.ru/img/chat/bg/bg-flowers.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -297,7 +297,7 @@ input[type=button]:focus,
 }
 .chatTabs ul li.appTab a {
     	background-color: transparent;
-	background-image: url(https://img-fotki.yandex.ru/get/5811/104166334.77/0_63eff_cea2eae6_S) !important;
+	background-image: url(http://demo.madeas.ru/img/chat/flower.png) !important;
     	background-position: 4px 4px;
     	background-repeat: no-repeat;
     	background-size: 16px;
@@ -319,6 +319,19 @@ input[type=button]:focus,
 	padding-top:7px;
 	padding-bottom:7px;
 	width: 200px;
+}
+.chatPeople ul.chatPeopleList li a.chatUserSex2 b::before {
+    	width: 20px;
+   	height: 20px;
+    	content: '';
+    	position: absolute;
+    	top: 7px;
+    	left: -5px;
+  	background-color: transparent;
+  	background-image: url(http://demo.madeas.ru/img/chat/flower-16x16.png);
+  	background-position: 0 0;
+  	background-repeat: no-repeat;
+  	background-size: 12px 12px;
 }
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatFooter --- */
