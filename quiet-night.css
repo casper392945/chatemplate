@@ -4,7 +4,7 @@ Theme URI: https://madeas.ru/product/quiet-night/
 Author: Andrej Sharapov 
 Author URI: https://madeas.ru/ 
 Description: Quiet night is a template for a completely new format for Chatovod. Chats made in dark colors can be quite popular and really capable of looking elegant and creative. Registration of this type can be fully used to work on client sites, but it does not suit everyone. 
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v3 or later 
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: quiet-night
@@ -44,17 +44,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .smilesBox::-webkit-scrollbar-thumb,
 .vscrollable::-webkit-scrollbar-track,
 .vscrollable::-webkit-scrollbar-thumb,
+ input[type="text"],
+ input[type="submit"],
+.chatSendExitPanel select,
+.chatSendButton,
 .chatMessageToMe .chatToUser {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
 #chatUserMiniMenu,
- input[type="text"],
-.chatSendButton,
- input[type="submit"],
 .chatPrivateMessages.vscrollable,
-.chatSendExitPanel select,
 .content form,
 .chatTopLineWrapper > ul > li > ul,
 .chatSendExitPanel select,
@@ -100,31 +100,34 @@ Use it to make something cool, have fun, and share what you've learned with othe
   	background-size: 40% auto, cover; 
     	opacity: 1;
 }
- input[type="text"]:focus {
-  	background: #fff;
-  	color: #131415;
-}
  input[type="text"] {
-  	padding:0 13px;
-  	line-height: 25px;
-  	height: 25px;
-  	border: 2px solid #6b6c6d;
+  	padding:0 5px;
+  	line-height: ;
+  	height: 2em;
+  	border: 2px solid #424242;
   	background: #3b3c41;
 	color: #fff;
+}
+ input[type="text"]:focus {
+  	background: rgba(255,255,255,.7);
+  	color: #131415;
 }
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatHeader --- */
 
 .chatHeader {
-  	width: calc(100% - 120px - 150px);
-  	top:0;
-  	left: 0;
+	width: 100%;
+  	top:45px;
+    	left: ;
+    	right: 20px;
   	transition: all 0.3s ease;
   	text-align: right;
   	height: 63px;
   	background-color: transparent;
+  	border-bottom-color: transparent;
+	z-index:33;
 }
-.chatTitle {
+.chatHeader .chatTitle {
   	background: linear-gradient(to right, rgba(44,46,50,1), rgba(44,46,50,1), rgba(44,46,50,.9));
   	border-top-left-radius: 9px;
   	border-top-right-radius: 9px;
@@ -133,13 +136,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   	height:65px;
   	left:5px;
   	right:20px;
-  	top:45px;
+  	top:0;
   	padding-top:10px;
   	text-align: center;
   	font-size:19pt;
   	font-weight: 400!important;
   	text-shadow: none!important;
-  	z-index:33;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -148,7 +150,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .chatHeader .chatTopLine {
   	background-color: transparent;
   	border:0;
-  	margin-top:20px;
+  	margin-top:-20px;
   	margin-right:17px;
   	z-index:101;
 }
@@ -268,7 +270,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   	right:20px;
   	bottom: 115px !important;
   	border-left:0;
-  	z-index:34;
+  	z-index:14;
 }
 .chatPeople .chatPeopleTitle {
   	width:100%;
@@ -276,10 +278,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .chatPeople.vscrollable::after {
   	position:absolute;
-  	bottom:7px;
+  	bottom:0;
   	right:7px;
-  	content:'ChaTemplate';
-  	color:rgba(255,255,255,.07);
+  	content:'© 2018 ChaTemplate';
+  	color:rgba(255,255,255,.05);
   	font-size:9px;
 }
 .chatPeople ul.chatPeopleList li.hover {
@@ -330,6 +332,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .chatPopupMenuDiv1, 
 .chatPopupMenuDiv2 {
   	border-color:#333;
+}
+.smilesBox {
+	z-index:101;
 }
 .chatSendButton,
  input[type="submit"],
