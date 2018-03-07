@@ -1,0 +1,20 @@
+
+a[title="Включить снег"],
+a[title="Выключить снег"] {
+  top: 50px!important;
+  right: 169px !important;
+  width:16px;
+  height:16px;
+  font-size: 0 !important;
+  z-index: 2018;
+}
+
+a[title="Включить снег"]::after,
+a[title="Выключить снег"]::after {
+  width:16px;
+  height:16px;
+  position: absolute;
+  top: 0;
+  left:0;
+  content: url(//st1.chatovod.ru/i/widget/gifts/flake_16.png);
+}
