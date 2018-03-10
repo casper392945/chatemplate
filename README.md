@@ -1,6 +1,6 @@
 # ChaTemplate - CSS Templates free for Chatovod.ru
 <br />
-<img src="https://madeas.ru/wp-content/uploads/2017/10/facebanner.png">
+<img src="https://madeas.ru/wp-content/uploads/2018/03/bg-dog.png">
 <br />
 <br />Project Name: ChaTemplate
 <br />Project URI: https://madeas.ru/chatemplate/
