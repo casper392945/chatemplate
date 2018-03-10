@@ -1,6 +1,6 @@
 # ChaTemplate - CSS Templates free for Chatovod.ru
-<br />
-<img src="https://madeas.ru/wp-content/uploads/2018/03/bg-dog.png">
+
+<img src="https://madeas.ru/wp-content/uploads/2018/03/ch-mail-form.png">
 <br />
 <br />Project Name: ChaTemplate
 <br />Project URI: https://madeas.ru/chatemplate/
@@ -22,7 +22,7 @@
 <br />
 <br />
 
-<h3>How to put a template?</h3>
+## How to put a template?
 Everything is simple:
 <ul>
 <li>select template</li>
