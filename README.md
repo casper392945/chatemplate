@@ -1,7 +1,7 @@
 # ChaTemplate - CSS Templates free for Chatovod.ru
 
-<img src="https://madeas.ru/wp-content/uploads/2018/03/ch-mail-form.png">
-<br />
+![chatemplate](https://madeas.ru/wp-content/uploads/2018/03/ch-mail-form.png)
+
 <br />Project Name: ChaTemplate
 <br />Project URI: https://madeas.ru/chatemplate/
 <br />Author: Andrej Sharapov
