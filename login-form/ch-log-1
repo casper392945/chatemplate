@@ -1,10 +1,17 @@
+/*!
+* ch-log-1.css -https://madeas.ru/product/ch-log-1
+* Version - 1.0.0
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2018 Andrej Sharapov
+*/
 
 .content form {
-position: relative;
-background: #fff;
-width: 240px;
-padding: 15px;
-outline: 15px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    background: #fff;
+    width: 240px;
+    padding: 15px;
+    outline: 15px solid rgba(255, 255, 255, 0.15);
 }
 
 #sign-in-label a,
@@ -24,7 +31,7 @@ outline: 15px solid rgba(255, 255, 255, 0.15);
     text-align: center;
     text-decoration: none;
     vertical-align: baseline;
-
+        
     -webkit-border-radius: .25em;
     -moz-border-radius: .25em;
     border-radius: .25em;
@@ -60,40 +67,39 @@ outline: 15px solid rgba(255, 255, 255, 0.15);
 #sign-in-label a:focus,
 .chatFull a:focus,
 #join-chat-button2:focus {
-outline: none;
+    outline: none;
 }
 #account-info {
-text-align: center;
+    text-align: center;
 }
 #email {
-display: block;
+    display: block;
 }
 .content form #nick, 
 .content form #captcha-input {
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
-  padding-left: .5em;
-  width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+    padding-left: .5em;
+    width: 100%;
 }
 #new-nick-label, 
 #captcha-label,
 #existing-nick-label {
-  box-sizing: border-box;
-  position: relative;
-  font-size: 0.8em;
-  color: #ccc;
-  font-weight: normal;
-  z-index: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0.8em;
+    color: #ccc;
+    font-weight: normal;
 }
 #new-nick-label, 
 #captcha-label {
-  display: block;  
+    display: block;  
 }
 .content form input[type="text"]:focus {
-  border-color: #ccc!important;
+    border-color: #ccc!important;
 }
 #captcha-block a.ajax {
-background: transparent !important;
-cursor: default;
+    background: transparent !important;
+    cursor: default;
 }
