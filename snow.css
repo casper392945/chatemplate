@@ -1,18 +1,21 @@
 /*
-Theme Name: Snow ChaTemplate
+Theme Name: Snow
 Theme URI: https://madeas.ru/product/snow/
 Author: Andrej Sharapov 
 Author URI: https://madeas.ru/ 
 Description: Snow ChaTemplate is an evolving project where you can find an interesting template to improve your favorite chatovod chat service, and also join a huge community of users who want to transform their chat. 
-Version: 1.0.0
-
+Version: 1.0.3
 License: GNU General Public License v2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 Text Domain: snow
 Tags: madeas, chatemplate, design, template, chatovod, snow, chat-colors, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov
-
 This theme, like Chatovod, is licensed under the GPL. 
 Use it to make something cool, have fun, and share what you've learned with others. 
+*
+* ch-log-1.css -https://madeas.ru/product/ch-log-1
+* Version - 1.0.0
+*
+* Copyright (c) 2018 Andrej Sharapov
 */
 
 .chat {
@@ -33,6 +36,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #profile-menu a,
 .chatMenuItemWithSeparator a {
   height:15px!important;
+}
+.chatPopupMenuDiv2 {
+  background-color: #fff;
 }
 .chatMain .chatPeople {
   border-left: 0;
@@ -346,7 +352,6 @@ input[type="submit"]:active {
 .chatTime {
   padding-right: 12px;
 }
-
 .chatUserMenuItems {
    float: left;
   margin-left: 16px;
@@ -361,144 +366,18 @@ input[type="submit"]:active {
   right: 175px !important;
   bottom: 6px;
 }
-
 .chatSendButton {
   width: 26px !important;
   height: 26px!important;
   font-size:0!important;
   background: transparent url(http://madeas.usite.pro/ChaTemplate/icon/arrow_enter.png) center center no-repeat / 20px 20px;
 }
-.content form {
-  position: relative;
-  background: #fff;
-  width: 240px;
-  padding: 15px;
-  outline: 15px solid rgba(255, 255, 255, 0.15);
-}
-.content form #nick, 
-.content form #captcha-input {
-  -webkit-transition: border-color;
-  -moz-transition: border-color;
-  transition: border-color;
-  box-sizing: border-box;
-  border-radius: 3px;
-  border: 1px solid #ddd;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
-  font-family: "Open Sans",Arial,sans-serif;
-  padding: 0.5em;
-  width: 100%;
-  outline: none;
-  margin-top: 1em;
-}
-#new-nick-label, 
-#captcha-label {
-  position: absolute;
-  left: 20px;
-  background-color: #fff;
-  font-size: 0.8em;
-  color: #ccc;
-  padding: 0 0.3em;
-  font-weight: normal;
-  cursor: text;
-  pointer-events: none;
-  z-index:0;
-}
-#new-nick-label {
-  top: 64px;
-}
-#captcha-label {
-  top: 160px;
-}
-#existing-nick-label {
-  margin-bottom: -10px;
-}
-.content form input[type="text"]:focus {
-  border-color: #ccc!important;
-}
-
-#sign-in-label a, 
-#join-chat-button, 
-#join-chat-button2, 
-.dialog-buttons button {
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-    display: inline-block;
-    min-height: 1em;
-    outline: none;
-    border: 1px solid rgba(34,36,38,.15);
-    vertical-align: baseline;
-    padding: 0.75em 1.25em;
-    text-transform: none;
-    text-shadow: none;
-    font-weight: normal;
-    line-height: 1em;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    border-radius: 3px;
-    -webkit-transition: 0.1s all linear;
-    -moz-transition: 0.1s all linear;
-    -ms-transition: 0.1s all linear;
-    -o-transition: 0.1s all linear;
-    transition: 0.1s all linear;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-}
-#sign-in-label a:hover, 
-#join-chat-button:hover, 
-#join-chat-button2:hover, 
-.dialog-buttons button:hover {
-    border-color: rgba(34,36,38,.35);
-    background-image: -moz-linear-gradient(top, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.08) 100%);
-    background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
-    background-image: -o-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
-    background-image: -ms-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
-    text-decoration: none;
-    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
-    cursor: pointer;
-}
-#sign-in-label a:active, 
-#join-chat-button:active, 
-#join-chat-button2:active, 
-.dialog-buttons button:active {
-    position: relative;
-    top: 1px;
-}
-#sign-in-label a:active, 
-#join-chat-button:active, 
-#join-chat-button2:active, 
-.dialog-buttons button:active {
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%);
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
-    background-image: -o-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
-    text-decoration: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    cursor: pointer;
-}
-#sign-in-label a {
-  display: inherit;
-  width: 100%;
-  background-color: #fff;
-  color: #333;
-}
 .chatLinkVip {
   padding-left: 21px;
 }
 .chatLinkVip::after {
   position:absolute;
-  content:'Vip';
+  content:'vip';
   border-bottom:1px dotted #000;
 }
 .chatLinkModerate {
@@ -510,7 +389,7 @@ input[type="submit"]:active {
 
 .chatLinkModerate::before {
   position:absolute;
-  content:'Moder';
+  content:'модер';
   border-bottom:1px dotted #000;
 }
 .chatLinkMore {
@@ -519,4 +398,100 @@ input[type="submit"]:active {
   background-image: url('http://madeas.usite.pro/ChaTemplate/icon/icon_plus.png')!important;
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+.content form {
+    position: relative;
+    background: #fff;
+    width: 240px;
+    padding: 15px;
+    outline: 15px solid rgba(255, 255, 255, 0.15);
+}
+#sign-in-label a,
+.chatFull a,
+#join-chat-button2,
+#join-chat-button {
+    box-sizing: border-box;
+    display: inherit;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(34,36,38,.15);
+    color: #333;
+    cursor: pointer;
+    line-height: 1em;
+    margin-top: .5em;
+    min-height: 1em;
+    padding: .75em 1.25em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;        
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    -webkit-transition: 0.1s all linear;
+    -moz-transition: 0.1s all linear;
+    transition: 0.1s all linear;
+}
+#sign-in-label a:hover,
+.chatFull a:hover
+#join-chat-button2:fover,
+#join-chat-button:hover {
+    border-color: rgba(34,36,38,.35);
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.08) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+}
+#sign-in-label a:active,
+.chatFull a:active,
+#join-chat-button2:active,
+#join-chat-button:active {
+    position: relative;
+    top: 1px;
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#sign-in-label a:focus,
+.chatFull a:focus,
+#join-chat-button2:focus {
+    outline: none;
+}
+#account-info {
+    text-align: center;
+}
+#email {
+    display: block;
+}
+.content form #nick, 
+.content form #captcha-input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+    padding-left: .5em;
+    width: 100%;
+}
+#new-nick-label, 
+#captcha-label,
+#existing-nick-label {
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0.8em;
+    color: #ccc;
+    font-weight: normal;
+}
+#new-nick-label, 
+#captcha-label {
+    display: block;  
+}
+.content form input[type="text"]:focus {
+    border-color: #ccc!important;
+}
+#captcha-block a.ajax {
+    background: transparent !important;
+    cursor: default;
 }
