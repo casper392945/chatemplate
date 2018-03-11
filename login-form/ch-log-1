@@ -13,7 +13,6 @@
     padding: 15px;
     outline: 15px solid rgba(255, 255, 255, 0.15);
 }
-
 #sign-in-label a,
 .chatFull a,
 #join-chat-button2 {
@@ -30,17 +29,14 @@
     padding: .75em 0;
     text-align: center;
     text-decoration: none;
-    vertical-align: baseline;
-        
+    vertical-align: baseline;        
     -webkit-border-radius: .25em;
     -moz-border-radius: .25em;
     border-radius: .25em;
-
     -webkit-transition: 0.1s all linear;
     -moz-transition: 0.1s all linear;
     transition: 0.1s all linear;
 }
-
 #sign-in-label a:hover,
 .chatFull a:hover
 #join-chat-button2:fover {
