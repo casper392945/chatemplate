@@ -1,0 +1,83 @@
+.content form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: auto;
+    margin-left: -135px;
+    margin-top: -150px;
+    padding: 30px;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: linear-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    z-index: 0;
+    box-shadow:
+        0 0 2px rgba(0, 0, 0, 0.2),
+        0 1px 1px rgba(0, 0, 0, .2),
+        0 3px 0 #fff,
+        0 4px 0 rgba(0, 0, 0, .2),
+        0 6px 0 #fff,
+        0 7px 0 rgba(0, 0, 0, .2);
+}
+.content form::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border: 1px dashed #ccc;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    -moz-box-shadow: 0 0 0 1px #ccc;
+    -webkit-box-shadow: 0 0 0 1px #ccc;
+    box-shadow: 0 0 0 1px #ccc;
+}
+#nick,
+#captcha-input {
+background-color: #f1f1f1;
+    color: #424242;
+    height: 3em;
+    padding-left: .25em;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+}
+#nick:focus,
+#captcha-input:focus {
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+    -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+#sign-in-label a,
+#account-info a {
+    display: inherit;
+    width: 100%;
+    padding: 0.75em 0;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #424242;
+
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+
+    -webkit-transition: 0.3s all linear;
+    -moz-transition: 0.3s all linear;
+    transition: 0.3s all linear;
+}
+#account-info a {
+    margin-top: .5em;
+}
