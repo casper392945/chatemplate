@@ -48,6 +48,10 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 .vscrollable::-webkit-scrollbar {
 	width: 8px;
 }
+.smilesBox::-webkit-scrollbar-track, 
+.vscrollable::-webkit-scrollbar-track {
+	background: rgba(255,255,255,.05);
+}
 .smilesBox::-webkit-scrollbar-thumb, 
 .vscrollable::-webkit-scrollbar-thumb, 
 .smilesBox::-webkit-scrollbar-thumb:hover, 
@@ -57,6 +61,11 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 .smilesBox::-webkit-scrollbar-thumb:active, 
 .vscrollable::-webkit-scrollbar-thumb:active {
 	background-color: rgba(230,167,86,.9);
+}
+.smilesBox::-webkit-scrollbar-thumb,
+.smilesBox::-webkit-scrollbar-track {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .chatSendLinksPanel > a > span, 
 .chatSoundPanel > a > span,
@@ -88,7 +97,8 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 .chatTopLineWrapper > ul > li > a,
 .chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li,
 .chatUserAvatar,
-#account-info a:before {
+#account-info a:before,
+#chatUserMiniMenu .buttons div::before {
 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
 	background: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
 	background: -o-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(230,167,86,.09) 100%);
@@ -109,7 +119,8 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 .chatPopupMenuContent input[type="submit"]:active,
 .justify a:active,
 .chatTopLineWrapper > ul > li > a:active,
-.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li:active{
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li:active,
+#chatUserMiniMenu .buttons div:active::before {
 	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.08) 0%, rgba(255,255,255,0.08) 100%);
 	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.08) 0%, rgba(255,255,255,0.08) 100%);
 	background-image: -o-linear-gradient(rgba(255, 255, 255, 0.08) 0%, rgba(255,255,255,0.08) 100%);
@@ -206,7 +217,7 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 	width: 25px;
 	text-align: center;
 	background-color: rgba(230,167,86,.54);
-	background-position: 6px 12px;
+	background-position: 6px center;
 }
 .chatTabs,
 .chatTabs ul {
@@ -429,10 +440,14 @@ Linearicons icons have been supported along to the fine work of Perxis (@KingPer
 	width: 320px !important;
 	min-height: 95px;
 }
-.chatPopupMenuDiv2,
-.smilesBox {
+.chatPopupMenuDiv2 {
 	background: rgba(47,23,15,1);
 	padding: 6px;
+}
+.smilesBox {
+	border-top: 1px solid rgba(255, 255, 255, 0.18);
+	background: rgba(47,23,15,1);
+	padding: 6px 0 6px 6px;
 }
 .chatPopupMenuDiv2 .chatPopupMenuContent a,
 .chatPopupMenuDiv2 .chatPopupMenuContent p,
@@ -631,6 +646,9 @@ font-size: 11px !important;
 	border-top-color: transparent;
 	border-bottom-color: transparent;
 }
+.chatPeople ul.chatPeopleList li.hover .chatUser {
+	color: #e6a756;
+}
 .chatUserMenuItems {
 	margin-left: 66px;
 }
@@ -766,14 +784,85 @@ font-size: 11px !important;
 	content:'\e820';
 	font-size: 20px;
 }
-.chatFooterWrapper::after {
+ body:not(.has-nick) .chatFooterWrapper::after {
   position:absolute;
   top:2px;
   right:5px;
-  content:'© 2018 ChaTemplate';
-  color:rgba(255,255,255,.05);
+  content:'© 2018 ChaTemplate by Andrej Sharapov';
+  color:rgba(255,255,255,.07);
   font-size:9px;
 }
+.chatUserMenuInfo,
+.chatUserMenuPrivate,
+.chatUserMenuPhotos,
+.chatUserMenuGift,
+.chatUserMenuIgnore,
+.chatUserMenuBan {
+    background-image: none;
+}
+#chatUserMiniMenu .chatUserFrom,
+#chatUserMiniMenu .chatUserFrom span {
+	color: #e6a756 !important;
+	line-height: 24px;
+	margin-right: 5px;
+}
+#chatUserMiniMenu .buttons div {
+	width: 24px;
+	height: 24px;
+	margin-left: 3px;
+	text-align: center;
+	line-height: 20px;
+}
+#chatUserMiniMenu .buttons div::before {
+	display: inline-block;
+	border-radius: 3px;
+	color:#e6a756;
+	font-family: Linearicons-Free;
+	font-size: 13px !important;
+	padding-top:2px;
+	width: 24px;
+	height: 24px;
+}
+/* ---------------------------- */
+.chatUserMenuInfo::before {
+	content:'\e82a';
+}
+.chatUserMenuPrivate::before {
+	content:'\e82b';
+}
+.chatUserMenuPhotos::before {
+	content:'\e827';
+}
+.chatUserMenuGift::before {
+	content:'\e844';
+}
+.chatUserMenuIgnore::before {
+	content:'\e86e';
+}
+.chatUserMenuBan::before {
+	content:'\e880';
+}
+/* ---------------------------- */
+
+.chatMessage.type-news, 
+.chatMessage.type-event {
+  background: rgba(24, 50, 47, .15);
+  color: #fff;
+  font-style: italic;
+}
+.chatMessage.type-news a, 
+.chatMessage.type-event a {
+  color: #505050;
+  text-decoraion: none;
+}
+.chatMessage.type-ban {
+  background: rgba(255, 152, 0, .27);
+  color: #bd5900;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* ------------- */
 
 @media (max-width:768px) {
 	.chatHeader .chatTitle {
@@ -790,7 +879,7 @@ font-size: 11px !important;
 	.chatMain .chatMessages, 
 	.chatMain .chatPrivateMessages,
 	.chatMain .chatPeople {
-		top: 115px;
+		top: 110px;
 	}
 	.chatTabs > ul > li.chatTab > a, 
 	.chatTabs > ul > li.chatTab.chatTabActive > a, 
