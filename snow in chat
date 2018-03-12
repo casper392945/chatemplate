@@ -1,4 +1,11 @@
 
+/*!
+* Snow in chat
+*
+*
+* Copyright (c) 2018 Andrej Sharapov
+*/
+
 a[title="Включить снег"],
 a[title="Выключить снег"] {
   top: 50px!important;
@@ -28,15 +35,15 @@ a[title="Выключить снег"]::after {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: transparent url() no-repeat 0 0;
+  background: transparent url('image link 16x16') no-repeat 0 0;
   background-size: contain;
 }
 .snowfall-flakes:nth-child(2n)::before {
-  background: transparent url() no-repeat 0 0;
+  background: transparent url('image link 16x16') no-repeat 0 0;
   background-size: contain;
 }
 .snowfall-flakes:nth-child(3n)::before {
-  background: transparent url() no-repeat 0 0;
+  background: transparent url('image link 16x16') no-repeat 0 0;
   background-size: contain;
   vertical-align: bottom;
   -webkit-transform: scaleY(-1);
