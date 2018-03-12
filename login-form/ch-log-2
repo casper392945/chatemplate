@@ -1,3 +1,11 @@
+/*!
+* ch-log-2.css - https://madeas.ru/product/ch-log-2/
+* Version - 1.0.0
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2018 Andrej Sharapov
+*/
+
 .content form {
     position: absolute;
     top: 50%;
