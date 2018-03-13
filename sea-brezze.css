@@ -2,7 +2,7 @@
 Theme Name: Sea Brezze
 Theme URI: https://madeas.ru/product/sea-breeze/
 Author: Andrej Sharapov 
-Author URI: https://madeas.ru/ 
+Author URI: https://madeas.ru/
 Description: Sea breeze is a simple, but at the same time modern template, which easily adapts to your needs and will look great both on the gaming and corporate website.
 Version: 1.0.3
 License: GNU General Public License v2 or later 
@@ -18,178 +18,287 @@ Use it to make something cool, have fun, and share what you've learned with othe
 * Copyright (c) 2018 Andrej Sharapov
 */
 
+@import '//fonts.googleapis.com/css?family=Ubuntu:200,300,300italic,regular,italic,600,600italic,700,700italic,&#038;subset=latin';
+
 .chat {
-  border: 0;
-}
-.chatHeader {
-  top:-40px;
-  transition: .3s linear;
-  background-color: #4d9dcb;
-  border-bottom-color: #1d6d9c;
-}
-.chatHeader:hover {
-  top:0;
-}
-.chatHeader .chatTopLine {
-  background-color:#4d9dcb;
-  border-color:#4d9dcb;
-}
-.chatTopLineWrapper > ul > li > a {
-  text-shadow:1px 1px 0 #1e719e;
-}
-.chatTopLineWrapper > ul > li > a:hover {
-  background-color:#4d9dcb;
-}
-.chatMain {top:4px;}
-.chat a,
-.chatSendButton,
-#join-chat-button,
-#join-chat-button2,
-select {
-  outline:none;
-  cursor:pointer;
-}
-.chatTitle {
-  text-shadow:none!important;
+	font-family: 'Ubuntu';
 }
 .chatHeader,
-.chatTabs > ul > li.chatTab.chatTabActive > a, 
-.chatTabs > ul > li.chatTab > a:hover, 
-.chatTabs > ul > li.chatTab > a.active,
-.chatTopLineWrapper > ul > li > a {
-  color:#fff!important;
-}
-.chatTabs > ul > li > a {
-  text-decoration: none!important;
-}
-.chatTabs > ul > li.chatTab > a {
-  background: #1e5799; /* Old browsers */
-  background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 0%, #6bb0e5 23%, #7db9e8 52%, #5eaae5 75%, #207cca 100%, #207cca 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 0%,#6bb0e5 23%,#7db9e8 52%,#5eaae5 75%,#207cca 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#6bb0e5 23%,#7db9e8 52%,#5eaae5 75%,#207cca 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 );
-  border-radius: 25px;
-}
-.chatPeople ul.chatPeopleList li.hover {
-  border-top:1px solid #D4D2CB;
-  border-bottom:1px solid #D4D2CB;
-}
-.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {background-image:none;}
-.chatTopLineWrapper > ul > li > a { text-shadow: none!important;}
-.chatMessageToMe .chatToUser:hover {opacity:.8}
-.chatLinkVip {
-    margin-right: 33px!important;
-}
-.chatLinkVip::after {
-    position:absolute;
-    content:'vip';
-    margin-left:21px;
-    border-bottom:1px dotted #000;
-}
-.chatLinkModerate { 
-    margin-right: 51px!important;
-}
-.chatLinkModerate::before {
-    position: absolute;
-    content:'модер';
-    margin-left:21px;
-    border-bottom:1px dotted #000;
-}
-.chatLinkMore {
-    padding-left:21px;
-    background: transparent url('http://madeas.usite.pro/ChaTemplate/icon/icon_plus.png') 0 0 no-repeat;
-}
-.chatUserAway[title="Не беспокоить"] {
-  display: none;
-}
-.smilesBox {
-  position: fixed;
-  background: transparent;
-  margin: 1px -3px;
-  width: 335px !important;
-  z-index: 100;
-}
-.smilesBox p {
-  background: #f5f4ef;
-  padding: 5px;
-  color: #333;
-}
-.smilesBox::-webkit-scrollbar,
-.vscrollable::-webkit-scrollbar {width: 9px;}
+.chatTabs,
+.chatMain .chatPeople,
+.chatMain .chatMessages, 
+.chatMain .chatPrivateMessages,
+.smilesBox,
+.smilesBox p,
+.chatTopLineWrapper ul li ul,
+#scrollBottomBox,
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb,
 .smilesBox::-webkit-scrollbar-track,
 .vscrollable::-webkit-scrollbar-track {
-  border-radius: 6px;
-  margin:5px 0;
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
+	border-radius: .25rem;
+}
+
+.chatPopupMenuDiv2,
+.chatFooter {
+	-webkit-border-top-left-radius: .25rem;
+	-moz-border-top-left-radius: .25rem;
+	border-top-left-radius: .25rem;
+	-webkit-border-top-right-radius: .25rem;
+	-moz-border-top-right-radius: .25rem;
+	border-top-right-radius: .25rem;
+}
+.chatMain, 
+.chatEventDiv, 
+.chatPopupMenuDiv1, 
+.chatPopupMenuDiv2, 
+.smilesBox {
+	background-color: #fff;
+}
+#scrollBottomBox {
+	width: 30px;
+	height: 30px;
+	color: transparent;
+	border: 1px solid #ced4da;
+        background-color: rgba(0,123,255, 0.3);
+        background-image: url(//madeas.ru/img/sim/arrow-top.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 16px;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        transform: rotate(180deg);
+        top: auto !important;
+        left: auto !important;
+        bottom: 85px;
+        right: 60px;
+}
+.vscrollable::-webkit-scrollbar,
+.smilesBox::-webkit-scrollbar {
+	width: 8px;
+}
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track {
+        background-color: rgba(0,123,255, 0.08);
 }
 .smilesBox::-webkit-scrollbar-thumb,
 .vscrollable::-webkit-scrollbar-thumb {
-  background-color: #dadada;
-  border-radius: 6px;
+	background-color: rgba(0,123,255, 0.3);
+}
+.smilesBox::-webkit-scrollbar-thumb:hover,
+.vscrollable::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0,123,255, 0.6);
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatHeader --- */
+.chatHeader {
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	background-color: #a3d3ff;
+	border-bottom: 0;
+
+	-webkit-transition: .25s linear;
+	-moz-transition: .25s linear;
+	transition: .25s linear;
+}
+.chatHeader .chatTitle {
+	text-shadow: none;
+	font-size: 18px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ chatTopLine --- */
+.chatHeader .chatTopLine {
+	border-color:  rgba(255,255,255,.04);
+	background-color: transparent;
+}
+.chatTopLineWrapper ul li ul {
+	border: 1px solid #ccc;
+}
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a:hover {
+	background-image: url(//st1.chatovod.ru/i/widget/vborder.png);
+}
+.chatTopLineWrapper > ul > li > a {
+	text-shadow: none;
+}
+#chatMainMenuChatovod {
+	margin-left: -15px !important;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- chatMain --- */
+.chatMain {
+	/* top: 55px; */
+	/* bottom: 85px; */
+	top: 0;
+	bottom: 0;
+	background-size: cover !important;
+	background-position: center center !important;
 }
 .chatTabs {
-  top:-2px;
-  width:100%;
-  background-color:#f5f4ef;
-  border-bottom: 1px solid #bcbcbc;
-  z-index:3;
+	left: 5px;
+	right: 5px;
+	top: 55px; /* main 100% */
+	background-color: #cee7ff;
+	border-bottom: 0;
 }
-.chatTab a {color:#1d6d9c!important;}
-.chatTabs > ul > li.chatTab > a {background-color:#eaeaea;}
+.chatTabs > ul > li > a {
+	text-decoration: none !important;
+}
 .chatTabs > ul > li.chatTab.chatTabActive > a, 
 .chatTabs > ul > li.chatTab > a:hover, 
 .chatTabs > ul > li.chatTab > a.active {
-  background-color:#4d9dcb;
+	background-color: #8cc1fa;
 }
 .chatTabs ul li.chatTab .close {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color:#1d6d9c;
-  background-image: url(//madeas.usite.pro/ChaTemplate/icon/close.png);
-  background-repeat: no-repeat;
-  border-radius:10px;
-  opacity:0;
-  right: -6px;
-  top: 6px;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color:#8cc1fa;
+	background-image: url(//madeas.usite.pro/ChaTemplate/icon/close.png);
+	background-repeat: no-repeat;
+	border-radius:10px;
+	opacity:0;
+	right: -6px;
+	top: 6px;
 }
 .chatTabs ul li.chatTab:hover .close,
-.chatTabs ul li.chatTab .close:hover {opacity:1;}
-.chatTabs > ul > li.chatTab > a {color:#333333;}
-
-.chatPeople.vscrollable {
-  left:-141px!important;
-  top:40px;
-  border-left:0;
-  border-right:1px solid #bcbcbc;
-  transition: .3s linear;
-  background: #f5f4ef;
-  z-index:2;
+.chatTabs ul li.chatTab .close:hover {
+	opacity:1;
 }
-.chatPeople.vscrollable::after {
-  position:absolute;
-  bottom:2px;
-  left:5px;
-  content:'ChaTemplate';
-  color:#E1E1E1;
-  font-size:9px;
+.chatMain .chatMessages, 
+.chatMain .chatPrivateMessages {
+  background-color: rgba(255,255,255,.7);
+  left:35px;
+  right:5px;
+  top:105px; /* main 100% */
+  bottom: 90px; /* main 100% */
+}
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatPeople --- */
+.chatMain .chatPeople {
+	left: -141px !important;
+	/* top:45px; */
+	top: 105px; /* main 100% */
+	bottom: 90px; /* main 100% */
+	border-left:0;
+	background-color: #a3d3ff;
+	border-bottom: 0;
+
+	-webkit-transition: .3s linear;
+	-moz-transition: .3s linear;
+	transition: .3s linear;
+}
+.chatMain .chatPeople::after {
+	position: absolute;
+	bottom: 2px;
+	left: 5px;
+	content: '© 2018 ChaTemplate';
+	color: #E1E1E1;
+	font-size: 9px;
 }
 .chatPeople.vscrollable:hover {
-  left:0!important;
+	left: 5px !important;
 }
-#userGift {margin-left:50px;}
+.chatPeople .chatPeopleTitle {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+	width: .7em;
+	font-size: 12px !important;
+	word-wrap: break-word;
+}
+.chatUsersCount {
+	color: blue;
+	font-weight: bold;
+}
+.chatPeople ul.chatPeopleList li.hover {
+	background-color: #cee7ff;
+	border-top-color: #eee;
+	border-bottom-color:#eee;
+}
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li a {
+	text-decoration: none !important;
+}
+.chatUserAway[title="Не беспокоить"] {
+	display: none;
+}
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatFooter --- */
+.chatFooter {
+        height: 80px;
+	left:5px;
+	right: 5px;
+	background-color: #a3d3ff;
+	border-top: 0;
 
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s  ease-in-out;
+	transition: .25s  ease-in-out;
+}
+.chatLinkVip {
+  	padding-left: 21px;
+}
+.chatLinkVip::after {
+  	content:'vip';
+}
+.chatFooter .chatFooterWrapper .chatPanel div a span {
+	border-bottom-color: transparent;
+}
+.smilesBox {
+	position: fixed;
+	background: transparent;
+	margin: 1px -3px;
+	width: 335px !important;
+	padding: 0 0 2px 3px;
+	z-index: 101;
+}
+.smilesBox p {
+	width:55%;
+	background: #f5f4ef;
+	border:1px solid #ccc;
+	padding: 5px;
+	margin:5px 0;
+	background: #fff url(//madeas.ru/img/sim/arrow_down.png) 95% 5px no-repeat;
+	background-size: 12px;
+}
+.smilesBox a {
+	display: inline-block;
+	max-width: 45px;
+	max-height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+.smilesBox img {
+	max-width: 32px;
+	max-height: 32px;
+	vertical-align: middle;
+}
+.smilesBox > p > a {
+	max-width: none;
+	max-height: none;
+	line-height: inherit;
+	text-align: inherit;
+}
+.chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel {
+        width: auto;
+}
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a {
-  background: url("//madeas.ru/icon/online.png") 0 0 no-repeat;
-  animation: pulse 2s infinite;
-  border-radius: 50%;
-  padding-left: 15px;
-  padding-top: 5px;
-  height: 10px;
-  font-size:0;
+	background: url("//madeas.ru/icon/online.png") 0 0 no-repeat;
+ 	animation: pulse 2s infinite;
+	border-radius: 50%;
+	padding-left: 15px;
+	padding-top: 5px;
+	height: 10px;
+	font-size:0;
 }
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a.muted {
-  background: url("//madeas.ru/icon/offline.png") 0 0 no-repeat;
-  animation: none;
+	background: url("//madeas.ru/icon/offline.png") 0 0 no-repeat;
+	animation: none;
 }
 @-webkit-keyframes pulse {
   0% {
@@ -216,32 +325,121 @@ select {
       box-shadow: 0 0 0 0 rgba(0,0,0, 0);
   }
 }
-.chatPeopleTitle {color:black;}
-.chatMessages.vscrollable,
-.chatPrivateMessages.vscrollable {
-  background-color:rgba(255,255,255,.4);
-  left:20px;
-  right:0;
+.chatFooter .chatFooterWrapper .chatPanel .chatSendTextPanel,
+.chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel,
+.chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel {
+	top: 35px;
 }
-#scrollBottomBox {
-  position: absolute;
-  font-size:0;
-  bottom: 3px;
-  border:0!important;
-  padding:0!important;
-  left: auto !important;
-  right: 40px!important;
-  width: 16px!important;
-  height: 16px!important;
-  border-radius:0!important;
-  background-repeat: no-repeat;
-  background-color: transparent!important;
-  background-image: url(//madeas.usite.pro/ChaTemplate/icon/bottom.png);
-  cursor: pointer;
+.chatFooter .chatFooterWrapper .chatPanel .chatSendTextPanel {
+	right: 245px;
 }
+.chatPopupMenuContent p input[type="submit"] {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	color: transparent;
+	border-radius: .25rem;
+	border: 1px solid #ced4da;
+        background-image: url(//madeas.ru/img/sim/arrow-top.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+	font-size: 1rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	top: 40px;
+	right: 8px;
+        transform: rotate(90deg);
+}
+.chatPopupMenuDiv2::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: #ccc;
+	bottom: -20px;
+	left: 5%;
+}
+.chatPopupMenuDiv2::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: #fff;
+	bottom: -19px;
+	left: 5%;
+	z-index:3;
+}
+.chatPopupMenuDiv1 {
+	position: fixed;
+	background: transparent !important;
+ 	border-color: transparent;
+}
+.chatPopupMenuDiv2 {
+	margin-top:-2px;
+	padding: 2px;
+}
+.chatPopupMenuDiv2 .chatPopupMenuContent p a {
+	text-decoration: none;
+}
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- content --- */
 
-.chatMessageToMe .chatToUser {background-color:#1d6d9c;}
-.chatSendText {outline:none;}
+input[type="text"] {
+   	height: 2em;
+  	font-family: inherit;
+  	padding: .375rem .75rem !important;
+  	font-size: 1rem;
+  	line-height: 1.5;
+ 	color: #495057;
+ 	background-clip: padding-box;
+	border: 1px solid #ced4da !important;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.chatSendExitPanel select,
+#join-chat-button,
+#join-chat-button2,
+.justify a,
+.chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel .chatSendButton {
+	height: 2em;
+	border-radius: .25rem;
+	border: 1px solid #ced4da;
+	font-size: 1rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel .chatSendButton {
+	width: 120px;
+}
+#join-chat-button,
+#join-chat-button2,
+input[type="button"],
+input[type="submit"],
+.chatSendExitPanel select {
+        cursor: pointer;
+}
+#join-chat-button:hover,
+#join-chat-button2:hover,
+.justify a:hover,
+input[type="text"]:focus,
+#join-chat-button:focus,
+#join-chat-button2:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+.chatSendExitPanel select:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #80bdff;
+	outline: 0;
+ 	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+#userGift {margin-left:50px;}
+
+#chatImageUrl {
+	margin-bottom: 5px;
+	width: 83% !important;
+}
 .content form {
     position: absolute;
     top: 50%;
