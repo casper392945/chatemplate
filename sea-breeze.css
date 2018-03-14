@@ -3,7 +3,7 @@ Theme Name: Sea Breeze
 Theme URI: https://madeas.ru/product/sea-breeze/
 Author: Andrej Sharapov 
 Author URI: https://madeas.ru/
-Description: Sea breeze is a simple, but at the same time modern template, which easily adapts to your needs and will look great both on the gaming and corporate website.
+Description: Sea breeze is truly a paradise for your users. This simple and modern chat template easily adapts to your needs and will look great on gaming sites, travel agency websites and serious companies. Choose a background image or communicate without it, change the color of nicks, text and links. Chat will always look great.
 Version: 1.0.4
 License: GNU General Public License v2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
@@ -242,6 +242,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .chatLinkVip {
   	padding-left: 21px;
+  	padding-right: 8px;
 }
 .chatLinkVip::after {
   	content:'vip';
