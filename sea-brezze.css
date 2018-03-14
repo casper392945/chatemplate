@@ -4,7 +4,7 @@ Theme URI: https://madeas.ru/product/sea-breeze/
 Author: Andrej Sharapov 
 Author URI: https://madeas.ru/
 Description: Sea breeze is a simple, but at the same time modern template, which easily adapts to your needs and will look great both on the gaming and corporate website.
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 Text Domain: sea-brezze
@@ -197,7 +197,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	bottom: 2px;
 	left: 5px;
 	content: '© 2018 ChaTemplate';
-	color: #E1E1E1;
+	color: rgba(255,255,255,.5);
 	font-size: 9px;
 }
 .chatPeople.vscrollable:hover {
@@ -213,7 +213,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	word-wrap: break-word;
 }
 .chatUsersCount {
-	color: blue;
+	color: #4d92eb;
 	font-weight: bold;
 }
 .chatPeople ul.chatPeopleList li.hover {
@@ -401,11 +401,12 @@ input[type="text"] {
 .chatSendExitPanel select,
 #join-chat-button,
 #join-chat-button2,
-.justify a,
 .chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel .chatSendButton {
 	height: 2em;
+	background-color: #46b8e9;
 	border-radius: .25rem;
-	border: 1px solid #ced4da;
+	border: 1px solid #46b8e9;
+	color: #fff;
 	font-size: 1rem;
 	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -421,7 +422,6 @@ input[type="submit"],
 }
 #join-chat-button:hover,
 #join-chat-button2:hover,
-.justify a:hover,
 input[type="text"]:focus,
 #join-chat-button:focus,
 #join-chat-button2:focus,
@@ -434,11 +434,37 @@ input[type="submit"]:focus,
 	outline: 0;
  	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
-#userGift {margin-left:50px;}
-
+#userGift {
+	margin-left:50px;
+}
+@keyframes bounceInDown {
+0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}
+0%{opacity:0;transform:translate3d(0,-3000px,0)}
+60%{opacity:1;transform:translate3d(0,25px,0)}
+75%{transform:translate3d(0,-10px,0)}
+90%{transform:translate3d(0,5px,0)}
+to{transform:none}
+}
 #chatImageUrl {
 	margin-bottom: 5px;
 	width: 83% !important;
+}
+.chatFull {
+    animation-duration: .55s;
+    animation-fill-mode: both;
+    animation-name: bounceInLeft;
+}
+.chatFull .transparent {
+	background-color: #cee7ff;
+	opacity: 1;
+}
+@keyframes bounceInLeft {
+0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}
+0%{opacity:0;transform:translate3d(-3000px,0,0)}
+60%{opacity:1;transform:translate3d(25px,0,0)}
+75%{transform:translate3d(-10px,0,0)}
+90%{transform:translate3d(5px,0,0)}
+to{transform:none}
 }
 .content form {
     position: absolute;
@@ -456,13 +482,10 @@ input[type="submit"]:focus,
     -moz-border-radius: .25em;
     border-radius: .25em;
     z-index: 0;
-    box-shadow:
-        0 0 2px rgba(0, 0, 0, 0.2),
-        0 1px 1px rgba(0, 0, 0, .2),
-        0 3px 0 #fff,
-        0 4px 0 rgba(0, 0, 0, .2),
-        0 6px 0 #fff,
-        0 7px 0 rgba(0, 0, 0, .2);
+    animation-duration: 1.7s;
+    animation-fill-mode: both;
+    animation-name: bounceInDown;
+    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
 }
 .content form::before {
     content: '';
