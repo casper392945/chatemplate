@@ -1,19 +1,20 @@
 # ChaTemplate - CSS Templates free for Chatovod.ru  
-![alt](https://madeas.ru/wp-content/uploads/2018/03/ch-mail-form.png "ChaTemplate - CSS для Chatovod")  
 
-Project Name: ChaTemplate
-Project URI: https://madeas.ru/chatemplate/
-Author: Andrej Sharapov
-Author URI: https://madeas.ru/
-Description: ChaTemplate is an evolving project where you can find an interesting template to improve your favorite chatovod chat service, and also join a huge community of users who want to transform their chat.
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl.html
-Text Domain: chatemplate
-Tags: madeas, chatemplate, design, template, chatovod, chat-colors, complement, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov, translation-ready, accessibility-ready, e-commerce, blog, portfolio
-Themes this project, like Chatovod, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-Some templates use:
-Normalizing styles have been helped along thanks to the fine work of Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+![ChaTemplate - CSS для Chatovod](https://madeas.ru/wp-content/uploads/2018/03/ch-mail-form.png "ChaTemplate - CSS для Chatovod")
+
+Project Name: ChaTemplate  
+Project URI: https://madeas.ru/chatemplate/  
+Author: Andrej Sharapov  
+Author URI: https://madeas.ru/  
+Description: ChaTemplate is an evolving project where you can find an interesting template to improve your favorite chatovod chat service, and also join a huge community of users who want to transform their chat  
+License: GNU General Public License v3 or later  
+License URI: http://www.gnu.org/licenses/gpl.html  
+Text Domain: chatemplate  
+Tags: madeas, chatemplate, design, template, chatovod, chat-colors, complement, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov, translation-ready, accessibility-ready, e-commerce, blog, portfolio  
+Themes this project, like Chatovod, is licensed under the GPL  
+Use it to make something cool, have fun, and share what you've learned with others  
+Some templates use:  
+Normalizing styles have been helped along thanks to the fine work of Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/  
 Linearicons icons have been supported along to the fine work of Perxis (@KingPerxis on twitter) https://linearicons.com/
 
 
