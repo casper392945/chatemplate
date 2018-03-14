@@ -1,0 +1,114 @@
+/*!
+* ch-log-2.css - https://madeas.ru/product/ch-log-3/
+* Version - 1.0.0
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2018 Andrej Sharapov
+*/
+
+.content form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -155px 0 0 -160px;
+    width: 300px;
+    height: 310px;
+    color: rgba(255, 255, 255, 0.95);
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 10px;
+    text-decoration: none;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    -webkit-box-shadow: inset -1px 1px 0px rgba(255, 255, 255, 0.3), inset 1px 1px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset -1px 1px 0px rgba(255, 255, 255, 0.3), inset 1px 1px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: inset -1px 1px 0px rgba(255, 255, 255, 0.3), inset 1px 1px 0px rgba(255, 255, 255, 0.3);
+    border: 1px solid #555;
+}
+.content form a {
+    color: #fff;
+    text-decoration: none;
+}
+#join-chat-button2 {
+    color: #fff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: 400!important;
+    padding: .55em 1.25em!important;
+    cursor: pointer;
+}
+#join-buttons a {
+    padding: .55em 1.25em!important;
+    border:1px solid #ddd;
+    text-decoration: none;
+}
+#nick,
+#captcha-input {
+    font-size: 120%;
+    color: #fff;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 45px;
+    padding-left: 40px !important;
+    padding-right: 5px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 0;
+    box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.8) inset;
+}
+#account-info {
+    margin: .5em;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+}
+#account-info a {
+    position: absolute;
+    display: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .75em 1.25em!important;
+    -webkit-animation: slideOut 0.6s ease-in-out 0.9s backwards;
+    -webkit-box-shadow: inset -1px 1px 0px rgba(255, 255, 255, 0.3), inset 1px 0 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset -1px 1px 0px rgba(255, 255, 255, 0.3), inset 1px 0 0px rgba(255, 255, 255, 0.3);
+    box-shadow: inset -1px 1px 0px rgba(255, 255, 255, 0.3), inset 1px 0 0px rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #000;
+    word-spacing: -1;
+    width: 284px;
+    margin-left:-20px;
+    bottom:20px;
+}
+@-webkit-keyframes slideOut {
+	  0% {bottom:-30px; opacity: 0;}
+	  100% {bottom:0px; opacity: 1;}
+}
+#nick {
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/icon/log_user_icon.png) 10px center no-repeat /25px 25px;
+}
+#captcha-input {
+    background: transparent url(http://madeas.usite.pro/ChaTemplate/icon/log_closed_icon.png) 10px center no-repeat /22px 22px;
+}
+#sign-in-label a {
+    display: inherit;
+    width: 100%;
+    padding: 0.75em 0;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff !important;
+    -webkit-transition: 0.1s all linear;
+    -moz-transition: 0.1s all linear;
+    -ms-transition: 0.1s all linear;
+    -o-transition: 0.1s all linear;
+    transition: 0.1s all linear;
+}
