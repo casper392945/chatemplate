@@ -7,8 +7,8 @@
 
 a[title="Включить снег"],
 a[title="Выключить снег"] {
-  top: 50px!important;
-  right: 169px !important;
+  top: 60px!important;
+  right: 210px !important;
   width:16px;
   height:16px;
   font-size: 0 !important;
@@ -23,8 +23,9 @@ a[title="Выключить снег"]::after {
   left:0;
   content: url(//st1.chatovod.ru/i/widget/gifts/flake_16.png);
 }
+
 .snowfall-flakes {
-  opacity: 0.4;
+  visibility: hidden;
 }
 .snowfall-flakes::before {
   content:'';
@@ -34,16 +35,17 @@ a[title="Выключить снег"]::after {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: transparent url('image link 16x16') no-repeat 0 0;
-  background-size: contain;
+  background: transparent url('') no-repeat 0 0;
+  background-size:  16px;
+  visibility: visible;
 }
 .snowfall-flakes:nth-child(2n)::before {
-  background: transparent url('image link 16x16') no-repeat 0 0;
-  background-size: contain;
+  background: transparent url('') no-repeat 0 0;
+  background-size: 16px;
 }
 .snowfall-flakes:nth-child(3n)::before {
-  background: transparent url('image link 16x16') no-repeat 0 0;
-  background-size: contain;
+  background: transparent url('') no-repeat 0 0;
+  background-size:  16px;
   vertical-align: bottom;
   -webkit-transform: scaleY(-1);
-} 
+}
