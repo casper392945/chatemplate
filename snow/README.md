@@ -26,4 +26,4 @@ right: 210px !important;
 
 [id1]: http://demo.madeas.ru/images/snow-1.jpg
 [id2]: http://demo.madeas.ru/images/snow-2.jpg
-[id3]: http://demo.madeas.ru/images/snow-3.jpg
+[id3]: http://demo.madeas.ru/images/snow-4.jpg
