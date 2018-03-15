@@ -7,7 +7,7 @@
 
 a[title="Включить снег"],
 a[title="Выключить снег"] {
-  top: 60px!important;
+  top: 60px !important;
   right: 210px !important;
   width:16px;
   height:16px;
