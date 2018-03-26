@@ -94,6 +94,68 @@ a.ajax {
     font-weight:bold;
     padding: 4px 6px;
 }
+.sendVipLink {
+    padding-left:38px;
+    background:transparent url("../../i/vip.png") no-repeat 0 0;
+}
+.chatRemember {
+    vertical-align:middle;
+}
+.chatOpenIdOption {
+    padding:0 0 1px 24px;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    background-position:4px 0;
+}
+.chatOpenIdGoogle {
+    background-image:url(../../i/openid/google.png);
+}
+#scrollBottomBox {
+	position: absolute;
+	padding: 2px 6px;
+	background-color:#FAF3C0;
+	border: 1px solid #E5DB68;
+	cursor: pointer;
+	opacity: 0.5;
+	text-align:center;
+	font-family: Arial;
+	font-size: 9pt;
+	color: #49441F;
+	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#scrollBottomBox:hover {
+	opacity: 1;
+}
+.msi {
+    float:left;    
+    background:url(../../i/blank.gif) no-repeat top left;
+    width:16px;
+    height:16px;
+}
+.mst {   
+    margin-left:4px;
+}
+.msi_application_double{ background-position: 0 0; }
+.msi_coins{ background-position: 0 -32px; }
+.msi_cross{ background-position: 0 -64px; }
+.msi_group{ background-position: 0 -96px; }
+.msi_hourglass{ background-position: 0 -128px; }
+.msi_ignore{ background-position: 0 -160px; }
+.msi_layout_add{ background-position: 0 -192px; }
+.msi_phone{ background-position: 0 -224px; }
+.msi_photos{ background-position: 0 -256px; }
+.msi_report{ background-position: 0 -288px; }
+.msi_script{ background-position: 0 -320px; }
+.msi_shield{ background-position: 0 -352px; }
+.msi_transmit_blue{ background-position: 0 -384px; }
+.msi_vcard{ background-position: 0 -416px; }
+.msi_vcard_add{ background-position: 0 -448px; }
+.msi_vcard_edit{ background-position: 0 -480px; }
+.msi_wand{ background-position: 0 -512px; }
+
 
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatHeader --- */
@@ -245,6 +307,19 @@ a.ajax {
 .chatMessage {
     padding-left:15px;
 }
+.chatMessage a {
+    position:relative;
+}
+.chatMessage a div.reportspam {
+    display:block;
+    position:absolute;
+    background:transparent url("../../i/widget/reportspam.png") no-repeat 0 0;
+    left:-17px;
+    top:0;
+    width:17px;
+    height:16px;
+    cursor:pointer;
+}
 .chatMessage.type-news, 
 .chatMessage.type-event {
     background: transparent url("../../i/widget/unread.png") no-repeat 4px 8px;
@@ -291,6 +366,30 @@ a.ajax {
     height:16px;
     margin-left:8px;
     cursor:pointer;
+}
+.chatPopupMenuDiv1 {
+    display:none;
+    position:absolute;
+    background-color:#ffffff;
+    border-left:1px solid #CFCFC9;
+    border-right:1px solid #CFCFC9;
+    border-bottom:1px solid #CFCFC9;
+    z-index:98;
+}
+.chatPopupMenuDiv2 {
+    display:none;
+    position:absolute;
+    background-color:#ffffff;
+    border:1px solid #CFCFC9;    
+    z-index:97;
+}
+.chatPopupMenuDiv2 .chatPopupMenuContent {
+    padding:2px 6px;
+    font-size:8pt;
+}
+.chatPopupMenuDiv2 .chatPopupMenuContent p {
+    margin:0;
+    padding:4px 0;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -432,6 +531,11 @@ a.ajax {
     color:#333333;
     word-wrap: break-word;
 }
+.chatUserFrom {
+    cursor:pointer;
+    color:#729219;
+    font-weight:bold;
+}
 .chatUserVip {
     background:transparent url("../../i/widget/vip.gif") no-repeat 0 0;
 }
@@ -482,6 +586,15 @@ a.ajax {
     width:55px;
     height:80px;
     background:transparent url("../../i/ava.png") no-repeat center center;
+}
+#userGift {
+    cursor:pointer;
+    position:absolute;
+    width:48px;
+    height:48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 4;
 }
 .chatUserMenuItems {
     margin-left:64px;
@@ -618,7 +731,6 @@ a.ajax {
     box-sizing: border-box;
     background:#ffffff url(../../i/inputback.gif) repeat-x 0 0;
 }
-
 .chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel {
     position:absolute;
     width:85px;
@@ -643,7 +755,8 @@ a.ajax {
     width:81px;
     height: 22px;
     box-sizing: border-box;
-}.chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel {
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel {
     position:absolute;
     width:96px;
     top:30px;
@@ -657,10 +770,72 @@ a.ajax {
 .chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel .chatExitButton {
     width:65px;
 }
+.smilesBox {
+    background-color:#ffffff;
+    position:absolute;
+    left:0;
+    top:0;    
+    width:320px;
+    height:250px;
+    overflow:auto;
+    z-index:98;
+}
+.smilesBox p {
+    font-size:8pt;
+    padding:5px 0 2px 0;
+    margin:0;
+    font-weight:bold;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- chatFull --- */
-
+.chatFull {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#000000;
+    z-index:999;
+}
+.chatFull .transparent {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color:#FFFFFF;
+    opacity:0.9;
+    z-index:-1;
+}
+.chatFull .white-filler {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color:#FFFFFF;
+    z-index:-1;
+}
+.center-wrapper {
+    display: table;
+    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.center-text-wrapper {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.center-wrapper .content, .center-text-wrapper .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.chatFull a {
+    color:#4487D1;
+}
 #sign-in-label {
     font-weight: bold;
 }
@@ -708,4 +883,70 @@ a.ajax {
     width: 100%;
     height: 0;
     line-height: 0;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- Not used --- */
+
+/* dialogs */
+.chatActionDialog {
+    position:absolute;
+    background-color:#ffffff;
+    border:5px solid #CCCCCC;
+}
+.chatActionDialog .content {
+    padding:0 10px;
+}
+/* ban */
+.chatBanForm div.row {
+    width:100%;
+    overflow:hidden;
+    padding:4px 0;
+}
+.chatBanForm label {
+    float:left;
+    width:60px;
+    padding-right:2px;
+    text-align:right;
+}
+.chatBanForm div.row div {
+    float:left;
+}
+.chatBanForm .submit, .chatBanForm p {
+    margin-left:60px;
+}
+.chatBanForm p {
+    font-weight:bold;
+}
+.chatBanForm .nick, .chatBanForm .cause {
+    width:155px;
+}
+.chatBanForm .srok {
+    width:50px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .chatMain .chatPeople {
+        width: 130px;
+    }
+    .chatMain .chatMessages, .chatMain .chatPrivateMessages {
+        right:130px;
+    }
+    .chatTabs {
+        right:131px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .chatMain .chatPeople {
+        width: 104px;
+    }
+    .chatMain .chatMessages, .chatMain .chatPrivateMessages {
+        right:104px;
+    }
+    .chatTabs {
+        right:105px;
+    }
 }
