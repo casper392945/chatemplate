@@ -81,8 +81,11 @@ a.ajax {
 }
 .smilesBox::-webkit-scrollbar,
 .vscrollable::-webkit-scrollbar {
-	width: 6px;
-	height: 0;
+	width: 8px;
+}
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track {
+	background: rgba(255,255,255, .18);
 }
 .smilesBox::-webkit-scrollbar-thumb,
 .vscrollable::-webkit-scrollbar-thumb {
@@ -94,9 +97,20 @@ a.ajax {
 }
 .smilesBox:hover::-webkit-scrollbar-thumb,
 .vscrollable:hover::-webkit-scrollbar-thumb {
-	background-color: #999;
+	background: rgba(182, 226, 69, .5);
 	visibility: visible;
 	opacity:1;
+}
+.smilesBox::-webkit-scrollbar-thumb:active, 
+.vscrollable::-webkit-scrollbar-thumb:active {
+	background-color: #b6e245;
+}
+.vscrollable::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-track,
+.smilesBox::-webkit-scrollbar-thumb,
+.smilesBox::-webkit-scrollbar-track {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 #join-buttons {
 	padding-top: 12px;
@@ -321,7 +335,7 @@ a.ajax {
 .chatMain .chatPrivateMessages {
     position:absolute;
     left:0;
-    right:170px;
+    right:171px;
     bottom:0;
     overflow-x:hidden;
     overflow-y:auto;
@@ -1108,6 +1122,7 @@ button.cancel {
     font-weight:bold;
 }
 
+ /* требует полной переработки */
 @media screen and (max-width: 400px) {
     .chatMain .chatPeople {
         width: 130px;
@@ -1119,7 +1134,6 @@ button.cancel {
         right:131px;
     }
 }
- /* требует полной переработки */
 @media screen and (max-width: 320px) { 
     .chatMain .chatPeople {
         width: 104px;
@@ -1131,4 +1145,24 @@ button.cancel {
     .chatTabs {
         right:105px;
     }
+}
+
+/* ---------------------------------------------------------------- стилизация ----- */
+
+input[type=text] {
+    font-family: inherit;
+    padding-left: .375rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .15rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input[type=text]:focus {
+    color: #495057;
+    background-color: transparent;
+    border-color: #b6e245;
+    outline: 0;
+    box-shadow: 0 0 0 0.02rem rgba(0,123,255,.25);
 }
