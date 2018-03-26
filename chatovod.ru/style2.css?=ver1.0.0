@@ -158,6 +158,14 @@ a.ajax {
 .msi_vcard_edit{ background-position: 0 -480px; }
 .msi_wand{ background-position: 0 -512px; }
 
+/* snow style */
+.snowballmsg {
+    font-weight:bold;
+    color:#0000aa;
+}
+.snowballmsg img {
+    vertical-align: -2px;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- chatHeader --- */
@@ -196,12 +204,12 @@ a.ajax {
 	border: 1px solid #b5db4e;
 	background-color: #cff265;
 }
-.chatTopLineWrapper ul{
+.chatTopLineWrapper ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-.chatTopLineWrapper ul li{
+.chatTopLineWrapper ul li {
     position: relative;
     float: left;
 }
@@ -210,9 +218,21 @@ a.ajax {
     padding: 4px 10px 4px 10px;    
     text-decoration: none;
     text-transform: lowercase;
-}
-.chatTopLineWrapper > ul > li > a {
     padding-right: 23px;
+    
+    color: #4a600d;
+    text-shadow:1px 1px 0 #e1f69b;
+}
+.chatTopLineWrapper ul li a:hover {
+    background-image:none;
+    background-color: #A0CA2D;
+    text-shadow: 0 0 0;
+}
+.chatTopLineWrapper > ul > li > ul > li > a {
+    color: #333;
+}
+.chatTopLineWrapper > ul > li > ul > li > a:hover {
+    background-color: #dfdfdf;
 }
 .menu_profile_title {
     text-transform: none;
@@ -222,10 +242,6 @@ a.ajax {
     background-image:url("../../i/widget/vborder.png");
     background-repeat:repeat-y;
     background-position:right top;
-}
-.chatTopLineWrapper ul li a:hover {
-    background-image:none;
-    text-shadow:0 0 0;
 }
 #profile-menu {
     display: none;
@@ -436,6 +452,16 @@ a.ajax {
     border-top:0 !important;
     border-right:0 !important;
     vertical-align:middle;
+}
+.chatTabs > ul > li.chatTab > a {
+    background-color: #eaeaea;
+    color:#333333;
+}
+.chatTabs > ul > li.chatTab.chatTabActive > a, 
+.chatTabs > ul > li.chatTab > a:hover, 
+.chatTabs > ul > li.chatTab > a.active {
+    background-color:#b6e245;
+    color:#4a600d;
 }
 .chatTabsLeft, 
 .chatTabsRight {
@@ -656,6 +682,10 @@ a.ajax {
 }
 .chatUserMenuMail {
     background-image:url("../../i/widget/mail.png");
+}
+.chatUserGiftsCount > img {
+    width: auto;
+    height: 16px;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -895,7 +925,6 @@ a.ajax {
     line-height: 0;
 }
 
-
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- Not used --- */
 
@@ -935,7 +964,129 @@ a.ajax {
 .chatBanForm .srok {
     width:50px;
 }
+.youtubeMsg {
+    display: inline-block;
+    width: 120px;
+    height: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.youtubeMsg > a {
+    background: transparent url('../../i/widget/yt48.png') no-repeat center;
+    opacity: 0.7;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.youtubeMsg > a:hover {
+    opacity: 1;
+}
+.smoke-base {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.smoke-base.smoke-visible {
+    opacity: 1;
+    visibility: visible;
+}
+.smokebg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.smoke-base .dialog {
+    position: absolute;
+}
+.dialog-prompt {
+    margin-top: 15px;
+    text-align: center;
+}
+.dialog-buttons {
+    margin: 20px 0 5px 0
+}
+.smoke {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+}
+.dialog-buttons button {
+    display: inline-block;
+    vertical-align: baseline;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    margin: 0 5px;
+    -webkit-background-clip: padding-box;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: normal;
+    padding: 9px 12px;
+}
+.dialog-prompt input {
+    margin: 0;
+    outline: none;
+    font-family: Arial, sans-serif;
+    border: 1px solid #aaa;
+    width: 75%;
+    display: inline-block;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 8px;
+}
+.smoke-base {
+    background: rgba(0,0,0,.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#900000000);
+}
+.smoke-base .dialog {
+    top: 25%;
+    width: 40%;
+    left: 50%;
+    margin-left: -20%;
+}
+.smoke-base .dialog-inner {
+    padding: 15px;
+    color:#202020;
+}
+.smoke {
+    background-color: rgba(255,255,255,0.95);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff);
+    box-shadow: 0 2px 8px #666;
+}
+.dialog-buttons button {
+    background-color: rgba(0,0,0,.85);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#222222,endColorstr=#222222);
+    border-radius: 0;
+    color: #fff;
+}
+button.cancel {
+    background-color: rgba(0,0,0,.40);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444,endColorstr=#444444);
+}
+.queue{
+    display:none;
+}
+.yes-button {
+    background-color:#00aa00;
+    color:#fff;
+    font-weight:bold;
 
+}
+.no-button {
+    background-color:#aa0000;
+    color:#fff;
+    font-weight:bold;
+}
 
 @media screen and (max-width: 400px) {
     .chatMain .chatPeople {
