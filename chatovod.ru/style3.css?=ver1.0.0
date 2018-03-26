@@ -1,6 +1,4 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite, code, em, font, q, s, small, strike, 
-strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, 
-th, td {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite, code, em, font, q, s, small, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,img, th, td {
 	border: 0;
 	font: inherit;
 	font-size: 100%;
@@ -11,17 +9,22 @@ th, td {
 	padding: 0;
 	vertical-align: baseline;
 }
-img {
-	border:0;
-}
-* {
+*, 
+*:before, 
+*:after {
+	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+ select,
+ input[type="button"],
+ input[type="submit"] {
+	cursor:pointer;
 }
 html {
 	font-size: 100%;
 	height: 100%;
-	overflow-y: scroll;
+	overflow: hidden;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -34,11 +37,11 @@ body {
 }
 a {
 	color: #333;
+	text-decoration: none !important; /* del important */
 }
 a:hover,
 a:focus {
 	color: #0d48a1;
-	text-decoration: none;
 }
  iframe,
 .hidden {
@@ -76,17 +79,24 @@ a.ajax {
 .is-registered #register-menu-item {
 	display: none;
 }
+.smilesBox::-webkit-scrollbar,
 .vscrollable::-webkit-scrollbar {
 	width: 6px;
+	height: 0;
 }
+.smilesBox::-webkit-scrollbar-thumb,
 .vscrollable::-webkit-scrollbar-thumb {
-	background-color: #ccc;
+	visibility: hidden;
+	opacity:0;
+	-webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+	-moz-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+	transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
-.vscrollable::-webkit-scrollbar-thumb:hover {
+.smilesBox:hover::-webkit-scrollbar-thumb,
+.vscrollable:hover::-webkit-scrollbar-thumb {
 	background-color: #999;
-}
-.vscrollable::-webkit-scrollbar-thumb:active {
-	background-color: #777;
+	visibility: visible;
+	opacity:1;
 }
 #join-buttons {
 	padding-top: 12px;
@@ -204,44 +214,15 @@ a.ajax {
 	border: 1px solid #b5db4e;
 	background-color: #cff265;
 }
-.chatTopLineWrapper ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.chatTopLineWrapper ul li {
-    position: relative;
-    float: left;
-}
-.chatTopLineWrapper ul li a {
-    display: block;
-    padding: 4px 10px 4px 10px;    
-    text-decoration: none;
-    text-transform: lowercase;
-    padding-right: 23px;
-    
-    color: #4a600d;
-    text-shadow:1px 1px 0 #e1f69b;
-}
-.chatTopLineWrapper ul li a:hover {
-    background-image:none;
-    background-color: #A0CA2D;
-    text-shadow: 0 0 0;
-}
-.chatTopLineWrapper > ul > li > ul > li > a {
-    color: #333;
-}
-.chatTopLineWrapper > ul > li > ul > li > a:hover {
-    background-color: #dfdfdf;
-}
 .menu_profile_title {
     text-transform: none;
     font-weight: bold;
 }
-.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {
-    background-image:url("http://st1.chatovod.ru/i/widget/vborder.png");
-    background-repeat:repeat-y;
-    background-position:right top;
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a,
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a:hover {
+    background-image: url("http://st1.chatovod.ru/i/widget/vborder.png");
+    background-repeat: repeat-y;
+    background-position: right top;
 }
 #profile-menu {
     display: none;
@@ -258,27 +239,57 @@ a.ajax {
 .has-user-id .chatLinkProfile {
     display: inline;
 }
-.chatTopLineWrapper ul li ul {
+.chatTopLineWrapper ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.chatTopLineWrapper ul > li {
+	position: relative;
+	float: left;
+}
+#chatMainMenuChatovod {
+	margin-left: -12px;
+}
+.chatTopLineWrapper ul > li > a {
+	display: block;
+	padding: 4px 10px 4px 10px;    
+	text-decoration: none;
+	text-transform: lowercase;
+	min-height: 23px;
+	padding-right: 23px;
+    
+	color: #4a600d;
+	text-shadow:1px 1px 0 #e1f69b;
+}
+.chatTopLineWrapper > ul > li > a:hover {
+    background-image:none;
+    background-color: #A0CA2D;
+    text-shadow: 0 0 0;
+}
+.chatTopLineWrapper > ul > li > ul {
     position: absolute;
+    top: 0;
     left: 0;
     display: block;
     visibility: hidden;
-    border-color: #ccc #666 #666 #ccc;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #ccc;
     background-color: #fff;
 }
-.chatTopLineWrapper ul li ul li {
+.chatTopLineWrapper > ul > li > ul > li {
     float: none;
 }
-.chatTopLineWrapper ul li ul li ul {
-    top: 0;
+.chatTopLineWrapper > ul > li > ul > li > a {
+	min-width: 160px;
+	white-space: nowrap;
+	padding: .5em .75em;
+	margin: 0;
+	background-image:none !important;
+	color: #333;
+	text-shadow: none;
 }
-.chatTopLineWrapper ul li ul li a {
-    width: 160px;
-    padding: 4px 9px;
-    margin: 0;
-    background-image:none!important;
+.chatTopLineWrapper > ul > li > ul > li > a:hover {
+    background-color: #dfdfdf;
 }
 .downarrowclass {
     position: absolute;
@@ -730,8 +741,11 @@ a.ajax {
     height:16px;
 }
 .chatFooter .chatFooterWrapper .chatPanel div a span {
-    border-bottom:1px dotted #000000;
-    position:relative;
+    border-bottom: 1px dotted #000000;
+    position: relative;
+}
+.chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a span {
+    display: none;
 }
 .chatLinkGold {
     padding-left:21px;
@@ -739,9 +753,15 @@ a.ajax {
 }
 .chatLinkVip {
     width:16px;
+    padding-left:21px;
     background:transparent url("http://st1.chatovod.ru/i/ivip.png") no-repeat 0 0;
-    margin-right:6px!important;
+    margin-right:26px!important;
 }
+.chatLinkVip::after {
+ 	position:absolute;
+ 	content:'vip';
+ 	border-bottom:1px dotted #000;
+ }
 .chatLinkModerate {
     width:16px;
     background:transparent url("http://st1.chatovod.ru/i/widget/shield.png") no-repeat 0 0;
@@ -771,12 +791,12 @@ a.ajax {
     background:#ffffff url(http://st1.chatovod.ru/i/inputback.gif) repeat-x 0 0;
 }
 .chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel {
-    position:absolute;
-    width:85px;
-    height:16px;
-    top:7px;
-    right:16px;
-    text-align:right;
+    position: absolute;
+    min-width: 65px;
+    width: auto;
+    height: 16px;
+    top: 30px;
+    right: 117px;
 }
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a {
     padding-left:20px;
@@ -793,7 +813,6 @@ a.ajax {
 .chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel .chatSendButton {
     width:81px;
     height: 22px;
-    box-sizing: border-box;
 }
 .chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel {
     position:absolute;
@@ -810,14 +829,16 @@ a.ajax {
     width:65px;
 }
 .smilesBox {
-    background-color:#ffffff;
-    position:absolute;
-    left:0;
-    top:0;    
-    width:320px;
-    height:250px;
-    overflow:auto;
-    z-index:98;
+	background-color: #ffffff;
+	position:absolute;
+	left:0;
+	top:0;    
+	margin: 1px -3px;
+	padding-left:3px;
+	width:320px;
+	height:247px;
+	overflow: auto;
+	z-index:98;
 }
 .smilesBox p {
     font-size:8pt;
@@ -1098,12 +1119,13 @@ button.cancel {
         right:131px;
     }
 }
-
-@media screen and (max-width: 320px) {
+ /* требует полной переработки */
+@media screen and (max-width: 320px) { 
     .chatMain .chatPeople {
         width: 104px;
     }
-    .chatMain .chatMessages, .chatMain .chatPrivateMessages {
+    .chatMain .chatMessages, 
+    .chatMain .chatPrivateMessages {
         right:104px;
     }
     .chatTabs {
