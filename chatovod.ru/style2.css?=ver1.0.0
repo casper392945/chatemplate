@@ -1,0 +1,633 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite, code, em, font, q, s, small, strike, 
+strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, 
+th, td {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+img {
+	border:0;
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	padding:0;
+	height: 100%;
+	color: #000000;
+	background-color:#ffffff;
+}
+a {
+	color: #333;
+}
+a:hover,
+a:focus {
+	color: #0d48a1;
+	text-decoration: none;
+}
+ iframe,
+.hidden {
+	display: none;
+}
+.hidden2 {
+	visibility: hidden;
+}	
+a.ajax {
+	text-decoration:none;
+	border-bottom:1px dotted #000000;
+}
+.chatPanel {
+	display: none;
+}
+.has-nick .chatPanel {
+	display: block;
+}
+.chatLinkRegister {
+	font-weight:bold;
+}
+.bold {
+	font-weight:bold;
+}
+.chat {
+	position:absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	left:0;
+	font: normal 10pt Arial;
+	overflow:hidden;
+}
+.is-registered #register-menu-item {
+	display: none;
+}
+.vscrollable::-webkit-scrollbar {
+	width: 6px;
+}
+.vscrollable::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+}
+.vscrollable::-webkit-scrollbar-thumb:hover {
+	background-color: #999;
+}
+.vscrollable::-webkit-scrollbar-thumb:active {
+	background-color: #777;
+}
+#join-buttons {
+    padding-top: 12px;
+}
+#join-chat-button, 
+#join-chat-button2 {
+    font-weight:bold;
+    padding: 4px 6px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatHeader --- */
+
+.chatHeader {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:45px;
+    z-index:99;
+}
+.chatHeader .chatHeaderWrapper {
+    width:100%;
+    overflow:hidden;
+}
+.chatHeader .chatTitle {
+    float:left;
+    margin:14px 0 0 15px;
+    font-weight:bold;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ chatTopLine --- */
+
+.chatHeader .chatTopLine {
+    position:absolute;
+    top:10px;
+    right:12px;
+    font-size:9pt;
+}
+
+/* top menu */
+.chatTopLineWrapper ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.chatTopLineWrapper ul li{
+    position: relative;
+    float: left;
+}
+/* Top level menu link items style */
+.chatTopLineWrapper ul li a {
+    display: block;
+    padding: 4px 10px 4px 10px;    
+    text-decoration: none;
+    text-transform: lowercase;
+}
+/* Top level menu link items style */
+.chatTopLineWrapper > ul > li > a {
+    padding-right: 23px;
+}
+.menu_profile_title {
+    text-transform: none;
+    font-weight: bold;
+}
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {
+    background-image:url("../../i/widget/vborder.png");
+    background-repeat:repeat-y;
+    background-position:right top;
+}
+.chatTopLineWrapper ul li a:hover {
+    background-image:none;
+    text-shadow:0 0 0;
+}
+#profile-menu {
+    display: none;
+}
+.has-nick #profile-menu {
+    display: inline;
+    display: list-item;
+}
+.chatLinkProfile {
+    padding-left:21px;
+    background:url(../../i/msi.png) no-repeat 0 -416px;
+    display: none;
+}
+.has-user-id .chatLinkProfile {
+    display: inline;
+}
+/* 1st sub level menu */
+.chatTopLineWrapper ul li ul {
+    position: absolute;
+    left: 0;
+    display: block;
+    visibility: hidden;
+    border-color: #ccc #666 #666 #ccc;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #fff;
+}
+/* Sub level menu list items (undo style from Top level List Items) */
+.chatTopLineWrapper ul li ul li{
+    float: none;
+}
+
+/* All subsequent sub menu levels vertical offset after 1st level sub menu */
+.chatTopLineWrapper ul li ul li ul{
+    top: 0;
+}
+/* Sub level menu links style */
+.chatTopLineWrapper ul li ul li a {
+    width: 160px; /*width of sub menus*/
+    padding: 4px 9px;
+    margin: 0;
+    background-image:none!important;
+}
+/* CSS classes applied to down and right arrow images */
+.downarrowclass{
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    background-image: url("../../i/widget/down2.png");
+    width: 9px;
+    height: 6px;
+}
+.rightarrowclass {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+}
+/* top menu end */
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- chatMain --- */
+
+.chatMain {
+    position:absolute;
+    left:0;
+    right:0;
+    top:45px;
+    bottom:63px;
+    background: #f5f4ef url("http://st1.chatovod.ru/i/widget/fon.png") repeat-x fixed left bottom;
+    background-position: left 0 bottom 64px;
+}
+.chatMain .chatMessages, 
+.chatMain .chatPrivateMessages {
+    position:absolute;
+    left:0;
+    right:170px;
+    bottom:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding: 0 0 4px 0;
+    top: 41px;
+    line-height:1.5em;
+}
+.chatMessage {
+    padding-left:15px;
+}
+.chatMessage.type-news, 
+.chatMessage.type-event {
+    background: transparent url("../../i/widget/unread.png") no-repeat 4px 8px;
+}
+.chatMessage.type-news {
+    font-weight:bold;
+}
+.chatMessageToMe .chatToUser {
+    background-color:#729219;
+    color:#ffffff;
+    padding:0 3px;
+}
+.chatSystemMessage {
+    font-style:italic;
+    overflow:hidden;
+}
+.chatTime {
+    float:right;
+    padding-right:8px;
+    color:#8B897E;
+    font-size:7pt;
+    visibility:hidden;
+    font-style: normal;
+}
+.chatMessage:hover .chatTime {
+    visibility: visible;
+}
+
+/* mini user menu */
+#chatUserMiniMenu {
+    position:absolute;    
+    border:1px solid #d4d2cb;
+    background-color:#ffffff;
+    padding:4px 6px;
+    -webkit-box-shadow: 0px 0px 7px #cccccc;
+    -moz-box-shadow: 0px 0px 7px #cccccc;
+    box-shadow: 0px 0px 7px #cccccc;
+}
+#chatUserMiniMenu div {
+    float:left;
+}
+#chatUserMiniMenu .buttons div {
+    width:16px;
+    height:16px;
+    margin-left:8px;
+    cursor:pointer;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- chatTabs --- */
+
+.chatTabs {
+    position:absolute;
+    top:0;
+    left:0;
+    right: 171px;
+    height: 41px;
+}
+.chatTabs ul {
+    position:absolute;
+    left:16px;
+    right:16px;
+    top:8px;
+    height:24px;
+    overflow:hidden;
+
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    white-space:nowrap;
+    font-size:0;
+}
+.chatTabs > ul > li {
+    display:-moz-inline-box;
+    display:inline-block;
+    margin-right:5px;
+    height:100%;
+    position:relative;
+}
+.chatTabs > ul > li.appTab {
+    margin-right: 0;
+    margin-left: 2px;
+}
+.chatTabs > ul > li > a {
+    display: table-cell;
+    display: inline-block;
+    padding: 0 14px 0 10px;
+    line-height: 24px;
+    height: 100%;
+    font-size: 8pt;
+    text-decoration:none;
+    border-top:0 !important;
+    border-right:0 !important;
+    vertical-align:middle;
+}
+.chatTabsLeft, 
+.chatTabsRight {
+    position: absolute;
+    top: 0;
+    width: 16px;
+    height: 100%;
+    cursor:pointer;
+    color: #000000;
+    font-weight: bold;
+    visibility: hidden;
+}
+.chatTabsLeft {
+    left:0;
+    background:transparent url("../../i/apps/vleft.png") no-repeat 2px 12px;
+}
+.chatTabsRight {
+    right:0;
+    background:transparent url("../../i/apps/vright.png") no-repeat 2px 12px;
+}
+.chatTabsLRActive {
+    visibility:visible;
+}
+#chat_main a {
+    padding:0 10px 0 10px;
+}
+.chatTabs ul li.chatTabActive a {
+    cursor:default;
+}
+/* close tab */
+.chatTabs ul li.chatTab .close {
+    position:absolute;
+    right:3px;
+    top:2px;
+    width:8px;
+    height:8px;
+    background:transparent url("../../i/closetab.png") no-repeat 0 0;
+    cursor:pointer;
+}
+
+.chatTabs ul li.appTab a {
+    padding:0 6px 0 25px;
+    background-position:4px 4px;
+    background-repeat:no-repeat;
+    background-image: url("../../i/apps/app.png");
+    text-decoration: underline;
+}
+#chat_app_add a {
+    background-image:url("../../i/apps/add.png");
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatPeople --- */
+
+.chatMain .chatPeople {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    width:170px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    border-left:1px solid #D4D2CB;
+    z-index: 1;
+}
+.chatPeople .chatPeopleTitle {
+    margin:4px 0 4px 8px;
+    font-size:8pt;
+}
+.chatPeople ul.chatPeopleList {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.chatPeople ul.chatPeopleList li {
+    margin:0;
+    padding:6px 0 0 8px;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+.chatPeople ul.chatPeopleList li img {
+    vertical-align:-3px;
+}
+.chatPeople ul.chatPeopleList li.hover {
+    background-color:#ffffff;
+    border-top: 1px solid #CDE390;
+    border-bottom: 1px solid #CDE390;
+}
+.chatUserSex1, 
+.chatUserSex2, 
+.chatUserSex0 {
+    float:left;
+}
+.chatUserSex1 b, .chatUserSex2 b, .chatUserSex0 b {
+    width:16px;
+    height:16px;
+    float:left;
+}
+.chatPeople ul.chatPeopleList li a.chatUser {
+    text-decoration:none;
+    color:#333333;
+    word-wrap: break-word;
+}
+.chatPeople ul.chatPeopleList li a.chatUserSex0 b {
+    background:transparent url("../../i/widget/user_gray.png") no-repeat 0 0;
+}
+.chatPeople ul.chatPeopleList li a.chatUserSex1 b {
+    background:transparent url("../../i/widget/user.png") no-repeat 0 0;
+}
+.chatPeople ul.chatPeopleList li a.chatUserSex2 b {
+    background:transparent url("../../i/widget/user_female.png") no-repeat 0 0;
+}
+.nyi .chatPeople ul.chatPeopleList li a.chatUserSex0 b {
+    background:transparent url("../../i/widget/ny_unknown.png") 0 0 no-repeat;
+}
+.nyi .chatPeople ul.chatPeopleList li a.chatUserSex1 b {
+    background:transparent url("../../i/widget/ny_male.png") 0 0 no-repeat;
+}
+.nyi .chatPeople ul.chatPeopleList li a.chatUserSex2 b {
+    background:transparent url("../../i/widget/ny_female.png") 0 0 no-repeat;
+}
+.chatUserAway {
+    opacity:0.4;
+}
+.chatUserMenu {
+    padding: 8px 0 12px 0;
+    width: 145px;
+    overflow: hidden;
+}
+.chatUserWrapper {
+    margin-left:20px;
+}
+.chatUserAvatar {
+    float:left;
+    overflow:hidden;
+    width:55px;
+    height:80px;
+    background:transparent url("../../i/ava.png") no-repeat center center;
+}
+.chatUserMenuItems {
+    margin-left:64px;
+    font-size:8pt;
+}
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li {
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow:hidden;
+}
+.chatPeople ul.chatPeopleList li .chatUserMenu .chatUserMenuItems ul li a {
+    float:left;
+    padding-left:22px;
+    line-height:18px;
+    height:18px;
+    background-position:0 0;
+    background-repeat:no-repeat;
+    background-color:transparent;
+}
+.chatUserMenuInfo {
+    background-image:url("../../i/widget/vcard.png");
+}
+.chatUserMenuPhotos {
+    background-image:url("../../i/widget/photo.png");
+}
+.chatUserMenuPrivate {
+    background-image:url("../../i/widget/user_comment.png");
+}
+.chatUserMenuGift {
+    background-image:url("../../i/widget/present.png");
+}
+.chatUserMenuIgnore {
+    background-image:url("../../i/widget/ignore.png");
+}
+.chatUserMenuBan {
+    background-image:url("../../i/cross.png");
+}
+.chatUserMenuAdd {
+    background-image:url("../../i/widget/user_add.png");
+}
+.chatUserMenuDel {
+    background-image:url("../../i/widget/user_delete.png");
+}
+.chatUserMenuMail {
+    background-image:url("../../i/widget/mail.png");
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatFooter --- */
+
+.chatFooter {
+    position:absolute;
+    left: 0;
+    bottom:0;
+    right: 0;
+    height: 62px;
+    background: #f5f4ef url("http://st1.chatovod.ru/i/widget/fon.png") repeat-x left top;
+    font-weight: bold;
+    border-top: 1px solid #d4d2cb;
+}
+.chatFooter .chatFooterWrapper {
+    position:relative;
+    width:100%;
+    height:62px;
+}
+.chatSetupNickname {
+    position:absolute;
+    left:15px;
+    top:0;
+    line-height: 62px;
+}
+.has-nick .chatSetupNickname {
+    display: none;
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendLinksPanel {
+    position:absolute;
+    left:16px;
+    top:7px;
+    font-weight:normal;
+    font-size:8pt;
+    z-index:99;
+}
+.chatSendLinksPanel a {
+    margin-right:16px;
+    text-decoration:none;
+    float:left;
+    height:16px;
+}
+.chatFooter .chatFooterWrapper .chatPanel div a span {
+    border-bottom:1px dotted #000000;
+    position:relative;
+}
+.chatUserVip {
+    background:transparent url("../../i/widget/vip.gif") no-repeat 0 0;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- chatFull --- */
+
+#sign-in-label {
+    font-weight: bold;
+}
+.chatSpecifyPassword label, 
+.chatSpecifyPassword p {
+    display: block;
+    margin: 0;
+    padding: 6px 0 4px 0;
+}
+.chatSpecifyPassword input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 3px 4px;
+}
+.chatSpecifyPassword .error {
+    color:red;
+}
+.chatSpecifyPassword .error:empty {
+    display: none;
+}
+#existing-nick-label {
+    display: none;
+}
+.has-account #new-nick-label {
+    display: none;
+}
+.has-account #existing-nick-label {
+    display: block;
+}
+#captcha-block {
+    padding-top: 9px;
+}
+.has-account #captcha-block {
+    display: none;
+}
+.has-account #sign-in-label {
+    display: none;
+}
+.justify {
+    text-align: justify;
+}
+.justify .spacer {
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    line-height: 0;
+}
