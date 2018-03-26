@@ -427,20 +427,25 @@ a.ajax {
     border-top: 1px solid #CDE390;
     border-bottom: 1px solid #CDE390;
 }
+.chatPeople ul.chatPeopleList li a.chatUser {
+    text-decoration:none;
+    color:#333333;
+    word-wrap: break-word;
+}
+.chatUserVip {
+    background:transparent url("../../i/widget/vip.gif") no-repeat 0 0;
+}
 .chatUserSex1, 
 .chatUserSex2, 
 .chatUserSex0 {
     float:left;
 }
-.chatUserSex1 b, .chatUserSex2 b, .chatUserSex0 b {
+.chatUserSex1 b, 
+.chatUserSex2 b, 
+.chatUserSex0 b {
     width:16px;
     height:16px;
     float:left;
-}
-.chatPeople ul.chatPeopleList li a.chatUser {
-    text-decoration:none;
-    color:#333333;
-    word-wrap: break-word;
 }
 .chatPeople ul.chatPeopleList li a.chatUserSex0 b {
     background:transparent url("../../i/widget/user_gray.png") no-repeat 0 0;
@@ -575,10 +580,83 @@ a.ajax {
     border-bottom:1px dotted #000000;
     position:relative;
 }
-.chatUserVip {
-    background:transparent url("../../i/widget/vip.gif") no-repeat 0 0;
+.chatLinkGold {
+    padding-left:21px;
+    background:transparent url("../../i/coins.png") no-repeat 0 0;
+}
+.chatLinkVip {
+    width:16px;
+    background:transparent url("../../i/ivip.png") no-repeat 0 0;
+    margin-right:6px!important;
+}
+.chatLinkModerate {
+    width:16px;
+    background:transparent url("../../i/widget/shield.png") no-repeat 0 0;
+    margin-right:7px!important;
+}
+.chatSendLinksPanel a.chatLinkSmiles {
+    padding-left:21px;
+    background:transparent url("../../i/widget/smile.png") no-repeat 0 0;
+}
+.chatSendLinksPanel .chatLinkImage {
+    padding-left:21px;
+    background:transparent url("../../i/media.png") no-repeat 0 0;
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendTextPanel {
+    position:absolute;
+    left:16px;
+    top:30px;
+    right:204px;
+    /*height:20px;*/
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendTextPanel .chatSendText {
+    width:100%;
+}
+.chatInputText {
+    border:1px solid #cfcfc9;
+    height:22px;
+    box-sizing: border-box;
+    background:#ffffff url(../../i/inputback.gif) repeat-x 0 0;
 }
 
+.chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel {
+    position:absolute;
+    width:85px;
+    height:16px;
+    top:7px;
+    right:16px;
+    text-align:right;
+}
+.chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a {
+    padding-left:20px;
+    font-size:8pt;
+    text-decoration:none;
+    font-weight:normal;
+    background:transparent url(../../i/sound.png) no-repeat 0 0;
+    float:right;
+    height: 16px;
+}
+.chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a.muted {
+    background-image:url(../../i/sound_none.png);
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel .chatSendButton {
+    width:81px;
+    height: 22px;
+    box-sizing: border-box;
+}.chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel {
+    position:absolute;
+    width:96px;
+    top:30px;
+    right:13px;
+}
+.chatSendExitPanel select {
+    width:100%;
+    height: 22px;
+    box-sizing: border-box;
+}
+.chatFooter .chatFooterWrapper .chatPanel .chatSendExitPanel .chatExitButton {
+    width:65px;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- chatFull --- */
