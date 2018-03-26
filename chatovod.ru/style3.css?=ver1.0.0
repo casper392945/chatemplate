@@ -98,7 +98,7 @@ a.ajax {
 }
 .sendVipLink {
 	padding-left:38px;
-	background:transparent url("../../i/vip.png") no-repeat 0 0;
+	background:transparent url("http://st1.chatovod.ru/i/vip.png") no-repeat 0 0;
 }
 .chatRemember {
 	vertical-align:middle;
@@ -110,7 +110,7 @@ a.ajax {
 	background-position:4px 0;
 }
 .chatOpenIdGoogle {
-	background-image:url(../../i/openid/google.png);
+	background-image:url(http://st1.chatovod.ru/i/openid/google.png);
 }
 #scrollBottomBox {
 	position: absolute;
@@ -133,7 +133,7 @@ a.ajax {
 }
 .msi {
 	float:left;    
-	background:url(../../i/blank.gif) no-repeat top left;
+	background:url(http://st1.chatovod.ru/i/blank.gif) no-repeat top left;
 	width:16px;
 	height:16px;
 }
@@ -239,7 +239,7 @@ a.ajax {
     font-weight: bold;
 }
 .chatTopLineWrapper ul li.chatMenuItemWithSeparator a {
-    background-image:url("../../i/widget/vborder.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/vborder.png");
     background-repeat:repeat-y;
     background-position:right top;
 }
@@ -251,8 +251,8 @@ a.ajax {
     display: list-item;
 }
 .chatLinkProfile {
-    padding-left:21px;
-    background:url(../../i/msi.png) no-repeat 0 -416px;
+    padding-left: 21px;
+    background: transparent url(http://st1.chatovod.ru/i/msi.png) no-repeat 0 -416px;
     display: none;
 }
 .has-user-id .chatLinkProfile {
@@ -275,7 +275,7 @@ a.ajax {
     top: 0;
 }
 .chatTopLineWrapper ul li ul li a {
-    width: 160px; /*width of sub menus*/
+    width: 160px;
     padding: 4px 9px;
     margin: 0;
     background-image:none!important;
@@ -284,7 +284,7 @@ a.ajax {
     position: absolute;
     top: 9px;
     right: 7px;
-    background-image: url("../../i/widget/down2.png");
+    background-image: url("http://st1.chatovod.ru/i/widget/down2.png");
     width: 9px;
     height: 6px;
 }
@@ -327,7 +327,7 @@ a.ajax {
 .chatMessage a div.reportspam {
     display:block;
     position:absolute;
-    background:transparent url("../../i/widget/reportspam.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/widget/reportspam.png") no-repeat 0 0;
     left:-17px;
     top:0;
     width:17px;
@@ -336,7 +336,7 @@ a.ajax {
 }
 .chatMessage.type-news, 
 .chatMessage.type-event {
-    background: transparent url("../../i/widget/unread.png") no-repeat 4px 8px;
+    background: transparent url("http://st1.chatovod.ru/i/widget/unread.png") no-repeat 4px 8px;
 }
 .chatMessage.type-news {
     font-weight:bold;
@@ -476,11 +476,11 @@ a.ajax {
 }
 .chatTabsLeft {
     left:0;
-    background:transparent url("../../i/apps/vleft.png") no-repeat 2px 12px;
+    background:transparent url("http://st1.chatovod.ru/i/apps/vleft.png") no-repeat 2px 12px;
 }
 .chatTabsRight {
     right:0;
-    background:transparent url("../../i/apps/vright.png") no-repeat 2px 12px;
+    background:transparent url("http://st1.chatovod.ru/i/apps/vright.png") no-repeat 2px 12px;
 }
 .chatTabsLRActive {
     visibility:visible;
@@ -498,7 +498,7 @@ a.ajax {
     top:2px;
     width:8px;
     height:8px;
-    background:transparent url("../../i/closetab.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/closetab.png") no-repeat 0 0;
     cursor:pointer;
 }
 
@@ -506,11 +506,11 @@ a.ajax {
     padding:0 6px 0 25px;
     background-position:4px 4px;
     background-repeat:no-repeat;
-    background-image: url("../../i/apps/app.png");
+    background-image: url("http://st1.chatovod.ru/i/apps/app.png");
     text-decoration: underline;
 }
 #chat_app_add a {
-    background-image:url("../../i/apps/add.png");
+    background-image:url("http://st1.chatovod.ru/i/apps/add.png");
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -561,7 +561,7 @@ a.ajax {
     font-weight:bold;
 }
 .chatUserVip {
-    background:transparent url("../../i/widget/vip.gif") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/widget/vip.gif") no-repeat 0 0;
 }
 .user-icon {
     width: 16px;
@@ -570,10 +570,10 @@ a.ajax {
     background-repeat: no-repeat;
 }
 .mod-icon {
-    background-image: url("../../i/widget/shield.png");
+    background-image: url("http://st1.chatovod.ru/i/widget/shield.png");
 }
 .adm-icon {
-    background-image: url("../../i/widget/admin.png");
+    background-image: url("http://st1.chatovod.ru/i/widget/admin.png");
 }
 .chatUserSex1, 
 .chatUserSex2, 
@@ -588,22 +588,22 @@ a.ajax {
     float:left;
 }
 .chatPeople ul.chatPeopleList li a.chatUserSex0 b {
-    background:transparent url("../../i/widget/user_gray.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/widget/user_gray.png") no-repeat 0 0;
 }
 .chatPeople ul.chatPeopleList li a.chatUserSex1 b {
-    background:transparent url("../../i/widget/user.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/widget/user.png") no-repeat 0 0;
 }
 .chatPeople ul.chatPeopleList li a.chatUserSex2 b {
-    background:transparent url("../../i/widget/user_female.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/widget/user_female.png") no-repeat 0 0;
 }
 .nyi .chatPeople ul.chatPeopleList li a.chatUserSex0 b {
-    background:transparent url("../../i/widget/ny_unknown.png") 0 0 no-repeat;
+    background:transparent url("http://st1.chatovod.ru/i/widget/ny_unknown.png") 0 0 no-repeat;
 }
 .nyi .chatPeople ul.chatPeopleList li a.chatUserSex1 b {
-    background:transparent url("../../i/widget/ny_male.png") 0 0 no-repeat;
+    background:transparent url("http://st1.chatovod.ru/i/widget/ny_male.png") 0 0 no-repeat;
 }
 .nyi .chatPeople ul.chatPeopleList li a.chatUserSex2 b {
-    background:transparent url("../../i/widget/ny_female.png") 0 0 no-repeat;
+    background:transparent url("http://st1.chatovod.ru/i/widget/ny_female.png") 0 0 no-repeat;
 }
 .chatUserAway {
     opacity:0.4;
@@ -621,7 +621,7 @@ a.ajax {
     overflow:hidden;
     width:55px;
     height:80px;
-    background:transparent url("../../i/ava.png") no-repeat center center;
+    background:transparent url("http://st1.chatovod.ru/i/ava.png") no-repeat center center;
 }
 #userGift {
     cursor:pointer;
@@ -657,31 +657,31 @@ a.ajax {
     background-color:transparent;
 }
 .chatUserMenuInfo {
-    background-image:url("../../i/widget/vcard.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/vcard.png");
 }
 .chatUserMenuPhotos {
-    background-image:url("../../i/widget/photo.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/photo.png");
 }
 .chatUserMenuPrivate {
-    background-image:url("../../i/widget/user_comment.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/user_comment.png");
 }
 .chatUserMenuGift {
-    background-image:url("../../i/widget/present.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/present.png");
 }
 .chatUserMenuIgnore {
-    background-image:url("../../i/widget/ignore.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/ignore.png");
 }
 .chatUserMenuBan {
-    background-image:url("../../i/cross.png");
+    background-image:url("http://st1.chatovod.ru/i/cross.png");
 }
 .chatUserMenuAdd {
-    background-image:url("../../i/widget/user_add.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/user_add.png");
 }
 .chatUserMenuDel {
-    background-image:url("../../i/widget/user_delete.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/user_delete.png");
 }
 .chatUserMenuMail {
-    background-image:url("../../i/widget/mail.png");
+    background-image:url("http://st1.chatovod.ru/i/widget/mail.png");
 }
 .chatUserGiftsCount > img {
     width: auto;
@@ -735,32 +735,31 @@ a.ajax {
 }
 .chatLinkGold {
     padding-left:21px;
-    background:transparent url("../../i/coins.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/coins.png") no-repeat 0 0;
 }
 .chatLinkVip {
     width:16px;
-    background:transparent url("../../i/ivip.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/ivip.png") no-repeat 0 0;
     margin-right:6px!important;
 }
 .chatLinkModerate {
     width:16px;
-    background:transparent url("../../i/widget/shield.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/widget/shield.png") no-repeat 0 0;
     margin-right:7px!important;
 }
 .chatSendLinksPanel a.chatLinkSmiles {
     padding-left:21px;
-    background:transparent url("../../i/widget/smile.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/widget/smile.png") no-repeat 0 0;
 }
 .chatSendLinksPanel .chatLinkImage {
     padding-left:21px;
-    background:transparent url("../../i/media.png") no-repeat 0 0;
+    background:transparent url("http://st1.chatovod.ru/i/media.png") no-repeat 0 0;
 }
 .chatFooter .chatFooterWrapper .chatPanel .chatSendTextPanel {
     position:absolute;
-    left:16px;
-    top:30px;
-    right:204px;
-    /*height:20px;*/
+    left: 16px;
+    top: 30px;
+    right: 204px;
 }
 .chatFooter .chatFooterWrapper .chatPanel .chatSendTextPanel .chatSendText {
     width:100%;
@@ -769,7 +768,7 @@ a.ajax {
     border:1px solid #cfcfc9;
     height:22px;
     box-sizing: border-box;
-    background:#ffffff url(../../i/inputback.gif) repeat-x 0 0;
+    background:#ffffff url(http://st1.chatovod.ru/i/inputback.gif) repeat-x 0 0;
 }
 .chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel {
     position:absolute;
@@ -784,12 +783,12 @@ a.ajax {
     font-size:8pt;
     text-decoration:none;
     font-weight:normal;
-    background:transparent url(../../i/sound.png) no-repeat 0 0;
+    background:transparent url(http://st1.chatovod.ru/i/sound.png) no-repeat 0 0;
     float:right;
     height: 16px;
 }
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a.muted {
-    background-image:url(../../i/sound_none.png);
+    background-image:url(http://st1.chatovod.ru/i/sound_none.png);
 }
 .chatFooter .chatFooterWrapper .chatPanel .chatSendButtonPanel .chatSendButton {
     width:81px;
@@ -972,7 +971,7 @@ a.ajax {
     background-repeat: no-repeat;
 }
 .youtubeMsg > a {
-    background: transparent url('../../i/widget/yt48.png') no-repeat center;
+    background: transparent url('http://st1.chatovod.ru/i/widget/yt48.png') no-repeat center;
     opacity: 0.7;
     display: block;
     width: 100%;
