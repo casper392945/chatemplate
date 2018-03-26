@@ -2,41 +2,41 @@
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
     
-    <!-- Required meta tags -->
-	  <meta charset="utf-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- обязательное условие для отображения на desctop & mobile -->
-    <meta name="description" content="">
-    <meta name="author" content="chatovod.ru">
-    <meta name="yandex-verification" content="f8af8ffad7155fff">
-  	<meta name="google-site-verification" content="">
+    	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- обязательное условие для отображения на desctop & mobile -->
+	<meta name="description" content="">
+	<meta name="author" content="chatovod.ru">
+	<meta name="yandex-verification" content="f8af8ffad7155fff">
+	<meta name="google-site-verification" content="">
 	
-	  <title></title>
+	<title></title>
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="favicon.ico" /> <!-- вообще достаточно будет и этой, но для apple & win10 остальные тоже не поимешают -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	  <link rel="manifest" href="/site.webmanifest">
-	  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	  <meta name="msapplication-TileColor" content="#00aba9">
-	  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	  <meta name="theme-color" content="#ffffff">
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="favicon.ico" /> <!-- вообще достаточно будет и этой, но для apple & win10 остальные тоже не поимешают -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	
-    <!-- General Style -->
-    <link rel="stylesheet" href="//st1.chatovod.ru/css/widget/style2.css?=ver79" />
+	<!-- General Style -->
+	<link rel="stylesheet" href="//st1.chatovod.ru/css/widget/style2.css?=ver79" />
 		
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" /> <!-- было бы не плохо иметь набор встроенных шрифтов -->
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" /> <!-- было бы не плохо иметь набор встроенных шрифтов -->
 	
-    <!-- User Settings -->
-	  <style>	
+	<!-- User Settings -->
+	<style>	
 	  ...	
-	  </style>
-	  <link rel="stylesheet" href="custom.css?=ver" />
+	</style>
+	<link rel="stylesheet" href="custom.css?=ver" />
 	
-    <!-- Social Meta Tegs -->  
+	<!-- Social Meta Tegs -->  
     
     <!-- Facebook -->  
     <meta property="og:site_name" content="" />
@@ -60,42 +60,42 @@
 		
   <body>
 
-	  <main>
-		  ...
-	  </main>	
+	<main>
+	...
+	</main>	
 	  
-    <!-- JavaScript -->
-	  <script src="//st1.chatovod.ru/js/widget.js?16"></script>
-	  <script src="//st1.chatovod.ru/js/snowfall.min.js"></script>
-	  <script>
-    var snowEl = document.createElement("A");
-    snowEl.href = "#";
-    snowEl.title = "Выключить снег";
-    snowEl.innerHTML = "Снег выкл.";
-    var s = snowEl.style;
-    s.position = "absolute";
-    s.right = "215px";
-    s.top = "62px";
-    s.color = "#49441F";
-    s.textShadow = "1px 1px 2px #ffffff";
-    s.zIndex = 60;
-    s.fontSize = "9pt";
-    document.getElementsByClassName("chatMain")[0].appendChild(snowEl);
-    var flakeopts = {flakeCount: 50, minSize: 2, maxSize: 4, minSpeed: 1, maxSpeed: 1};
-    snowFall.snow(document.getElementsByClassName("chat")[0], flakeopts);
+    	<!-- JavaScript -->
+	<script src="//st1.chatovod.ru/js/widget.js?16"></script>
+	<script src="//st1.chatovod.ru/js/snowfall.min.js"></script>
+	<script>
+	var snowEl = document.createElement("A");
+	snowEl.href = "#";
+	snowEl.title = "Выключить снег";
+	snowEl.innerHTML = "Снег выкл.";
+	var s = snowEl.style;
+	s.position = "absolute";
+	s.right = "215px";
+	s.top = "62px";
+	s.color = "#49441F";
+	s.textShadow = "1px 1px 2px #ffffff";
+	s.zIndex = 60;
+	s.fontSize = "9pt";
+	document.getElementsByClassName("chatMain")[0].appendChild(snowEl);
+	var flakeopts = {flakeCount: 50, minSize: 2, maxSize: 4, minSpeed: 1, maxSpeed: 1};
+	snowFall.snow(document.getElementsByClassName("chat")[0], flakeopts);
 
-    snowEl.onclick = function(e) {
+	snowEl.onclick = function(e) {
         e.preventDefault();
         if (snowEl.innerHTML == "Снег выкл.") {
             snowFall.snow(document.getElementsByClassName("chat")[0], "clear");
             snowEl.innerHTML = "Снег вкл.";
             snowEl.title = "Включить снег";
-        } else {
+        	} else {
             snowFall.snow(document.getElementsByClassName("chat")[0], flakeopts);
             snowEl.innerHTML = "Снег выкл.";
             snowEl.title = "Выключить снег";
-        }
-    };
+        	}
+	};
 	  </script>
 
 	</body>
