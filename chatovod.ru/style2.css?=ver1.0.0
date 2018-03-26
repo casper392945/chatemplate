@@ -19,6 +19,7 @@ img {
 	box-sizing: border-box;
 }
 html {
+	font-size: 100%;
 	height: 100%;
 	overflow-y: scroll;
 	-webkit-text-size-adjust: 100%;
@@ -28,7 +29,7 @@ body {
 	margin: 0;
 	padding:0;
 	height: 100%;
-	color: #000000;
+	color:#5d5b53;
 	background-color:#ffffff;
 }
 a {
@@ -69,7 +70,8 @@ a.ajax {
 	bottom:0;
 	left:0;
 	font: normal 10pt Arial;
-	overflow:hidden;
+	overflow: hidden;
+	border:1px solid #a0ca2d;
 }
 .is-registered #register-menu-item {
 	display: none;
@@ -87,28 +89,28 @@ a.ajax {
 	background-color: #777;
 }
 #join-buttons {
-    padding-top: 12px;
+	padding-top: 12px;
 }
 #join-chat-button, 
 #join-chat-button2 {
-    font-weight:bold;
-    padding: 4px 6px;
+	font-weight:bold;
+	padding: 4px 6px;
 }
 .sendVipLink {
-    padding-left:38px;
-    background:transparent url("../../i/vip.png") no-repeat 0 0;
+	padding-left:38px;
+	background:transparent url("../../i/vip.png") no-repeat 0 0;
 }
 .chatRemember {
-    vertical-align:middle;
+	vertical-align:middle;
 }
 .chatOpenIdOption {
-    padding:0 0 1px 24px;
-    background-color:transparent;
-    background-repeat:no-repeat;
-    background-position:4px 0;
+	padding:0 0 1px 24px;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-position:4px 0;
 }
 .chatOpenIdGoogle {
-    background-image:url(../../i/openid/google.png);
+	background-image:url(../../i/openid/google.png);
 }
 #scrollBottomBox {
 	position: absolute;
@@ -130,13 +132,13 @@ a.ajax {
 	opacity: 1;
 }
 .msi {
-    float:left;    
-    background:url(../../i/blank.gif) no-repeat top left;
-    width:16px;
-    height:16px;
+	float:left;    
+	background:url(../../i/blank.gif) no-repeat top left;
+	width:16px;
+	height:16px;
 }
 .mst {   
-    margin-left:4px;
+	margin-left:4px;
 }
 .msi_application_double{ background-position: 0 0; }
 .msi_coins{ background-position: 0 -32px; }
@@ -161,34 +163,39 @@ a.ajax {
 /* ------------------------------------------------------------------- chatHeader --- */
 
 .chatHeader {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    height:45px;
-    z-index:99;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:45px;
+	z-index:99;
+	background-color:#b6e245;
+	color:#4a600d;
+	border-bottom: 1px solid #a0ca2d;
 }
 .chatHeader .chatHeaderWrapper {
-    width:100%;
-    overflow:hidden;
+	width:100%;
+	overflow:hidden;
 }
 .chatHeader .chatTitle {
-    float:left;
-    margin:14px 0 0 15px;
-    font-weight:bold;
+	float:left;
+	margin: 14px 0 0 15px;
+	font-weight:bold;
+	text-shadow:1px 1px 0 #d9f18c;
 }
 
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------ chatTopLine --- */
 
 .chatHeader .chatTopLine {
-    position:absolute;
-    top:10px;
-    right:12px;
-    font-size:9pt;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	font-size: 9pt;
+	
+	border: 1px solid #b5db4e;
+	background-color: #cff265;
 }
-
-/* top menu */
 .chatTopLineWrapper ul{
     margin: 0;
     padding: 0;
@@ -198,14 +205,12 @@ a.ajax {
     position: relative;
     float: left;
 }
-/* Top level menu link items style */
 .chatTopLineWrapper ul li a {
     display: block;
     padding: 4px 10px 4px 10px;    
     text-decoration: none;
     text-transform: lowercase;
 }
-/* Top level menu link items style */
 .chatTopLineWrapper > ul > li > a {
     padding-right: 23px;
 }
@@ -237,7 +242,6 @@ a.ajax {
 .has-user-id .chatLinkProfile {
     display: inline;
 }
-/* 1st sub level menu */
 .chatTopLineWrapper ul li ul {
     position: absolute;
     left: 0;
@@ -248,24 +252,19 @@ a.ajax {
     border-width: 1px;
     background-color: #fff;
 }
-/* Sub level menu list items (undo style from Top level List Items) */
-.chatTopLineWrapper ul li ul li{
+.chatTopLineWrapper ul li ul li {
     float: none;
 }
-
-/* All subsequent sub menu levels vertical offset after 1st level sub menu */
-.chatTopLineWrapper ul li ul li ul{
+.chatTopLineWrapper ul li ul li ul {
     top: 0;
 }
-/* Sub level menu links style */
 .chatTopLineWrapper ul li ul li a {
     width: 160px; /*width of sub menus*/
     padding: 4px 9px;
     margin: 0;
     background-image:none!important;
 }
-/* CSS classes applied to down and right arrow images */
-.downarrowclass{
+.downarrowclass {
     position: absolute;
     top: 9px;
     right: 7px;
@@ -278,7 +277,6 @@ a.ajax {
     top: 6px;
     right: 5px;
 }
-/* top menu end */
 
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- chatMain --- */
@@ -538,6 +536,18 @@ a.ajax {
 }
 .chatUserVip {
     background:transparent url("../../i/widget/vip.gif") no-repeat 0 0;
+}
+.user-icon {
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.mod-icon {
+    background-image: url("../../i/widget/shield.png");
+}
+.adm-icon {
+    background-image: url("../../i/widget/admin.png");
 }
 .chatUserSex1, 
 .chatUserSex2, 
