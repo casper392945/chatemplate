@@ -1,7 +1,7 @@
 
 # style3.css?=ver1.0.0
 
-### Изменилось в структуре кода:
+### Changed to the line of code:
 
 * consistently built the structure of the main blocks
 * deleted comment lines
