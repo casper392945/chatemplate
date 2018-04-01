@@ -1,0 +1,281 @@
+/*
+Theme Name: Light one
+Theme URI: https://madeas.ru/product/light-one/
+Author: Andrej Sharapov 
+Author URI: https://madeas.ru/
+Description: Light One is an experimental template with minimal, but funny changes. Change colors, add pictures, create your spring pattern, or leave it unchanged, and enjoy the conversation with ChaTemplate!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: light-one
+Tags: madeas, chatemplate, design, template, chatovod, light-one, chat-colors, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov
+This theme, like Chatovod, is licensed under the GPL. 
+Use it to make something cool, have fun, and share what you've learned with others. 
+*
+* ch-log-1.css - https://madeas.ru/product/ch-log-1/
+* Version - 1.0.1
+*
+* Copyright (c) 2018 Andrej Sharapov
+*/
+
+* a {
+    text-decoration: none !important;
+}
+input[type=text] {
+    padding-left: .25rem;
+}
+.smilesBox::-webkit-scrollbar,
+.vscrollable::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+}
+.smilesBox::-webkit-scrollbar-thumb,
+.vscrollable::-webkit-scrollbar-thumb { 	
+    background: #ddd;
+    background: -moz-linear-gradient(left, #ddd 0%, #ccc 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ddd ), color-stop(100%, #ccc));
+    background: -webkit-linear-gradient(left, #ddd 0%,#ccc 100%);
+    background: -o-linear-gradient(left, #ddd 0%,#ccc 100%);
+    background: -ms-linear-gradient(left, #ddd 0%,#ccc 100%);
+    background: linear-gradient(to right, #ddd 0%,#ccc 100%); 
+    border: 1px solid #ccc;   
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);
+	opacity: .4;
+}
+.smilesBox::-webkit-scrollbar-track,
+.vscrollable::-webkit-scrollbar-track {
+    background: rgba(245, 244, 239, .2);
+}
+.smilesBox::-webkit-scrollbar-thumb:active,
+.vscrollable::-webkit-scrollbar-thumb:active {	
+    background: #ccc;
+    background: -moz-linear-gradient(left, #ccc 0%, #ddd 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ccc), color-stop(100%, #ddd ));
+    background: -webkit-linear-gradient(left, #616060 0%, #ddd 100%);
+    background: -o-linear-gradient(left, #ccc 0%,#ddd 100%);
+    background: -ms-linear-gradient(left, #ccc 0%,#ddd 100%);
+    background: linear-gradient(to right, #ccc 0%,#ddd 100%); 
+    border: 1px solid #ccc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ chatTopLine --- */
+
+.chatTopLineWrapper > ul > li {
+    height: 22px !important;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- chatMain --- */
+
+.chatMain {
+    background-size: cover;
+}
+.chatMessage,
+.chatTabs {
+    background: linear-gradient(to right, rgba(255,255,255,.9), transparent);
+}
+.chatMain .chatMessages, 
+.chatMain .chatPrivateMessages {
+    padding: 0;;
+    right: 2px !important;
+    left: 0 !important;
+}
+.chatTabs {
+    right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#scrollBottomBox {
+    right: 190px !important;
+    left: auto !important;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatPeople --- */
+
+.chatMain .chatPeople {
+    height: 12px;
+    overflow: hidden;
+    right: 14px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+
+    -webkit-transition: height .25s ease-in-out;
+    -moz-transition: height .25s ease-in-out;
+    transition: height .25s ease-in-out;
+}
+.chatMain .chatPeople:hover {    
+    background-color: rgba(0, 0, 0, .14);
+    height: 100%;
+    border-left: 1px solid rgba(51, 51, 51, .1);
+    border-right: 1px solid rgba(51, 51, 51, .1);
+}
+.chatPeople .chatPeopleTitle {
+    margin: 2px 0;
+    text-align: center;
+}
+.chatPeople ul.chatPeopleList li.hover {
+  border-top:1px solid rgba(51, 51, 51, .2);
+  border-bottom:1px solid rgba(51, 51, 51, .2);
+  background-color: rgba(0, 0, 0, .14);
+}
+.chatMain .chatPeople::after {
+    position:absolute;
+    bottom:15px;
+    right:5px;
+    content:'ChaTemplate';
+    color: rgba(0,0,0,.2);
+    font-size:9px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- chatFooter --- */
+
+.chatSendLinksPanel a {
+    width: 16px !important;
+    padding: 0 !important;
+    margin-right: 16px !important;
+}
+.chatFooter .chatFooterWrapper .chatPanel div a span {
+    display: none;
+}
+.chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel {
+    left: 244px;
+    right: auto;
+    z-index: 100;
+    width: 16px;
+}
+.chatLinkMore {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEVSURBVHjarFM7boQwEDVSgIJuqWlouAGiQl5pT0CxZ8kRcpYtOEGkBURFTwsN9dJAwU+OZzY49ipuQkYaNMwbP88b2wZjjByxN/hcP6+/YXfu9DvOuJ9fC26X25Ng2zYShqECVlVF95wcS/hPB+u6Iolsck6HC4JlWURiNzmnwwXBPM8isZuc0+Eywb0sS2pZFgE3TZO4risWQVzXNYN/WAjOJeFgkWCaJpokibLDOI5kGAaMgyAgjuMoeJqmVJHQdZ32rPu+R9dK4B1keZ5TaB0k2LaNMnzfx6KmaVAOrxPz4EPN5A7OURQpOxRFwTzPw7htWxLHsfGC/+MpHL4HR26iAa/x9H7602N6fDyeBEfsS4ABAL8Y9kkNjy+sAAAAAElFTkSuQmCC') 0 0 no-repeat;
+}
+.smilesBox {
+    width: 318px;
+    margin-top: 2px;
+    height: 246px;
+}
+.smilesBox p {
+  	border:1px solid #ccc;
+  	width:60%;
+  	padding: 5px;
+  	margin:3px;
+  	color: #333;
+  	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTnU1rJkAAAA3UlEQVRIS2MYBcMIODo6Fjo7Oy8iEcdBteMGTk5OZi4uLm+A+D8xGKj+HhBLQ7XjBsbGxqxADfVA/BvZAGwY6NJPQENDgNoYIboJAB8fHy6ghv3YDEPC/4BqFoAcAtVGHABqVAW66BaaYcj4GFBeGKqcJMAEjMhUoOYfWAx97erqag1VRzoAeRPo3YVAg/4hGQoKgubQ0FBmqDLygL29vQjQsKMwg4E+WAuKA6g0ZQAYJG5AA98B8T0gWxkqTDkAupoF6NpioMFx9fX1TFBhqgGQgcSl11EwCrAABgYAkAOMm/9waSsAAAAASUVORK5CYII=) 95% 7px no-repeat;
+  	background-size: 12px;
+ }
+
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- chatFull --- */
+
+.content form {
+  position: relative;
+  background: #fff;
+  width: 240px;
+  padding: 15px;
+  outline: 15px solid rgba(255, 255, 255, 0.15);
+}
+#join-chat-button,
+#join-chat-button2,
+#sign-in-label a,
+.chatFull a,
+#join-chat-button2 {
+  box-sizing: border-box;
+  display: inherit;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(34,36,38,.15);
+  color: #333;
+  cursor: pointer;
+  line-height: 1em;
+  margin-top: .5em;
+  min-height: 1em;
+  padding: .75em 1.25em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  -webkit-transition: 0.1s all linear;
+  -moz-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+#join-chat-button:hover,
+#join-chat-button2:hover,
+#sign-in-label a:hover,
+.chatFull a:hover,
+#join-chat-button2:fover {
+  border-color: rgba(34,36,38,.35);
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.08) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.08) 100%);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 1px 2px rgba(0,0,0,.1);
+}
+#join-chat-button:active,
+#join-chat-button2:active,
+#sign-in-label a:active,
+.chatFull a:active,
+#join-chat-button2:active {
+  position: relative;
+  top: 1px;
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 100%);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#sign-in-label a:focus,
+.chatFull a:focus,
+#join-chat-button2:focus,
+#join-chat-button:focus,
+#join-chat-button2:focus {
+  outline: none;
+}
+#account-info {
+  text-align: center;
+}
+#email {
+display: block;
+}
+.content form #nick,
+.content form #captcha-input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+  padding-left: .5em;
+  width: 100%;
+}
+#new-nick-label,
+#captcha-label,
+#existing-nick-label {
+  box-sizing: border-box;
+  position: relative;
+  font-size: 0.8em;
+  color: #ccc;
+  font-weight: normal;
+}
+#new-nick-label,
+#captcha-label {
+  display: block;
+}
+.content form input[type="text"]:focus {
+  border-color: #ccc!important;
+}
+#captcha-block a.ajax {
+  background: transparent !important;
+  cursor: default;
+}
+input[type=text] {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px solid #d4d2cb !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
