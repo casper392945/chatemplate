@@ -37,8 +37,8 @@
     -moz-transition: 0.1s all linear;
     transition: 0.1s all linear;
 }
+.chatFull a:hover,
 #sign-in-label a:hover,
-.chatFull a:hover
 #join-chat-button2:fover {
     border-color: rgba(34,36,38,.35);
     background-image: -moz-linear-gradient(top, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.08) 100%);
