@@ -9,18 +9,18 @@
 * Andrej Sharapov https://madeas.ru/
 */
 
-	@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-	@import url(https://fonts.googleapis.com/css?family=Exo+2:300,300italic,500,600;subset=latin,cyrillic);
-	@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=cyrillic-ext);
-	@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Work+Sans:400,700);
-	@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
-	@import url(https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300);
-	@import url(https://fonts.googleapis.com/css?family=Barlow:400,500,700);
-	@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
-	@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic|Montserrat:700);
-	@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,300italic,500,600;subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Work+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300);
+@import url(https://fonts.googleapis.com/css?family=Barlow:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic|Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,700);
 
-/* --- style3.css --- */
+/* --- alignment.css --- */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite, code, em, font, q, 
 s, small, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
 caption, tbody, tfoot, thead, tr,img, th, td {
@@ -51,7 +51,7 @@ caption, tbody, tfoot, thead, tr,img, th, td {
  input[type="button"]:focus,
  input[type="submit"]:focus,
  input[type="text"]:focus {
-	outline:none;
+    outline:none;
 }
 html {
     font-size: 100%;
@@ -68,12 +68,11 @@ body {
     background-color:#ffffff;
 }
 a {
-    color: #333;
-    text-decoration: none !important; /* del important */
+    text-decoration: none !important;
 }
 a:hover,
 a:focus {
-    color: #0d48a1;
+    color: #5d5b53;
 }
 .smilesBox::-webkit-scrollbar,
 .vscrollable::-webkit-scrollbar {
@@ -93,27 +92,27 @@ a:focus {
 }
 .smilesBox:hover::-webkit-scrollbar-thumb,
 .vscrollable:hover::-webkit-scrollbar-thumb {
-    background: rgba(182, 226, 69, .5);
+    background: #ccc;
     visibility: visible;
     opacity:1;
 }
 .smilesBox::-webkit-scrollbar-thumb:active, 
 .vscrollable::-webkit-scrollbar-thumb:active {
-    background-color: #b6e245;
+    background-color: #777;
 }
 .vscrollable::-webkit-scrollbar-thumb,
 .vscrollable::-webkit-scrollbar-track,
 .smilesBox::-webkit-scrollbar-thumb,
 .smilesBox::-webkit-scrollbar-track {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 #scrollBottomBox {  
 	position: absolute;  
 	font-size:0;  
 	bottom: 3px;  
 	left: auto !important;  
-	right: 173px !important;  
+	right: 180px !important;  
 	border: 0 !important;  
 	padding: 0 !important;  
 	width: 16px !important;  
@@ -127,13 +126,17 @@ a:focus {
 #chatMainMenuChatovod {
     margin-left: -12px;
 }
+#chatMainMenuProfile {
+    margin-left: -1px;
+}
+.chatTopLineWrapper ul li ul {
+    border-color: #ccc;
+}
+.menu_profile_title {
+    font-weight: normal !important;
+}
 .chatTopLineWrapper ul > li > a {
-    display: block;
-    padding: 4px 10px 4px 10px;    
-    text-decoration: none;
-    text-transform: lowercase;
     min-height: 23px;
-    padding-right: 23px;
 }
 .chatTopLineWrapper > ul > li > ul > li > a {
     min-width: 160px;
@@ -164,43 +167,46 @@ a:focus {
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel a span {
     display: none;
 }
+.chatLinkVip {
+    margin-right: 33px!important;
+}
 .chatLinkVip::after {
      position:absolute;
      content:'vip';
      border-bottom:1px dotted #000;
+     margin-left:21px;
  }
 .chatLinkModerate {
     width:16px;
-    background:transparent url("http://st1.chatovod.ru/i/widget/shield.png") no-repeat 0 0;
     margin-right:7px!important;
 }
 .smilesBox {
-    background-color: #ffffff;
-    position:absolute;
-    left:0;
-    top:0;    
-    margin: 1px -3px;
-    padding-left:3px;
-    width:320px;
-    height:247px;
-    overflow: auto;
-    z-index:98;
+	background-color: #ffffff;
+	position:absolute;
+	left:0;
+	top:0;    
+	margin: 1px -3px;
+	padding-left:3px;
+	width:320px;
+	height:247px;
+	overflow: auto;
+	z-index:98;
 }
 .chatTime {
-	padding-right: 12px;
+	padding-right: 14px;
 }
 .chatSpecifyPassword input[type=text] {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    padding: 3px 4px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	padding: 3px 4px;
 }
 .chatFooter .chatFooterWrapper .chatPanel div a span,
 .chatLinkVip::after {
-    border-bottom: 1px dotted transparent; /* если не хотите удалять, сделайте прозрачным */
+	border-bottom: 1px dotted transparent;
 }
 .chatSendExitPanel select:focus {
-    outline: none;
+	outline: none;
 }
 
  body:not(.has-nick) .chatFooter::after {
@@ -212,6 +218,10 @@ a:focus {
 	right: 0;
 	bottom: 7px;
 	text-align: center;
+	opacity: .4;
 }
-
+input[type=text] {
+	padding-left: 5px;
+	padding-right: 5px;
+}
 /* ------------------ */
