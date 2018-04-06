@@ -9,17 +9,17 @@
 @import url('https://madeas.ru/css/chatemplate/alignment.min.css');
 
 .chatHeader {
-    height: 26px;
+	height: 26px;
 }
 .chatHeader .chatTitle {
-    width: 50%;
-    height: 26px;
-    margin: 0;
-    margin-left: 15px;
-    line-height: 26px;
+	width: 50%;
+	height: 26px;
+	margin: 0;
+	margin-left: 15px;
+	line-height: 26px;
 }
 .chatHeader .chatTopLine {
-        top: 0;
+	top: 0;
         right: 0;
 	animation-duration: .5s;
         animation-name: fadeInDown;
@@ -34,15 +34,15 @@
 }
 .chatPeople ul.chatPeopleList li.hover .chatUserWrapper,
 .chatPeople ul.chatPeopleList li.hover > a {
-    white-space: nowrap;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+	white-space: nowrap;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
 }
 .chatPeople ul.chatPeopleList li.hover {
-    background-color: rgba(0, 0, 0, .06);
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+	background-color: rgba(0, 0, 0, .06);
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 .chatUserMenu {
 	animation-duration: .5s;
@@ -50,59 +50,59 @@
         animation-name: fadeInRight;
 }
 .chatMain {
-    top: 26px;
+	top: 26px;
 }
 .chatTabs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 110px;
-    height: 100%;
-    border-right: 1px solid #D4D2CB;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 110px;
+	height: 100%;
+	border-right: 1px solid #D4D2CB;
 }
 .chatTabs ul {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
 }
 .chatTabs > ul > li {
-    display: block;
-    height: auto;
+	display: block;
+	height: auto;
 }
 .chatTabs > ul,
 .chatTabs > ul > li {
-    width: 110px;
-    margin: 0 !important;
+	width: 110px;
+	margin: 0 !important;
 }
 .chatTabs > ul > li > a {
-    width: 110px;
-    padding: 0 10px 0 10px;
+	width: 110px;
+	padding: 0 10px 0 10px;
 }
 .chatTabs ul li.appTab a {
-    width: 79px;
+	width: 79px;
 }
 .chatTabs > ul > li:hover {
-    background-color: rgba(0, 0, 0, .06);
+	background-color: rgba(0, 0, 0, .06);
 }
 .chatTabs > ul > li:hover > a {
-    transform: translateX(5px);
+	transform: translateX(5px);
 }
 .chatTabs > ul > li > a {
-    white-space: nowrap;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+	white-space: nowrap;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
 }
 .chatTabsLeft, 
 .chatTabsRight {
-    display: none;
+	display: none;
 }
 .chatMain .chatMessages, 
 .chatMain .chatPrivateMessages {
-    top: 0;
-    left: 112px;
+	top: 0;
+	left: 112px;
 }
 .chatPopupMenuDiv2,
 .smilesBox {
@@ -110,16 +110,16 @@
         animation-name: fadeIn;
 }
 @keyframes fadeIn {
-    0%{opacity:0}
-    to{opacity:1}
+0%{opacity:0}
+to{opacity:1}
 }
 @keyframes fadeInRight {
-    0%{opacity:0;transform:translate3d(100%,0,0)}
-    to{opacity:1;transform:none}
+0%{opacity:0;transform:translate3d(100%,0,0)}
+to{opacity:1;transform:none}
 }
 @keyframes fadeInDown {
-    0%{opacity:0;transform:translate3d(0,-100%,0)}
-    to{opacity:1;transform:none}
+0%{opacity:0;transform:translate3d(0,-100%,0)}
+to{opacity:1;transform:none}
 }
 @keyframes fadeInUp90 {
     0%{opacity:0;transform:translate3d(0,10%,0)}
