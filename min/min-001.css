@@ -1,175 +1,146 @@
-/*
-Theme Name: Light one
-Theme URI: https://madeas.ru/product/light-one/
-Author: Andrej Sharapov 
-Author URI: https://madeas.ru/
-Description: Light One is an experimental template with minimal, but funny changes. Change colors, add pictures, create your spring pattern, or leave it unchanged, and enjoy the conversation with ChaTemplate!
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html 
-Text Domain: light-one
-Tags: madeas, chatemplate, design, template, chatovod, light-one, chat-colors, chat, full-width-template, new-web-design, madeas.ru, andrej-sharapov
-This theme, like Chatovod, is licensed under the GPL. 
-Use it to make something cool, have fun, and share what you've learned with others. 
+/*!
+* min-002.css - https://madeas.ru/product/light-one/
+* version - 1.0.0
+* licensed under the MIT license - http://opensource.org/licenses/MIT
 *
 * ch-log-1.css - https://madeas.ru/product/ch-log-1/
 * Version - 1.0.1
+*
 *
 * Copyright (c) 2018 Andrej Sharapov
 */
 
 * a {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 input[type=text] {
-    padding-left: .25rem;
+	padding-left: .25rem;
 }
 .smilesBox::-webkit-scrollbar,
 .vscrollable::-webkit-scrollbar {
-    width: 10px;
-    height: 6px;
+	width: 10px;
+	height: 6px;
 }
 .smilesBox::-webkit-scrollbar-thumb,
 .vscrollable::-webkit-scrollbar-thumb { 	
-    background: #ddd;
-    background: -moz-linear-gradient(left, #ddd 0%, #ccc 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ddd ), color-stop(100%, #ccc));
-    background: -webkit-linear-gradient(left, #ddd 0%,#ccc 100%);
-    background: -o-linear-gradient(left, #ddd 0%,#ccc 100%);
-    background: -ms-linear-gradient(left, #ddd 0%,#ccc 100%);
-    background: linear-gradient(to right, #ddd 0%,#ccc 100%); 
-    border: 1px solid #ccc;   
+	background: #ddd;
+	background: -moz-linear-gradient(left, #ddd 0%, #ccc 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ddd ), color-stop(100%, #ccc));
+	background: -webkit-linear-gradient(left, #ddd 0%,#ccc 100%);
+	background: -o-linear-gradient(left, #ddd 0%,#ccc 100%);
+	background: -ms-linear-gradient(left, #ddd 0%,#ccc 100%);
+	background: linear-gradient(to right, #ddd 0%,#ccc 100%); 
+	border: 1px solid #ccc;   
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 	filter: alpha(opacity=40);
 	opacity: .4;
 }
 .smilesBox::-webkit-scrollbar-track,
 .vscrollable::-webkit-scrollbar-track {
-    background: rgba(245, 244, 239, .2);
+	background: rgba(245, 244, 239, .2);
 }
 .smilesBox::-webkit-scrollbar-thumb:active,
 .vscrollable::-webkit-scrollbar-thumb:active {	
-    background: #ccc;
-    background: -moz-linear-gradient(left, #ccc 0%, #ddd 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ccc), color-stop(100%, #ddd ));
-    background: -webkit-linear-gradient(left, #616060 0%, #ddd 100%);
-    background: -o-linear-gradient(left, #ccc 0%,#ddd 100%);
-    background: -ms-linear-gradient(left, #ccc 0%,#ddd 100%);
-    background: linear-gradient(to right, #ccc 0%,#ddd 100%); 
-    border: 1px solid #ccc;
+	background: #ccc;
+	background: -moz-linear-gradient(left, #ccc 0%, #ddd 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ccc), color-stop(100%, #ddd ));
+	background: -webkit-linear-gradient(left, #616060 0%, #ddd 100%);
+	background: -o-linear-gradient(left, #ccc 0%,#ddd 100%);
+	background: -ms-linear-gradient(left, #ccc 0%,#ddd 100%);
+	background: linear-gradient(to right, #ccc 0%,#ddd 100%); 
+	border: 1px solid #ccc;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
 	opacity: .7;
 }
-
-/* ---------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------ chatTopLine --- */
-
 .chatTopLineWrapper > ul > li {
-    height: 22px !important;
+	height: 22px !important;
 }
-
-/* ---------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------- chatMain --- */
-
 .chatMain {
-    background-size: cover;
+	background-size: cover;
 }
 .chatMessage,
 .chatTabs {
-    background: linear-gradient(to right, rgba(255,255,255,.9), transparent);
+	background: linear-gradient(to right, rgba(255,255,255,.9), transparent);
 }
 .chatMain .chatMessages, 
 .chatMain .chatPrivateMessages {
-    padding: 0;;
-    right: 2px !important;
-    left: 0 !important;
+	padding: 0;;
+	right: 2px !important;
+	left: 0 !important;
 }
 .chatTabs {
-    right: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	right: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 #scrollBottomBox {
-    right: 190px !important;
-    left: auto !important;
+	right: 190px !important;
+	left: auto !important;
 }
-
-/* ---------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------- chatPeople --- */
-
 .chatMain .chatPeople {
-    height: 12px;
-    overflow: hidden;
-    right: 14px;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-
-    -webkit-transition: height .25s ease-in-out;
-    -moz-transition: height .25s ease-in-out;
-    transition: height .25s ease-in-out;
+	height: 12px;
+	overflow: hidden;
+	right: 14px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	-webkit-transition: height .25s ease-in-out;
+	-moz-transition: height .25s ease-in-out;
+	transition: height .25s ease-in-out;
 }
 .chatMain .chatPeople:hover {    
-    background-color: rgba(0, 0, 0, .14);
-    height: 100%;
-    border-left: 1px solid rgba(51, 51, 51, .1);
-    border-right: 1px solid rgba(51, 51, 51, .1);
+	background-color: rgba(0, 0, 0, .14);
+	height: 100%;
+	border-left: 1px solid rgba(51, 51, 51, .1);
+	border-right: 1px solid rgba(51, 51, 51, .1);
 }
 .chatPeople .chatPeopleTitle {
-    margin: 2px 0;
-    text-align: center;
+	margin: 2px 0;
+	text-align: center;
 }
 .chatPeople ul.chatPeopleList li.hover {
-  border-top:1px solid rgba(51, 51, 51, .2);
-  border-bottom:1px solid rgba(51, 51, 51, .2);
-  background-color: rgba(0, 0, 0, .14);
+	border-top:1px solid rgba(51, 51, 51, .2);
+	border-bottom:1px solid rgba(51, 51, 51, .2);
+	background-color: rgba(0, 0, 0, .14);
 }
 .chatMain .chatPeople::after {
-    position:absolute;
-    bottom:15px;
-    right:5px;
-    content:'ChaTemplate';
-    color: rgba(0,0,0,.2);
-    font-size:9px;
+	position:absolute;
+	bottom:15px;
+	right:5px;
+	content:'ChaTemplate';
+	color: rgba(0,0,0,.2);
+	font-size:9px;
 }
-
-/* ---------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------- chatFooter --- */
-
 .chatSendLinksPanel a {
-    width: 16px !important;
-    padding: 0 !important;
-    margin-right: 16px !important;
+	width: 16px !important;
+	padding: 0 !important;
+	margin-right: 16px !important;
 }
 .chatFooter .chatFooterWrapper .chatPanel div a span {
-    display: none;
+	display: none;
 }
 .chatFooter .chatFooterWrapper .chatPanel div.chatSoundPanel {
-    left: 244px;
-    right: auto;
-    z-index: 100;
-    width: 16px;
+	left: 244px;
+	right: auto;
+	z-index: 100;
+	width: 16px;
 }
 .chatLinkMore {
-    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEVSURBVHjarFM7boQwEDVSgIJuqWlouAGiQl5pT0CxZ8kRcpYtOEGkBURFTwsN9dJAwU+OZzY49ipuQkYaNMwbP88b2wZjjByxN/hcP6+/YXfu9DvOuJ9fC26X25Ng2zYShqECVlVF95wcS/hPB+u6Iolsck6HC4JlWURiNzmnwwXBPM8isZuc0+Eywb0sS2pZFgE3TZO4risWQVzXNYN/WAjOJeFgkWCaJpokibLDOI5kGAaMgyAgjuMoeJqmVJHQdZ32rPu+R9dK4B1keZ5TaB0k2LaNMnzfx6KmaVAOrxPz4EPN5A7OURQpOxRFwTzPw7htWxLHsfGC/+MpHL4HR26iAa/x9H7602N6fDyeBEfsS4ABAL8Y9kkNjy+sAAAAAElFTkSuQmCC') 0 0 no-repeat;
+	background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEVSURBVHjarFM7boQwEDVSgIJuqWlouAGiQl5pT0CxZ8kRcpYtOEGkBURFTwsN9dJAwU+OZzY49ipuQkYaNMwbP88b2wZjjByxN/hcP6+/YXfu9DvOuJ9fC26X25Ng2zYShqECVlVF95wcS/hPB+u6Iolsck6HC4JlWURiNzmnwwXBPM8isZuc0+Eywb0sS2pZFgE3TZO4risWQVzXNYN/WAjOJeFgkWCaJpokibLDOI5kGAaMgyAgjuMoeJqmVJHQdZ32rPu+R9dK4B1keZ5TaB0k2LaNMnzfx6KmaVAOrxPz4EPN5A7OURQpOxRFwTzPw7htWxLHsfGC/+MpHL4HR26iAa/x9H7602N6fDyeBEfsS4ABAL8Y9kkNjy+sAAAAAElFTkSuQmCC') 0 0 no-repeat;
 }
 .smilesBox {
-    width: 318px;
-    margin-top: 2px;
-    height: 246px;
+	width: 318px;
+	margin-top: 2px;
+	height: 246px;
 }
 .smilesBox p {
-  	border:1px solid #ccc;
-  	width:60%;
-  	padding: 5px;
-  	margin:3px;
-  	color: #333;
-  	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTnU1rJkAAAA3UlEQVRIS2MYBcMIODo6Fjo7Oy8iEcdBteMGTk5OZi4uLm+A+D8xGKj+HhBLQ7XjBsbGxqxADfVA/BvZAGwY6NJPQENDgNoYIboJAB8fHy6ghv3YDEPC/4BqFoAcAtVGHABqVAW66BaaYcj4GFBeGKqcJMAEjMhUoOYfWAx97erqag1VRzoAeRPo3YVAg/4hGQoKgubQ0FBmqDLygL29vQjQsKMwg4E+WAuKA6g0ZQAYJG5AA98B8T0gWxkqTDkAupoF6NpioMFx9fX1TFBhqgGQgcSl11EwCrAABgYAkAOMm/9waSsAAAAASUVORK5CYII=) 95% 7px no-repeat;
-  	background-size: 12px;
+	border:1px solid #ccc;
+	width:60%;
+	padding: 5px;
+	margin:3px;
+	color: #333;
+	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTnU1rJkAAAA3UlEQVRIS2MYBcMIODo6Fjo7Oy8iEcdBteMGTk5OZi4uLm+A+D8xGKj+HhBLQ7XjBsbGxqxADfVA/BvZAGwY6NJPQENDgNoYIboJAB8fHy6ghv3YDEPC/4BqFoAcAtVGHABqVAW66BaaYcj4GFBeGKqcJMAEjMhUoOYfWAx97erqag1VRzoAeRPo3YVAg/4hGQoKgubQ0FBmqDLygL29vQjQsKMwg4E+WAuKA6g0ZQAYJG5AA98B8T0gWxkqTDkAupoF6NpioMFx9fX1TFBhqgGQgcSl11EwCrAABgYAkAOMm/9waSsAAAAASUVORK5CYII=) 95% 7px no-repeat;
+	background-size: 12px;
  }
-
-/* ---------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- chatFull --- */
-
 .content form {
   position: relative;
   background: #fff;
@@ -177,10 +148,10 @@ input[type=text] {
   padding: 15px;
   outline: 15px solid rgba(255, 255, 255, 0.15);
 }
+.chatFull a,
 #join-chat-button,
 #join-chat-button2,
 #sign-in-label a,
-.chatFull a,
 #join-chat-button2 {
   box-sizing: border-box;
   display: inherit;
