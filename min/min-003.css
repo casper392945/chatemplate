@@ -26,8 +26,8 @@
 .chatHeader .chatTopLine,
 .chatTopLineWrapper > ul {
 	height: 69px;
-  top: 0;
-  right: 0;
+	top: 0;
+	right: 0;
 	width: 170px;
 	border-right: 0;	
 	border-top: 0;	
@@ -61,8 +61,8 @@
 	top: 0;
 }
 .chatTabs {
-  border-bottom: 1px solid #D4D2CB;
-  right: 170px;
+	border-bottom: 1px solid #D4D2CB;
+	right: 170px;
 }
 .chatMain {
 	top: 69px;
