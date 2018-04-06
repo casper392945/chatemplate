@@ -1,0 +1,114 @@
+/*!
+* min-003.css - https://madeas.ru/product/min-003/
+* version - 1.0.0
+* licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2018 Andrej Sharapov
+*/
+
+@import url('https://madeas.ru/css/chatemplate/alignment.min.css');
+
+.chatTopLineWrapper > ul > li {
+	animation-name: fadeInRight90;
+	float: none;
+}
+.chatTopLineWrapper > ul > li:nth-child(2) {
+	animation-duration:.75s;
+}
+.chatTopLineWrapper > ul > li:nth-child(3) {
+	animation-duration:.95s;
+}
+.chatHeader .chatTopLine {
+	animation-name: fadeInRight90;
+	animation-duration:.55s;
+	animation-fill-mode: both;
+}
+.chatHeader .chatTopLine,
+.chatTopLineWrapper > ul {
+	height: 69px;
+  top: 0;
+  right: 0;
+	width: 170px;
+	border-right: 0;	
+	border-top: 0;	
+	border-bottom: 0;
+}
+.chatHeader .chatTopLine {
+	border-bottom: 1px solid #D4D2CB;
+}
+.chatTopLineWrapper ul li.chatMenuItemWithSeparator a {
+	background-image: none !important;
+}
+.chatHeader {
+	height: 69px;
+}
+.chatHeader .chatTitle {
+	width: calc(100% - 170px);
+	margin: auto;
+	text-align: center;
+	line-height: 69px;
+}
+.chatHeader .chatTitle {
+	font-size: 40px;
+}
+.chatPeople ul.chatPeopleList li {
+	animation-name: fadeIn;
+	animation-duration:1s;
+	animation-fill-mode: both;
+}
+.chatMain .chatPeople,
+.chatMain .chatTabs {
+	top: 0;
+}
+.chatTabs {
+  border-bottom: 1px solid #D4D2CB;
+  right: 170px;
+}
+.chatMain {
+	top: 69px;
+}
+.chatTopLineWrapper > ul > li > ul {
+	z-index: 102;
+  position: absolute;
+	width: 171px;
+	border: 1px solid #D4D2CB;
+	border-top: 0;
+	right: 0;
+	left: auto !important;
+}
+#menu_profile_title {
+	white-space: nowrap;
+}
+.chatTopLineWrapper > ul > li > ul > li > a {
+  width: 169px;
+}
+.chatTopLineWrapper > ul > li > ul {
+	animation-name: fadeInUp90;
+	animation-duration:.35s;
+}
+.center-wrapper .content form {
+	animation-name: bounceIn;
+	animation-duration:1s;
+	animation-fill-mode: both;
+}
+@keyframes bounceIn {
+0%,20%,40%,60%,80%,to {animation-timing-function:cubic-bezier(.215,.61,.355,1)}
+0%{opacity:0;transform:scale3d(.3,.3,.3)}
+20%{transform:scale3d(1.1,1.1,1.1)}
+40%{transform:scale3d(.9,.9,.9)}
+60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}
+80%{transform:scale3d(.97,.97,.97)}
+to{opacity:1;transform:scaleX(1)}
+}
+@keyframes fadeInUp90 {
+0%{opacity:0;transform:translate3d(0,90%,0)}
+to{opacity:1;transform:none}
+}
+@keyframes fadeInRight90 {
+0%{opacity:0;transform:translate3d(90%,0,0)}
+to{opacity:1;transform:none}
+}
+@keyframes fadeIn {
+0%{opacity:0}
+to{opacity:1}
+}
