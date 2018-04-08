@@ -1,0 +1,13 @@
+.chat::before {
+  content:'';
+  position: fixed; 
+  top: 0%; 
+  left: 0;
+  width: 65px;
+  height: 64px;
+  background: transparent url(http://demo.madeas.ru/img/st.g.r.gif);
+  z-index: 102;
+}
+.chatHeader .chatTitle {
+  margin-left: 50px;
+}
