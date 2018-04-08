@@ -1,0 +1,23 @@
+
+/*!	
+* garland.css - 
+* version - 1.0.0
+* licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2018 Andrej Sharapov
+*/
+
+.chat::before {
+content:'';
+position: fixed; 
+top: 0; 
+left: 0;
+width: 100%;
+height: 10px;
+background: transparent url(http://demo.madeas.ru/img/chat/happy/garland.gif) 0 0 repeat-x;
+background-size: 30px;
+z-index: 102;
+}
+.chatHeader .chatTitle {
+margin-left: 50px;
+}
