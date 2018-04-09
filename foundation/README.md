@@ -1,0 +1,3 @@
+# alignment.min.css
+
+[Documentation](https://madeas.ru/chatemplate/alignment-css/, "Documentation")
