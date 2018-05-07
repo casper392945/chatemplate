@@ -1,3 +1,7 @@
+<!-- St.G.R ChaTemplate CSS  -->
+.chat {
+  position: relative;
+}
 .chat::before {
   content:'';
   position: fixed; 
@@ -11,3 +15,4 @@
 .chatHeader .chatTitle {
   margin-left: 50px;
 }
+<!--/ St.G.R ChaTemplate CSS -->
